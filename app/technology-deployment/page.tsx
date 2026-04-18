@@ -3,7 +3,7 @@ import PageHeader from "../components/PageHeader";
 
 export default function page() {
     return (
-        <main>
+        <>
             <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section id="description">
                 <h2>Description</h2>
@@ -338,6 +338,6 @@ export default function page() {
                     </li>
                 </ul>
             </section>
-        </main>
+        </>
     );
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <main>
+        <>
             <h1>CMALT Portfolio</h1>
             <p>
                 <Link href="/contextual-statement">Contextual Statement</Link>
@@ -92,6 +92,6 @@ export default function Home() {
                     </Link>
                 </li>
             </ul>
-        </main>
+        </>
     );
 }

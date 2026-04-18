@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function page() {
     return (
-        <main>
+        <>
             <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section>
                 <h2>Future Directions in Learning Technology</h2>
@@ -115,6 +115,6 @@ export default function page() {
                     technology.
                 </p>
             </section>
-        </main>
+        </>
     );
 }
