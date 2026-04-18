@@ -11,7 +11,7 @@
     --muted: #6b6360;
     --border: #e0dad4;
     --surface: #f2ede7;
-    --nav-label: #8b7f7a;
+    --nav-label: #665b58;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
         --muted: #a09895;
         --border: #2e2b28;
         --surface: #221f1d;
-        --nav-label: #7a7370;
+        --nav-label: #9a8f8c;
     }
 }
 

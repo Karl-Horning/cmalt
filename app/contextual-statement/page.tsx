@@ -3,7 +3,7 @@ import PageHeader from "../components/PageHeader";
 
 export default function page() {
     return (
-        <main>
+        <>
             <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section id="description">
                 <h2>My Journey in Learning Technology</h2>
@@ -126,6 +126,6 @@ export default function page() {
                     the sector.
                 </p>
             </section>
-        </main>
+        </>
     );
 }
