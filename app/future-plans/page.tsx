@@ -1,8 +1,12 @@
+import { meta } from "./meta";
+import PageHeader from "../components/PageHeader";
+
 import Link from "next/link";
 
 export default function page() {
     return (
         <main>
+            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section>
                 <h2>Future Directions in Learning Technology</h2>
 
