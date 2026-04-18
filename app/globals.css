@@ -232,6 +232,14 @@ body {
     padding-left: 1.5rem;
 }
 
+.content-body ul {
+    list-style-type: square;
+}
+
+.content-body ol {
+    list-style-type: decimal;
+}
+
 .content-body li {
     margin-bottom: 0.4rem;
 }
