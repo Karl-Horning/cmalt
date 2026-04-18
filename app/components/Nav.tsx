@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 const navStructure = [
     {
@@ -60,22 +59,11 @@ const navStructure = [
     },
 ];
 
-export default function Nav() {
+export default function Nav({ open }: { open: boolean }) {
     const pathname = usePathname();
-    const [open, setOpen] = useState(false);
 
     return (
         <nav aria-label="Portfolio sections">
-            <button
-                className="nav-toggle-btn"
-                onClick={() => setOpen(!open)}
-                aria-expanded={open}
-                aria-controls="nav-list"
-            >
-                <span aria-hidden="true">{open ? "✕" : "☰"}</span>
-                <span>Navigation</span>
-            </button>
-
             <div id="nav-list" className={`nav-list${open ? " open" : ""}`}>
                 {navStructure.map((item) => {
                     if (item.type === "standalone") {
