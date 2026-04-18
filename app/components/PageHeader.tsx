@@ -1,9 +1,33 @@
+/**
+ * @fileoverview Page header component displaying title, date, and reading time.
+ */
+
+/**
+ * Props for the PageHeader component.
+ */
 interface PageHeaderProps {
+    /** The page title, rendered as an h1 element. */
     title: string;
+    /** ISO 8601 date string (YYYY-MM-DD) of the last content update. */
     date: string;
+    /** Estimated reading time in minutes. */
     readingTime: number;
 }
 
+/**
+ * Renders a page header containing the title, last-updated date, and
+ * estimated reading time.
+ *
+ * The date is parsed by splitting its components rather than passing it
+ * directly to the Date constructor, which interprets YYYY-MM-DD strings as
+ * UTC and can display the previous day in negative-offset timezones.
+ *
+ * @param props - Component props.
+ * @param props.title - The page title.
+ * @param props.date - ISO 8601 date string of the last content update.
+ * @param props.readingTime - Estimated reading time in minutes.
+ * @returns The rendered page header element.
+ */
 export default function PageHeader({
     title,
     date,

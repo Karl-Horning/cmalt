@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Top-level layout shell for the CMALT portfolio site.
+ */
+
 "use client";
 
 import Link from "next/link";
@@ -5,6 +9,18 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Nav from "./Nav";
 
+/**
+ * Renders the site header, sidebar navigation, and main content area.
+ *
+ * Mobile navigation state is stored as the pathname at which the menu was
+ * opened rather than a plain boolean. This means navigating to a new page
+ * automatically closes the menu without needing a synchronous setState call
+ * inside an effect, which would cause an extra render cycle on every navigation.
+ *
+ * @param props - Component props.
+ * @param props.children - Page content rendered inside the main element.
+ * @returns The rendered site shell fragment.
+ */
 export default function SiteShell({
     children,
 }: {

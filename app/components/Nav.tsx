@@ -1,16 +1,39 @@
+/**
+ * @fileoverview Sidebar navigation component for the CMALT portfolio.
+ */
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navStructure = [
+/**
+ * A standalone nav entry rendered above the grouped sections.
+ */
+interface StandaloneItem {
+    type: "standalone";
+    href: string;
+    label: string;
+}
+
+/**
+ * A grouped nav section containing one or more child links.
+ */
+interface GroupItem {
+    type: "group";
+    label: string;
+    items: { href: string; label: string }[];
+}
+
+/** All portfolio sections in display order, grouped to reflect CMALT structure. */
+const navStructure: (StandaloneItem | GroupItem)[] = [
     {
-        type: "standalone" as const,
+        type: "standalone",
         href: "/contextual-statement",
         label: "Contextual Statement",
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 1: Operational Issues",
         items: [
             { href: "/technology-constraints", label: "Technology Constraints" },
@@ -19,7 +42,7 @@ const navStructure = [
         ],
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 2: Teaching & Learning",
         items: [
             { href: "/teaching-and-learning", label: "Teaching & Learning" },
@@ -27,7 +50,7 @@ const navStructure = [
         ],
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 3: Wider Context",
         items: [
             { href: "/legislation", label: "Legislation" },
@@ -35,12 +58,12 @@ const navStructure = [
         ],
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 4: Communication",
         items: [{ href: "/communication", label: "Communication" }],
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 5: Specialist Area",
         items: [
             {
@@ -50,7 +73,7 @@ const navStructure = [
         ],
     },
     {
-        type: "group" as const,
+        type: "group",
         label: "Section 6: Professional Development",
         items: [
             { href: "/future-plans", label: "Future Plans" },
@@ -59,6 +82,15 @@ const navStructure = [
     },
 ];
 
+/**
+ * Renders the portfolio sidebar navigation with grouped section links.
+ *
+ * Highlights the active link using aria-current="page", derived from the
+ * current pathname rather than route params, to avoid stale state on
+ * client-side navigation.
+ *
+ * @returns The rendered nav element.
+ */
 export default function Nav() {
     const pathname = usePathname();
 
