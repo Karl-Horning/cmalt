@@ -192,6 +192,7 @@ body {
 
 .content-body {
     max-width: 680px;
+    margin: 0 auto;
 }
 
 .content-body h1,
