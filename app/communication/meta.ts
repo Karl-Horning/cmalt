@@ -4,6 +4,6 @@ export const meta = {
         "Section 4 highlights how I communicate and collaborate with others in my professional practice. It includes examples of teamwork, peer learning, stakeholder engagement, and the ways I share knowledge through presentations, publications, and informal channels.",
     date: "2025-11-11",
     readingTime: 12,
-    slug: "section-4a-communication-and-working-with-others",
+    slug: "communication",
     draft: false,
 };
