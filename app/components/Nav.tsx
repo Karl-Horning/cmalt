@@ -59,12 +59,12 @@ const navStructure = [
     },
 ];
 
-export default function Nav({ open }: { open: boolean }) {
+export default function Nav() {
     const pathname = usePathname();
 
     return (
         <nav aria-label="Portfolio sections">
-            <div id="nav-list" className={`nav-list${open ? " open" : ""}`}>
+            <div id="nav-list" className="nav-list">
                 {navStructure.map((item) => {
                     if (item.type === "standalone") {
                         return (

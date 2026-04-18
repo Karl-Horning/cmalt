@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import Nav from "./Nav";
 
 export default function SiteShell({
@@ -9,7 +10,16 @@ export default function SiteShell({
 }: {
     children: React.ReactNode;
 }) {
-    const [open, setOpen] = useState(false);
+    const pathname = usePathname();
+    const [openAt, setOpenAt] = useState<string | null>(null);
+    const open = openAt === pathname;
+
+    useEffect(() => {
+        document.body.style.overflow = open ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [open]);
 
     return (
         <>
@@ -22,9 +32,10 @@ export default function SiteShell({
                     <span className="brand-subtitle">CMALT Portfolio</span>
                 </Link>
                 <button
+                    type="button"
                     className="nav-toggle-btn"
-                    onClick={() => setOpen(!open)}
-                    aria-expanded={open}
+                    onClick={() => setOpenAt(open ? null : pathname)}
+                    aria-expanded={open ? "true" : "false"}
                     aria-controls="nav-list"
                     aria-label={open ? "Close navigation" : "Open navigation"}
                 >
@@ -33,9 +44,16 @@ export default function SiteShell({
             </header>
 
             <div className="site-layout">
-                <aside className="site-sidebar">
-                    <Nav open={open} />
+                <aside className={`site-sidebar${open ? " site-sidebar--open" : ""}`}>
+                    <Nav />
                 </aside>
+                {open && (
+                    <div
+                        className="nav-backdrop"
+                        onClick={() => setOpenAt(null)}
+                        aria-hidden="true"
+                    />
+                )}
                 <main id="main-content" className="site-main">
                     <div className="content-body">{children}</div>
                 </main>
