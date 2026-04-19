@@ -7,6 +7,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Footer from "./Footer";
 import Nav from "./Nav";
 
 /**
@@ -72,6 +73,7 @@ export default function SiteShell({
                 )}
                 <main id="main-content" className="site-main">
                     <div className="content-body">{children}</div>
+                    <Footer />
                 </main>
             </div>
         </>
