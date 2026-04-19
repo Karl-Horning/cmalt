@@ -1,5 +1,10 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    designingAnEnglishCourseDocument,
+    exampleFeedbackDocument,
+    firstSessionQuestionsDocument,
+} from "@/lib/constants";
 
 export default function page() {
     return (
@@ -23,7 +28,7 @@ export default function page() {
                 <p>
                     To tailor the learning experience from the start, I created
                     a document titled{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a href={firstSessionQuestionsDocument} target="_blank" rel="noopener noreferrer">
                         First Session Questions
                     </a>
                     , which I used as a structured needs analysis tool. It
@@ -35,7 +40,7 @@ export default function page() {
 
                 <p>
                     Based on this information,{" "}
-                    <a href={""} target="_blank" rel="noopener noreferrer">
+                    <a href={designingAnEnglishCourseDocument} target="_blank" rel="noopener noreferrer">
                         I designed bespoke ten-week courses
                     </a>
                     . For example, one group needed to improve clarity in
@@ -270,7 +275,7 @@ export default function page() {
                 <h3>Needs Analysis & Course Design</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a href={firstSessionQuestionsDocument} target="_blank" rel="noopener noreferrer">
                             First Session Questions (PDF)
                         </a>{" "}
                         <em>
@@ -281,7 +286,7 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href={""} target="_blank" rel="noopener noreferrer">
+                        <a href={designingAnEnglishCourseDocument} target="_blank" rel="noopener noreferrer">
                             Designing a Bespoke English Course for Professionals
                             (PDF)
                         </a>{" "}
@@ -297,7 +302,7 @@ export default function page() {
                 <h3>Personalised Feedback & Usage Clarity</h3>
                 <ul>
                     <li>
-                        <a href={""} target="_blank" rel="noopener noreferrer">
+                        <a href={exampleFeedbackDocument} target="_blank" rel="noopener noreferrer">
                             Example Feedback: Complete &amp; Full (Markdown)
                         </a>{" "}
                         <em>

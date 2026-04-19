@@ -1,10 +1,22 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    blackboardPostmanCollectionRepo,
+    colourAccessibilityUserStoriesScreenshot,
+    deppIctPresentation,
+    ictSeniorAnalystTestScriptScreenshot,
+    traineeListScreenshot,
+} from "@/lib/constants";
+import Image from "next/image";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -14,13 +26,32 @@ export default function page() {
                     evaluating multiple LMS platforms (Blackboard Ultra,
                     Brightspace, Canvas) to support a major institutional
                     review.{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={deppIctPresentation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         This required direct comparison of the platforms
                     </a>
                     , evaluating their APIs, integration models, accessibility
                     compliance (such as WCAG 2.1), and alignment with the
                     pedagogical and administrative needs of various faculties.
                 </p>
+
+                <figure>
+                    <Image
+                        src={colourAccessibilityUserStoriesScreenshot}
+                        alt="A spreadsheet showing two colour accessibility user stories from the LMS 2024 requirements document. The first requests background colour and contrast customisation, with acceptance criteria covering high contrast mode, saved user preferences, and ColourVeil integration. The second requests preset colour schemes to support colour-blind students."
+                        width={2940}
+                        height={1912}
+                        priority
+                    />
+                    <figcaption>
+                        Two colour accessibility user stories from the LMS 2024
+                        requirements document, with acceptance criteria used to
+                        evaluate platform candidates.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Accessibility was a consistent priority across all
@@ -54,6 +85,20 @@ export default function page() {
                     scripts, making the process transparent and reproducible.
                 </p>
 
+                <figure>
+                    <Image
+                        src={ictSeniorAnalystTestScriptScreenshot}
+                        alt="A spreadsheet showing ICT Senior Analyst test scenarios for the LMS evaluation. Test cases cover configuring colour schemes with accessibility checks using Accessibility Insights, managing user roles, and managing user permissions, each with expected results as acceptance criteria."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        ICT Senior Analyst test scenarios for the LMS
+                        evaluation, with structured acceptance criteria for
+                        colour scheme configuration and user management.
+                    </figcaption>
+                </figure>
+
                 <p>
                     Alongside technical evaluation, I engaged with key
                     stakeholders to manage change effectively, recognising that
@@ -64,7 +109,11 @@ export default function page() {
                 <p>
                     To support the evaluation process more broadly, I developed
                     a reusable{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={blackboardPostmanCollectionRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Postman collection for testing Blackboard Ultra&apos;s
                         APIs
                     </a>{" "}
@@ -237,7 +286,11 @@ export default function page() {
                 <h3>Platform Evaluation & API Testing</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={blackboardPostmanCollectionRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
@@ -249,7 +302,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={ictSeniorAnalystTestScriptScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
                         <em>
@@ -260,7 +317,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={deppIctPresentation}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
@@ -276,7 +337,11 @@ export default function page() {
                 <h3>Accessibility & User-Centred Design</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={colourAccessibilityUserStoriesScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Colour Accessibility User Stories (Screenshot)
                         </a>{" "}
                         <em>
@@ -291,7 +356,11 @@ export default function page() {
                 <h3>Custom Tooling & Automation</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={traineeListScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
                         <em>

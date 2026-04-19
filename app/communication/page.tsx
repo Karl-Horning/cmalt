@@ -1,10 +1,24 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    blackboardSwaggerPostmanCollectionLink,
+    deppIctPresentation,
+    lmsProjectGroupNotesScreenshot,
+    microsoftTeamsFaqDocument,
+    pocCleaningScreenshot,
+    understandingManualTestingCertificate,
+    usingPostmanWithApolloServerDocument,
+    webAccessibilityResourcesDocument,
+} from "@/lib/constants";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -51,7 +65,11 @@ export default function page() {
 
                 <p>
                     In October 2024, I delivered{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={deppIctPresentation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         a department-wide presentation on the DEPP
                     </a>
                     , outlining milestones, testing processes, and feedback
@@ -59,7 +77,11 @@ export default function page() {
                     timelines between technical and academic teams. In June
                     2025, I collaborated with colleagues in the Business School
                     on{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={pocCleaningScreenshot}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         a Proof of Concept data-cleaning exercise
                     </a>
                     , identifying and annotating discrepancies to streamline
@@ -70,7 +92,11 @@ export default function page() {
                 <p>
                     On 5 November 2024 — ahead of this Proof of Concept testing
                     — I completed the{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={understandingManualTestingCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Understanding Manual Testing
                     </a>{" "}
                     course on LinkedIn Learning to strengthen my approach to
@@ -92,44 +118,48 @@ export default function page() {
 
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsFaqDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Microsoft Teams FAQ
                         </a>{" "}
                         (2021)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={usingPostmanWithApolloServerDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Using Postman with Apollo Server
                         </a>{" "}
                         (2023)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            Using Blackboard&apos;s Swagger File to Create a
-                            Postman Collection and Make an API Call
+                        <a
+                            href={blackboardSwaggerPostmanCollectionLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Testing LMS APIs: What an OpenAPI Spec Gives You
+                            (and What It Doesn&apos;t)
                         </a>{" "}
                         (2025)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webAccessibilityResourcesDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions
                         </a>{" "}
                         (shared with the DEPP in January 2025).
                     </li>
                 </ul>
-
-                <p>
-                    I maintain a public repository of{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        documentation and style guides
-                    </a>{" "}
-                    which consolidate the conventions I follow when writing
-                    READMEs, CSS, comments, and Git commits. Creating and
-                    maintaining these guides reinforces my commitment to
-                    clarity, accessibility, and the open sharing of effective
-                    practice, aligning with CMALT principles.
-                </p>
 
                 <p>
                     These resources, along with my professional portfolio site,
@@ -166,7 +196,11 @@ export default function page() {
                     follow them closely during meetings, which helps maintain
                     focus and ensure that all voices are heard. On two
                     occasions,{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={lmsProjectGroupNotesScreenshot}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         I prepared the meeting notes myself
                     </a>
                     , adopting the same format — an agenda-linked structure with
@@ -308,7 +342,11 @@ export default function page() {
                 <h3>Collaboration and Communication</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={pocCleaningScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             PoC Data Cleaning Collaboration Screenshot (June
                             2025) (Image)
                         </a>{" "}
@@ -323,7 +361,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={lmsProjectGroupNotesScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             LMS Project Group Meeting Notes (October 2025)
                             (Screenshot)
                         </a>{" "}
@@ -337,7 +379,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={deppIctPresentation}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
@@ -353,7 +399,11 @@ export default function page() {
                 <h3>Documentation and Dissemination</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsFaqDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Microsoft Teams FAQ (PDF)
                         </a>{" "}
                         <em>
@@ -363,7 +413,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={usingPostmanWithApolloServerDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Using Postman with Apollo Server (PDF)
                         </a>{" "}
                         <em>
@@ -372,9 +426,12 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            Using Blackboard&apos;s Swagger File to Create a
-                            Postman Collection and Make an API Call (Link)
+                        <a
+                            href={blackboardSwaggerPostmanCollectionLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Testing LMS APIs: What an OpenAPI Spec Gives You (and What It Doesn&apos;t) (Link)
                         </a>{" "}
                         <em>
                             Blog post disseminating institutional testing
@@ -384,7 +441,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webAccessibilityResourcesDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
@@ -394,24 +455,16 @@ export default function page() {
                             WCAG-aligned best practice.
                         </em>
                     </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            Style Guides (GitHub Repository)
-                        </a>{" "}
-                        <em>
-                            Collection of documentation and style guides
-                            (READMEs, CSS, comments, and Git commits)
-                            demonstrating consistent, accessible communication
-                            practices and commitment to sharing effective
-                            professional standards.
-                        </em>
-                    </li>
                 </ul>
 
                 <h3>Professional Development</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={understandingManualTestingCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Understanding Manual Testing (LinkedIn Learning,
                             2024) (Certificate)
                         </a>{" "}

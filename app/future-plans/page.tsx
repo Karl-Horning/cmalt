@@ -1,6 +1,5 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
-
 import Link from "next/link";
 
 export default function page() {
@@ -41,7 +40,11 @@ export default function page() {
                 </p>
 
                 <p>
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                    <Link
+                        href="https://www.karlhorning.dev/blog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         I also plan to continue writing about what I learn in
                         coding and accessibility through my blog
                     </Link>
@@ -54,7 +57,11 @@ export default function page() {
                     expand my use of automated accessibility testing frameworks
                     such as <code>@axe-core/playwright</code>, which I currently
                     use on{" "}
-                    <Link href="" target="_blank" rel="noopener noreferrer">
+                    <Link
+                        href="https://karlhorning.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         karlhorning.dev
                     </Link>{" "}
                     to identify and resolve accessibility issues during
@@ -70,19 +77,16 @@ export default function page() {
                     approach to accessibility evaluation, combining automated
                     testing with analytics on issue trends and resolution rates
                     to establish evidence-based accessibility benchmarks. I also
-                    plan to continue developing my{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        Style Guides
-                    </a>{" "}
-                    repository, which consolidates documentation standards for
-                    READMEs, CSS, comments, and Git commits. Building on this
-                    foundation, I intend to expand it into a broader developer
-                    education resource — creating accessible, maintainable
-                    coding examples and guidance that support inclusive
-                    engineering practices. This will allow me to unite my
-                    background as an educator with my technical expertise,
-                    helping others apply clarity, accessibility, and
-                    sustainability principles in their own development work.
+                    plan to deepen my commitment to consistent documentation
+                    standards — covering READMEs, CSS, comments, and Git
+                    commits — by aligning more closely with established guides
+                    such as those published by Google. Building on this, I
+                    intend to create accessible, maintainable coding examples
+                    and guidance that support inclusive engineering practices.
+                    This will allow me to unite my background as an educator
+                    with my technical expertise, helping others apply clarity,
+                    accessibility, and sustainability principles in their own
+                    development work.
                 </p>
 
                 <p>

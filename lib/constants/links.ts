@@ -3,7 +3,7 @@
  */
 
 export const blackboardSwaggerPostmanCollectionLink =
-    "https://www.karlhorning.dev/blog/using-blackboards-swagger-file-to-create-a-postman-collection-and-make-an-api-call";
+    "https://www.karlhorning.dev/blog/testing-lms-apis";
 
 export const deppProjectLink =
     "https://www.imperial.ac.uk/about/education/our-projects/learning-management-system/";

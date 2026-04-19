@@ -1,10 +1,24 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    blackboardPostmanCollectionRepo,
+    graphQlCertificate,
+    ictAnalystTestScriptScreenshot,
+    ictSeniorAnalystTestScriptScreenshot,
+    learnlightPlatformCaseStudyLink,
+    oxfordLearnersDictionariesApiRepo,
+    traineeListScreenshot,
+} from "@/lib/constants";
+import Image from "next/image";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -18,6 +32,21 @@ export default function page() {
                     Moodle by customising workflows, testing features, and
                     supporting academic staff in their use.
                 </p>
+
+                <figure>
+                    <Image
+                        src={traineeListScreenshot}
+                        alt="Screenshot of the Trainee List Electron desktop app on macOS. The interface has a blue background with a white panel containing a yellow 'Generate Trainee List' header, a blue 'Generate Report' button, and a result message reading 'Fetched 20 trainees in 20 seconds!'."
+                        width={1080}
+                        height={608}
+                        priority
+                    />
+                    <figcaption>
+                        The Trainee List Electron app after generating a report,
+                        confirming that 20 trainee records were fetched in 20
+                        seconds.
+                    </figcaption>
+                </figure>
 
                 <p>
                     I&apos;ve also developed bespoke tools using JavaScript,
@@ -66,11 +95,19 @@ export default function page() {
                     Much of my work has bridged technical development and
                     practical pedagogical application. At Learnlight, for
                     example,{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={learnlightPlatformCaseStudyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         I optimised GraphQL API responses
                     </a>{" "}
                     and implemented automated backend testing to support{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={learnlightPlatformCaseStudyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         a commercial LMS serving over 700,000 registered
                         learners
                     </a>
@@ -82,7 +119,11 @@ export default function page() {
                 <p>
                     One project that exemplifies this balance was my integration
                     of the{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={oxfordLearnersDictionariesApiRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Oxford Learner&apos;s Dictionaries API Entry Fetcher
                     </a>{" "}
                     into the Learnlight platform. I developed a Node.js proof of
@@ -108,7 +149,11 @@ export default function page() {
                     foundation into a more learner-facing role. I wrote API
                     scripts based on LMS documentation (including Swagger
                     specifications) and{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={blackboardPostmanCollectionRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         used Postman to evaluate endpoints related to identity
                         and access management (IAM), data analytics, and system
                         configuration
@@ -116,6 +161,20 @@ export default function page() {
                     . These scripts supported LMS evaluation by revealing system
                     behaviours and limitations across platforms.
                 </p>
+
+                <figure>
+                    <Image
+                        src={ictAnalystTestScriptScreenshot}
+                        alt="An Excel spreadsheet titled 'PoC LMS Test Scenarios Analysts (ICT Training)' showing a structured test script. Columns include Scenario TID, Subtask, Test Case, Test Case Description, Steps to Execute, Expected Results (Acceptance Criteria), Resources, and Status. Test cases cover navigation configuration, system tools, and notification settings. The status bar at the bottom shows 'Accessibility: Good to go'."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        The ICT Analyst test script in Excel, listing structured
+                        test cases for LMS evaluation across navigation, tools,
+                        and notification workflows.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Alongside this, I developed manual test scripts aligned with
@@ -202,7 +261,11 @@ export default function page() {
                 <h3>Platform Evaluation & API Testing</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={blackboardPostmanCollectionRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
@@ -214,7 +277,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={ictAnalystTestScriptScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             ICT Analyst test script (Screenshot)
                         </a>{" "}
                         <em>
@@ -224,7 +291,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={ictSeniorAnalystTestScriptScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
                         <em>
@@ -239,7 +310,11 @@ export default function page() {
                 <h3>Custom Integrations & Tools</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={learnlightPlatformCaseStudyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
                         <em>
@@ -251,7 +326,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={oxfordLearnersDictionariesApiRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Oxford Learner&apos;s Dictionaries API Entry Fetcher
                             (Repository)
                         </a>{" "}
@@ -263,7 +342,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={traineeListScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
                         <em>
@@ -278,7 +361,11 @@ export default function page() {
                 <h3>Professional Development</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={graphQlCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
                         <em>
