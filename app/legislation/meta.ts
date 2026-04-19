@@ -1,7 +1,7 @@
 export const meta = {
     title: "Understanding and Engaging With Legislation",
     description:
-        "Section 3 explores the wider context that shapes my professional practice. It focuses on how I understand and engage with legislation, policies, and standards relevant to learning technology.",
+        "Applying WCAG 2.1 and EN 301 549 through subtitle creation and accessible document design, informed by European and UK digital accessibility legislation.",
     date: "2025-11-11",
     readingTime: 11,
     slug: "legislation",

@@ -1,10 +1,15 @@
+import JsonLd from "../components/JsonLd";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+
+export const metadata = generatePageMetadata(meta);
 import Link from "next/link";
 
 export default function page() {
     return (
         <>
+            <JsonLd data={generatePageJsonLd(meta)} />
             <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section>
                 <h2>Future Directions in Learning Technology</h2>

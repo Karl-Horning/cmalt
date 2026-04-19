@@ -1,5 +1,9 @@
+import JsonLd from "../components/JsonLd";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+
+export const metadata = generatePageMetadata(meta);
 import {
     designingAnEnglishCourseDocument,
     exampleFeedbackDocument,
@@ -9,6 +13,7 @@ import {
 export default function page() {
     return (
         <>
+            <JsonLd data={generatePageJsonLd(meta)} />
             <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
             <section id="description">
                 <h2>Description</h2>

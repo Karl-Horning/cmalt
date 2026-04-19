@@ -1,7 +1,7 @@
 export const meta = {
     title: "An Understanding of Your Target Learners",
     description:
-        "Section 2 focuses on my engagement with teaching, learning, and assessment processes. I reflect on how my understanding of these areas has shaped the ways I support staff and students, design learning experiences, and use technology to enhance pedagogy.",
+        "Structured needs analysis and curriculum design for adult professional learners, with examples from one-to-one and group corporate English language teaching.",
     date: "2025-11-11",
     readingTime: 11,
     slug: "target-learners",
