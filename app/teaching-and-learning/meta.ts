@@ -1,7 +1,7 @@
 export const meta = {
     title: "An Understanding of Teaching, Learning and/or Assessment Processes",
     description:
-        "Section 2 focuses on my engagement with teaching, learning, and assessment processes. I reflect on how my understanding of these areas has shaped the ways I support staff and students, design learning experiences, and use technology to enhance pedagogy.",
+        "Teaching practice across 10,000+ English language lessons — communicative methods, needs analysis, spaced repetition, and inclusive material design with before-and-after examples.",
     date: "2025-11-11",
     readingTime: 14,
     slug: "teaching-and-learning",
