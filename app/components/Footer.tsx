@@ -10,7 +10,7 @@ import { navStructure } from "@/lib/nav";
 const START_YEAR = 2025;
 const currentYear = new Date().getFullYear();
 const copyrightRange =
-    currentYear > START_YEAR ? `${START_YEAR}—${currentYear}` : String(START_YEAR);
+    currentYear > START_YEAR ? `${START_YEAR}–${currentYear}` : String(START_YEAR);
 
 /**
  * Renders the site footer with a full sitemap, external profile links, and a
