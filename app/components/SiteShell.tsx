@@ -7,6 +7,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import BackToTop from "./BackToTop";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import PrevNextNav from "./PrevNextNav";
@@ -72,6 +73,7 @@ export default function SiteShell({
                         aria-hidden="true"
                     />
                 )}
+                <BackToTop />
                 <main id="main-content" className="site-main">
                     <div className="content-body">
                         {children}
