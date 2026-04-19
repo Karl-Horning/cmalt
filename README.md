@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CMALT Portfolio
 
-## Getting Started
+A statically exported Next.js portfolio built to support [CMALT accreditation](https://www.alt.ac.uk/cmalt) — a peer-assessed professional credential from the Association for Learning Technology.
 
-First, run the development server:
+**Live site:** [cmalt.karlhorning.dev](https://cmalt.karlhorning.dev)
+
+## Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **React Icons**
+- Deployed to **GitHub Pages** via GitHub Actions with a custom domain
+
+## Notable decisions
+
+**Single source of truth for navigation** — `lib/nav.ts` drives the site nav, the footer sitemap, and the previous/next page buttons. No duplication.
+
+**SEO** — Each page exports typed metadata via a shared `lib/siteMetadata.ts` helper (Open Graph, Twitter cards, canonical URLs). JSON-LD structured data is included on every page. The site is registered with Google Search Console.
+
+**CI/CD** — GitHub Actions builds and deploys to GitHub Pages on every push to main.
+
+**Accessibility testing** — Playwright with `@axe-core/playwright` for automated accessibility checks alongside manual review.
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script | Description |
+| --- | --- |
+| `dev` | Start the development server on port 3001 |
+| `build` | Production build (static export) |
+| `start` | Start the Next.js server (run `build` first) |
+| `lint` | Run ESLint |
+| `test` | Run Playwright tests |
+| `test:ui` | Run Playwright tests with the interactive UI |
+| `check-links` | Check for broken links on the live site |
+| `check-links:local` | Check for broken links on the local server |
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Released under the [MIT License](./LICENSE) by [Karl Horning](https://github.com/Karl-Horning).
