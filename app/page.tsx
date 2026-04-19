@@ -1,9 +1,53 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa";
+import JsonLd from "./components/JsonLd";
+import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/siteMetadata";
+
+export const metadata: Metadata = {
+    title: "CMALT Portfolio — Karl Horning",
+    description:
+        "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+    alternates: { canonical: SITE_URL },
+    openGraph: {
+        title: "CMALT Portfolio — Karl Horning",
+        description:
+            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+        url: SITE_URL,
+        images: [{ url: "/og/preview-image.png", alt: "Karl Horning CMALT Portfolio" }],
+        type: "website",
+    },
+    twitter: {
+        title: "CMALT Portfolio — Karl Horning",
+        description:
+            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+        images: ["/og/preview-image.png"],
+    },
+};
+
+const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: "Karl Horning — CMALT Portfolio",
+    description:
+        "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+    url: SITE_URL,
+    mainEntity: {
+        "@type": "Person",
+        name: AUTHOR_NAME,
+        url: AUTHOR_URL,
+        sameAs: [
+            AUTHOR_URL,
+            "https://www.linkedin.com/in/karl-horning",
+            "https://www.karlhorning.dev/",
+        ],
+    },
+};
 
 export default function Home() {
     return (
         <>
+            <JsonLd data={homeJsonLd} />
             <div className="home-hero">
                 <h1>Karl Horning</h1>
                 <p className="home-subtitle">Full-Stack Developer</p>
