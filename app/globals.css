@@ -205,11 +205,16 @@ body {
 /* Main content */
 .site-main {
     padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - var(--header-height));
 }
 
 .content-body {
+    flex: 1;
     max-width: 680px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .content-body h1,
@@ -340,6 +345,19 @@ body {
 
 .back-to-top:hover {
     background: var(--accent-hover);
+}
+
+/* 404 page */
+.content-body:has(.not-found-body) {
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
 }
 
 /* Previous/next navigation */
