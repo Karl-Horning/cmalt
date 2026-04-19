@@ -1,10 +1,27 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    appleTeacherCertificate,
+    blackboardPostmanCollectionRepo,
+    blackboardSwaggerPostmanCollectionLink,
+    deppProjectLink,
+    electronCertificate,
+    graphQlCertificate,
+    graphQlRateLimitDemoRepo,
+    jiraFundamentalsScreenshot,
+    learnlightPlatformCaseStudyLink,
+    nextJsCertificate,
+    webDeveloperCertificate,
+} from "@/lib/constants";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
                 <p>
@@ -19,14 +36,22 @@ export default function page() {
                 </p>
 
                 <p>
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={learnlightPlatformCaseStudyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         I transitioned into development after more than a decade
                         in education
                     </a>
                     , and that background has shaped how I build software. From
                     2021 to 2024, I worked as a full-stack JavaScript developer
                     at Learnlight, a global EdTech company{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={learnlightPlatformCaseStudyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         serving over 700,000 registered learners
                     </a>
                     . I built and maintained its learning platform, the same one
@@ -48,7 +73,11 @@ export default function page() {
                     </li>
                     <li>
                         Implemented API rate limiting using{" "}
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={graphQlRateLimitDemoRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             GraphQL Rate Limit Directive
                         </a>{" "}
                         to ensure platform stability at scale
@@ -90,7 +119,11 @@ export default function page() {
                     More recently, I have applied this specialist knowledge
                     within my role as a Learning Technologist at Imperial
                     College London, particularly through the{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={deppProjectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Digital Education Platform Project (DEPP)
                     </a>
                     , a major institutional review of LMS platforms (Blackboard
@@ -103,7 +136,11 @@ export default function page() {
 
                 <p>
                     To support this process, I created a reusable{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={blackboardPostmanCollectionRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Postman collection for testing Blackboard Ultra&apos;s
                         APIs
                     </a>{" "}
@@ -119,9 +156,13 @@ export default function page() {
                     This project became an important part of my broader
                     knowledge-sharing activities with colleagues and the wider
                     community. In July 2025, I published a blog post titled{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        Using Blackboard&apos;s Swagger File to Create a Postman
-                        Collection and Make an API Call
+                    <a
+                        href={blackboardSwaggerPostmanCollectionLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Testing LMS APIs: What an OpenAPI Spec Gives You (and
+                        What It Doesn&apos;t)
                     </a>
                     , drawing directly on DEPP testing. The post demonstrates
                     how I adapted techniques from my previous developer role to
@@ -138,37 +179,61 @@ export default function page() {
                 </p>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={appleTeacherCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Apple Teacher (Swift Playgrounds)
                         </a>{" "}
                         (Awarded 6 June 2025 by Apple, self-paced)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webDeveloperCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             The Web Developer Bootcamp
                         </a>{" "}
                         (Awarded 2 July 2019 by Udemy, 47 hours)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={electronCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Master Electron
                         </a>{" "}
                         (Awarded 2 February 2024 by Udemy, 8 hours)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={graphQlCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Modern GraphQL with Node
                         </a>{" "}
                         (Awarded 2 January 2023 by Udemy, 10.5 hours)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={nextJsCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Next JS: The Complete Developer&apos;s Guide
                         </a>{" "}
                         (Awarded 22 March 2024 by Udemy, 15.5 hours)
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={jiraFundamentalsScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Jira Fundamentals
                         </a>{" "}
                         (Awarded 15 August 2024 by Atlassian, self-paced)
@@ -232,11 +297,8 @@ export default function page() {
                     diverse learning styles. As a visual learner, I often turned
                     to alternative resources such as video tutorials, MOOCs, and
                     community forums to fill the gaps. These experiences shaped
-                    my approach to documentation:{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        I now write detailed READMEs
-                    </a>
-                    , use JSDoc consistently, and document GraphQL schemas so
+                    my approach to documentation: I now write detailed READMEs,
+                    use JSDoc consistently, and document GraphQL schemas so
                     they&apos;re easily understood and usable in tools like
                     GraphQL Sandbox. I&apos;ve come to see documentation not
                     just as a technical requirement, but as a way to support
@@ -362,7 +424,11 @@ export default function page() {
                 <h3>Core Engineering Impact</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={learnlightPlatformCaseStudyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
                         <em>
@@ -374,7 +440,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={graphQlRateLimitDemoRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             GraphQL Rate Limit Demo (Repository)
                         </a>{" "}
                         <em>
@@ -384,7 +454,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={blackboardPostmanCollectionRepo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
@@ -395,7 +469,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://github.com/Karl-Horning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Karl Horning&apos;s GitHub: github.com/Karl-Horning
                             (Repository)
                         </a>{" "}
@@ -410,7 +488,11 @@ export default function page() {
                 <h3>Institutional Evaluation & Knowledge Sharing</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={blackboardSwaggerPostmanCollectionLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Using Blackboard&apos;s Swagger File to Create a
                             Postman Collection and Make an API Call (Blog Post,
                             2025)
@@ -422,19 +504,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            Style Guides (GitHub Repository)
-                        </a>{" "}
-                        <em>
-                            Collection of documentation and code style guides
-                            (READMEs, CSS, comments, and Git commits)
-                            demonstrating consistent, accessible developer
-                            communication and commitment to maintainable,
-                            inclusive engineering practice.
-                        </em>
-                    </li>
-                    <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://karlhorning.dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Karl Horning&apos;s personal portfolio:
                             karlhorning.dev
                         </a>{" "}
@@ -449,7 +523,11 @@ export default function page() {
                 <h3>Professional Profile</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://www.linkedin.com/in/karl-horning/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Karl Horning&apos;s LinkedIn profile:
                             linkedin.com/in/karl-horning
                         </a>{" "}
@@ -464,7 +542,11 @@ export default function page() {
                 <h3>Training & Certifications</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={graphQlCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
                         <em>
@@ -473,7 +555,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={nextJsCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Next JS: The Complete Developer&apos;s Guide (Udemy,
                             2024) (Certificate)
                         </a>{" "}
@@ -483,7 +569,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={electronCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Master Electron (Udemy, 2024) (Certificate)
                         </a>{" "}
                         <em>
@@ -492,7 +582,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webDeveloperCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             The Web Developer Bootcamp (Udemy, 2019)
                             (Certificate)
                         </a>{" "}
@@ -502,7 +596,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={jiraFundamentalsScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Jira Fundamentals (Atlassian, 2024) (Screenshot)
                         </a>{" "}
                         <em>
@@ -512,7 +610,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={appleTeacherCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Apple Teacher (Swift Playgrounds) (Apple, 2025)
                             (Certificate)
                         </a>{" "}

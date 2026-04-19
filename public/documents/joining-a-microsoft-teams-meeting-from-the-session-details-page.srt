@@ -1,0 +1,132 @@
+1
+00:00:10,000 --> 00:00:14,000
+To connect to Microsoft Teams  
+from the Session Details page,
+
+2
+00:00:14,100 --> 00:00:19,000
+make sure Microsoft Teams  
+is selected in the Connection Type box.
+
+3
+00:00:19,100 --> 00:00:23,000
+Then click Connect.
+
+4
+00:00:24,100 --> 00:00:30,000
+Your browser may display a dialogue  
+telling you the page is trying
+
+5
+00:00:30,100 --> 00:00:32,000
+to open the Microsoft Teams app.
+
+6
+00:00:32,100 --> 00:00:36,000
+If you want to use Teams on the web,  
+click Cancel.
+
+7
+00:00:36,100 --> 00:00:39,000
+Otherwise, click Open.
+
+8
+00:00:40,000 --> 00:00:43,900
+You'll then be taken to the  
+Join Conversation page.
+
+9
+00:00:44,000 --> 00:00:48,000
+This page offers three different options
+to join the meeting.
+
+10
+00:00:48,100 --> 00:00:51,900
+First, you can download  
+the Microsoft Teams app.
+
+11
+00:00:52,000 --> 00:00:56,000
+After installation, the app  
+will launch automatically.
+
+12
+00:00:57,000 --> 00:01:01,000
+Second, you can open  
+Microsoft Teams in your browser.
+
+13
+00:01:02,000 --> 00:01:07,000
+Third, you can open the meeting  
+in the app if it's already installed.
+
+14
+00:01:08,000 --> 00:01:13,000
+If it's your first time using Teams  
+in the browser,
+
+15
+00:01:13,100 --> 00:01:22,000
+click Allow when prompted  
+to use your microphone and camera.
+
+16
+00:01:25,100 --> 00:01:30,000
+You'll also have the option  
+to dial in to a meeting.
+
+17
+00:01:30,100 --> 00:01:35,000
+The Session Details page contains  
+a link to dial-in numbers by country.
+
+18
+00:01:37,100 --> 00:01:44,000
+To join by phone, make a note  
+of the Conference ID.
+
+19
+00:01:46,000 --> 00:01:48,500
+It is made up of nine digits.
+
+20
+00:01:54,500 --> 00:02:01,000
+For the best experience,  
+sign in with your Learnlight account.
+
+21
+00:02:01,100 --> 00:02:06,900
+Without signing in, browser options  
+are limited.
+
+22
+00:02:07,000 --> 00:02:10,000
+To sign in, click the link  
+at the bottom of the page
+
+23
+00:02:10,100 --> 00:02:12,000
+before joining a meeting.
+
+24
+00:02:13,000 --> 00:02:17,000
+By signing in, the experience  
+is similar to the desktop app.
+
+25
+00:02:17,100 --> 00:02:23,000
+Please note: these features  
+are not available in the browser:
+
+26
+00:02:23,100 --> 00:02:27,000
+The option to change or blur  
+your background,
+
+27
+00:02:27,100 --> 00:02:28,900
+live captions,
+
+28
+00:02:29,000 --> 00:02:31,000
+and the back and forward arrows.

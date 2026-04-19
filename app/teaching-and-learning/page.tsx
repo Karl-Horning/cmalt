@@ -1,20 +1,48 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    celtaCertificate,
+    deppIctPresentation,
+    dyslexiaAwarenessCertificate,
+    dyslexiaAwarenessLink,
+    ebbinghausForgettingCurveImage,
+    feedbackSlideOriginalImage,
+    feedbackSlideUpdatedImage,
+    firstSessionQuestionsDocument,
+    kolbLearningCycleImage,
+    ptllsCertificate,
+    sessionRatingsScreenshot,
+    sessionReportRatingsScreenshot,
+    webAccessibilityResourcesDocument,
+} from "@/lib/constants";
+import Image from "next/image";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
                 <p>
                     Since earning my{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={ptllsCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         PTLLS in 2012
                     </a>{" "}
                     and{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={celtaCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         CELTA in 2013
                     </a>
                     , I have delivered over 10,000 English language lessons to
@@ -41,6 +69,20 @@ export default function page() {
                     to maximise in-session practice.
                 </p>
 
+                <figure>
+                    <Image
+                        src={ebbinghausForgettingCurveImage}
+                        alt="A line graph showing memory retention (y-axis, 60%–100%) over days (x-axis, 0–7). A pink curve shows retention when material is reviewed at days 0, 1, 3, and 6, maintaining approximately 95% retention by day 7. A blue curve shows retention without review, declining to approximately 60% by day 7. Labels indicate 'First learned' and 'Reviewed' at each review point."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        Ebbinghaus&apos; forgetting curve illustrating how
+                        spaced repetition (pink) dramatically improves long-term
+                        retention compared to learning without review (blue).
+                    </figcaption>
+                </figure>
+
                 <p>
                     I embedded <strong>spaced repetition</strong> and{" "}
                     <strong>retrieval practice</strong> across courses. I
@@ -57,10 +99,29 @@ export default function page() {
             <section id="reflection">
                 <h2>Reflection</h2>
 
+                <figure>
+                    <Image
+                        src={kolbLearningCycleImage}
+                        alt="Kolb's Experiential Learning Cycle shown as four interlocking gear segments. Clockwise from top-left: Active Experimentation in salmon ('Trying out what you've learnt'), Concrete Experience in teal ('Doing or having an experience'), Reflection Observation in green ('Thinking about the experience'), and Abstract Conceptualism in red ('Learning from the experience')."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        Kolb&apos;s Experiential Learning Cycle, showing how
+                        concrete experiences lead to reflection,
+                        conceptualisation, and active experimentation in an
+                        ongoing cycle.
+                    </figcaption>
+                </figure>
+
                 <p>
                     A key practice that I adopted was beginning each course with
                     a structured{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={firstSessionQuestionsDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         needs assessment
                     </a>
                     . This session focused on understanding the learners&apos;
@@ -76,6 +137,22 @@ export default function page() {
                     actions. This followed{" "}
                     <strong>Kolb&apos;s experiential learning cycle</strong>.
                 </p>
+
+                <figure>
+                    <Image
+                        src={feedbackSlideOriginalImage}
+                        alt="A presentation slide with a bright red-pink background. The heading 'Feedback & Error Correction' is set in a white decorative serif font. Below are four numbered questions in white sans-serif text, asking learners which words were useful, which they are unsure how to use, which topics to revisit, and for any additional comments."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        The original Feedback &amp; Error Correction slide,
+                        using white text on a bright red-pink background with a
+                        decorative heading — a combination that presents
+                        contrast and readability challenges for learners with
+                        dyslexia or visual impairments.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Just as needs assessments helped tailor course content to
@@ -94,10 +171,29 @@ export default function page() {
                     WCAG 2.1 guidance on colour contrast and readability.
                 </p>
 
+                <figure>
+                    <Image
+                        src={feedbackSlideUpdatedImage}
+                        alt="A redesigned presentation slide with a white background and clean sans-serif typography. The heading 'Feedback and Error Correction' is in black, followed by a subtitle. Three bullet-point reflection questions are on the left, and three decorative hexagonal photographs are on the right. Slide number 20 is shown in the bottom-right corner."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        The redesigned Feedback and Error Correction slide,
+                        using black text on a white background with a clear
+                        sans-serif font, improving contrast and readability in
+                        line with WCAG 2.1 guidance.
+                    </figcaption>
+                </figure>
+
                 <p>
                     These same accessibility principles now informing my
                     practice at Imperial. In my{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={deppIctPresentation}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         DEPP ICT presentation
                     </a>
                     , for example, I balanced lessons learnt from my own
@@ -124,11 +220,19 @@ export default function page() {
 
                 <p>
                     Through ongoing reflection and CPD — including{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={dyslexiaAwarenessCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Dyslexia Awareness: In partnership with Made By Dyslexia
                     </a>{" "}
                     (2020,{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={dyslexiaAwarenessLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         updated in 2025
                     </a>
                     ) — I developed more inclusive visual and content design
@@ -137,6 +241,21 @@ export default function page() {
                     consistently recognised improvements in accessibility and
                     clarity.
                 </p>
+
+                <figure>
+                    <Image
+                        src={sessionReportRatingsScreenshot}
+                        alt="A Learnlight dashboard chart titled 'SESSION REPORT RATING'. A green badge shows the average score of 4.9 out of 5 with a gold trophy icon. A line graph plots monthly report ratings from April to April, starting around 4.6, dipping to approximately 4.4 in September, peaking near 4.9 in December–January, and ending around 4.6 in April."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        Session report rating chart from the Learnlight
+                        platform, showing a 4.9 out of 5 average, reflecting
+                        learner satisfaction with the quality and clarity of
+                        session reports over the year.
+                    </figcaption>
+                </figure>
 
                 <p>
                     Learners regularly commented that the visual clarity and
@@ -158,7 +277,11 @@ export default function page() {
                     interactivity, and the considered adoption of emerging
                     technologies. To support this, I maintain an evolving
                     resource —{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={webAccessibilityResourcesDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Web Accessibility Resources and Tools: Guidelines,
                         Checklists, and Testing Solutions (PDF)
                     </a>{" "}
@@ -270,7 +393,11 @@ export default function page() {
                 <h3>Inclusive Design & Accessible Materials</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={feedbackSlideUpdatedImage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             &quot;After&quot; slide showing accessibility
                             improvements (Screenshot)
                         </a>{" "}
@@ -282,7 +409,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={feedbackSlideOriginalImage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             &quot;Before&quot; slide showing accessibility
                             issues (Screenshot)
                         </a>{" "}
@@ -293,7 +424,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webAccessibilityResourcesDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
@@ -304,7 +439,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={deppIctPresentation}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             DEPP ICT Presentation (Slides)
                         </a>{" "}
                         <em>
@@ -318,7 +457,11 @@ export default function page() {
                 <h3>Needs Analysis & Curriculum Design</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={firstSessionQuestionsDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             First Session Questions (PDF)
                         </a>{" "}
                         <em>
@@ -328,7 +471,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={kolbLearningCycleImage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Kolb&apos;s Experiential Learning Cycle (Diagram)
                         </a>{" "}
                         <em>
@@ -338,7 +485,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={ebbinghausForgettingCurveImage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Ebbinghaus&apos; Forgetting Curve (Diagram)
                         </a>{" "}
                         <em>
@@ -352,7 +503,11 @@ export default function page() {
                 <h3>Learner Impact & Evaluation</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={sessionReportRatingsScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Session report rating of 4.9/5 (Screenshot)
                         </a>{" "}
                         <em>
@@ -362,7 +517,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={sessionRatingsScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Session evaluation rating of 4.5/5 (Screenshot)
                         </a>{" "}
                         <em>
@@ -376,7 +535,11 @@ export default function page() {
                 <h3>Teaching Qualifications & CPD</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={celtaCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Cambridge ESOL Level 5* Certificate in Teaching
                             English to Speakers of Other Languages (CELTA)
                             (2013) (Certificate)
@@ -387,7 +550,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={ptllsCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Level 4 Preparing to Teach in the Lifelong Learning
                             Sector (PTLLS) (2012) (Certificate)
                         </a>{" "}
@@ -397,7 +564,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dyslexiaAwarenessLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia — proof of completed modules (2025) (Badge)
                         </a>{" "}
@@ -408,7 +579,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dyslexiaAwarenessCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia (2020) (Certificate)
                         </a>{" "}

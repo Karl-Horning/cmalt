@@ -261,6 +261,26 @@ body {
     margin-bottom: 0.4rem;
 }
 
+.content-body video,
+.content-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.content-body figure {
+    margin: 0 0 1.25rem;
+}
+
+.content-body figure img {
+    margin-bottom: 0.5rem;
+}
+
+.content-body figcaption {
+    font-size: 0.8125rem;
+    color: var(--muted);
+}
+
 .content-body a {
     color: var(--accent);
     text-decoration: underline;

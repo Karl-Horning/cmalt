@@ -1,10 +1,24 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    dyslexiaAwarenessCertificate,
+    dyslexiaAwarenessLink,
+    editingSubtitlesScreenshot,
+    embeddedSubtitlesScreenshot,
+    microsoftTeamsFaqScreenshot,
+    subtitlesExampleDocument,
+    webAccessibilityResourcesDocument,
+} from "@/lib/constants";
+import Image from "next/image";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -79,7 +93,11 @@ export default function page() {
                 <p>
                     In support of these requirements, I have created a document
                     titled{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={webAccessibilityResourcesDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Web Accessibility Resources and Tools: Guidelines,
                         Checklists, and Testing Solutions
                     </a>
@@ -92,17 +110,39 @@ export default function page() {
 
                 <p>
                     To improve my understanding of learner needs, I completed{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={dyslexiaAwarenessCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Dyslexia Awareness: In partnership with Made By Dyslexia
                     </a>{" "}
                     when it launched in 2020 and{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={dyslexiaAwarenessLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         again in its extended 7-hour format in 2025
                     </a>
                     .
                 </p>
 
                 <h3>Subtitles and Video Accessibility</h3>
+
+                <figure>
+                    <Image
+                        src={editingSubtitlesScreenshot}
+                        alt="Visual Studio Code showing an open SRT subtitle file for a Microsoft Teams meeting guide. Numbered subtitle cues are visible with timestamps and caption text including 'To connect to Microsoft Teams' and 'from the Session Details page'. The status bar indicates the SRT file type."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        SRT subtitle file open in Visual Studio Code using the
+                        Subtitles Editor extension, showing manually timed
+                        captions for the Teams meeting walkthrough video.
+                    </figcaption>
+                </figure>
 
                 <p>
                     When producing video content, I comply with WCAG 2.1{" "}
@@ -114,7 +154,11 @@ export default function page() {
                         Success Criterion 1.2.2 Captions (Prerecorded)
                     </a>
                     . I create{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={subtitlesExampleDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         SRT subtitle files
                     </a>
                     , which are compatible with platforms such as{" "}
@@ -144,6 +188,21 @@ export default function page() {
                     in Visual Studio Code, basing them on the script and audio.
                 </p>
 
+                <figure>
+                    <Image
+                        src={embeddedSubtitlesScreenshot}
+                        alt="A video frame from the Microsoft Teams meeting guide showing the Teams join page with three options: Download the Mac app, Continue on this browser, and Open your Teams app. A browser dialog reads 'Open Microsoft Teams?' A subtitle caption overlaid at the bottom reads 'If you want to use Teams on the web, click Cancel.'"
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        Embedded subtitles displayed on a video frame,
+                        demonstrating that captions remain accessible when
+                        watching the video offline or without a separate caption
+                        file.
+                    </figcaption>
+                </figure>
+
                 <p>
                     I follow the{" "}
                     <a
@@ -167,6 +226,20 @@ export default function page() {
                 </p>
 
                 <h3>Accessible Document Design</h3>
+
+                <figure>
+                    <Image
+                        src={microsoftTeamsFaqScreenshot}
+                        alt="The Microsoft Teams FAQ Word document open on page 10 of 14, showing step-by-step instructions for making a test call via Settings > Devices > Make a test call, with annotated screenshots of the Teams interface. The Accessibility Assistant panel on the right shows 'Looks good! No issues found.'"
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        The Microsoft Teams FAQ document with the Accessibility
+                        Assistant confirming no accessibility issues, evidencing
+                        accessible document structure and design.
+                    </figcaption>
+                </figure>
 
                 <p>
                     I also apply accessibility standards to document creation.
@@ -309,7 +382,11 @@ export default function page() {
                 <h3>Subtitles & Video Accessibility</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={subtitlesExampleDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             SRT subtitle file (Joining a Microsoft Teams meeting
                             from the Session Details Page, 2020) (Subtitle File)
                         </a>{" "}
@@ -320,7 +397,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={embeddedSubtitlesScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Embedded subtitles using Subler (Screenshot)
                         </a>{" "}
                         <em>
@@ -330,7 +411,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={editingSubtitlesScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             SRT subtitle file in Visual Studio Code (Screenshot)
                         </a>{" "}
                         <em>
@@ -343,7 +428,11 @@ export default function page() {
                 <h3>Accessible Document Design</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsFaqScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Document with accessible layout and navigation
                             (Microsoft Teams FAQ, 2020) (Screenshot)
                         </a>{" "}
@@ -358,7 +447,11 @@ export default function page() {
                 <h3>Accessibility Frameworks & CPD</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={webAccessibilityResourcesDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
@@ -369,7 +462,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dyslexiaAwarenessLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia — proof of completed modules (2025) (Badge)
                         </a>{" "}
@@ -380,7 +477,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dyslexiaAwarenessCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia (2020) (Certificate)
                         </a>{" "}

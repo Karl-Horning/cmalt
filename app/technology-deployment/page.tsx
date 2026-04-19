@@ -1,10 +1,21 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    blackboardSwaggerPostmanCollectionLink,
+    deppProjectLink,
+    microsoftTeamsFaqDocument,
+    microsoftTeamsGuideVideo,
+    usingPostmanWithApolloServerDocument,
+} from "@/lib/constants";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -18,7 +29,11 @@ export default function page() {
                 <p>
                     In June 2021 — just before Microsoft retired Skype for
                     Business — I authored a{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={microsoftTeamsFaqDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Microsoft Teams FAQ
                     </a>{" "}
                     to support trainers through the institutional transition to
@@ -30,7 +45,11 @@ export default function page() {
                 <p>
                     In 2023, while working in a development-focused team, I
                     created a guide called{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={usingPostmanWithApolloServerDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Using Postman with Apollo Server
                     </a>{" "}
                     to help new developers interact with a GraphQL development
@@ -47,11 +66,14 @@ export default function page() {
                         controls
                         preload="metadata"
                         aria-label="Excerpt from Microsoft Teams Guide"
-                        poster=""
+                        poster={microsoftTeamsGuideVideo.poster}
                     >
-                        <source src="" type="video/mp4" />
+                        <source
+                            src={microsoftTeamsGuideVideo.src}
+                            type="video/mp4"
+                        />
                         <track
-                            src=""
+                            src={microsoftTeamsGuideVideo.subtitles}
                             kind="captions"
                             srcLang="en"
                             label="English"
@@ -59,28 +81,36 @@ export default function page() {
                         />
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+                    <figcaption>
                         An excerpt from <em>Microsoft Teams Guide</em>
                     </figcaption>
                 </figure>
 
                 <p>
                     Most recently, in July 2025, I published a blog post titled{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        Using Blackboard&apos;s Swagger File to Create a Postman
-                        Collection and Make an API Call
+                    <a
+                        href={blackboardSwaggerPostmanCollectionLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Testing LMS APIs: What an OpenAPI Spec Gives You (and
+                        What It Doesn&apos;t)
                     </a>
-                    . This guide was informed by testing work I contributed to
-                    as part of the{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    . This post was informed by testing work I contributed to as
+                    part of the{" "}
+                    <a
+                        href={deppProjectLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Digital Education Platform Project (DEPP)
                     </a>
                     , which explored the adoption of new LMS platforms. In the
-                    blog&apos;s &ldquo;Step 4: Request an Access Token&ldquo;, I
-                    reference a script adapted from one I originally developed
-                    to authenticate with Learnlight&apos;s bespoke language
-                    learning platform — demonstrating how techniques from
-                    previous roles fed into current work.
+                    blog&apos;s &ldquo;Blackboard: the platform with a Swagger
+                    file&ldquo;, I reference a script adapted from one I
+                    originally developed to authenticate with Learnlight&apos;s
+                    bespoke language learning platform — demonstrating how
+                    techniques from previous roles fed into current work.
                 </p>
             </section>
 
@@ -97,7 +127,11 @@ export default function page() {
 
                 <p>
                     For example, the{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={microsoftTeamsFaqDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Microsoft Teams FAQ
                     </a>{" "}
                     included lengthy text blocks and oversized arrows that
@@ -106,7 +140,11 @@ export default function page() {
                     visually clearer — reflecting lessons learned about
                     information overload, visual accessibility, and cognitive
                     load. Similarly, my{" "}
-                    <a href="" target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={usingPostmanWithApolloServerDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Using Postman with Apollo Server
                     </a>{" "}
                     guide — created in Confluence — omitted annotated visuals
@@ -211,19 +249,26 @@ export default function page() {
                 <h3>Documentation & Technical Workflows</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            Using Blackboard&apos;s Swagger File to Create a
-                            Postman Collection and Make an API Call (2025) (Blog
-                            post)
+                        <a
+                            href={blackboardSwaggerPostmanCollectionLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Testing LMS APIs: What an OpenAPI Spec Gives You
+                            (and What It Doesn&apos;t) (2025) (Blog post)
                         </a>{" "}
                         <em>
-                            Public, step-by-step guide informed by DEPP testing;
-                            demonstrates clear dissemination of API evaluation
-                            methods and supports reproducible endpoint testing.
+                            Public, post informed by DEPP testing; demonstrates
+                            clear dissemination of API evaluation methods and
+                            supports reproducible endpoint testing.
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={usingPostmanWithApolloServerDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Using Postman with Apollo Server (2023) (PDF)
                         </a>{" "}
                         <em>
@@ -238,7 +283,11 @@ export default function page() {
                 <h3>Training & Rollout Support</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsFaqDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Microsoft Teams FAQ (2021) (PDF)
                         </a>{" "}
                         <em>
@@ -249,7 +298,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsGuideVideo.src}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Microsoft Teams Guide (Video)
                         </a>{" "}
                         <em>
@@ -291,8 +344,12 @@ export default function page() {
                         Imperial College London.{" "}
                         <em>Digital Education Platform Project (DEPP)</em>.
                         Available at:{" "}
-                        <a href="" target="_blank" rel="noopener noreferrer">
-                            TODO
+                        <a
+                            href={deppProjectLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {deppProjectLink}
                         </a>
                     </li>
 

@@ -1,10 +1,24 @@
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    dpaScreenshot,
+    gdprBeginnerCertificate,
+    gdprCertificate,
+    gdprElementaryCertificate,
+    gdprIntroductionCertificate,
+    joiningTeamsMeetingScreenshot,
+    microsoftTeamsFaqScreenshot,
+} from "@/lib/constants";
+import Image from "next/image";
 
 export default function page() {
     return (
         <>
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -22,23 +36,39 @@ export default function page() {
 
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprBeginnerCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>GDPR: Beginner</em> (12 Oct 2021, Kaspersky)
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprElementaryCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>GDPR: Elementary</em> (20 Dec 2021, Kaspersky)
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>General Data Protection Regulation (GDPR)</em>{" "}
                             (2 May 2023, Learnlight)
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprIntroductionCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>
                                 An Introduction to the General Data Protection
                                 Regulation (GDPR)
@@ -48,12 +78,31 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dpaScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>Data Protection Awareness course</em> (1 August
                             2024, Imperial College London)
                         </a>
                     </li>
                 </ul>
+
+                <figure>
+                    <Image
+                        src={microsoftTeamsFaqScreenshot}
+                        alt="The Microsoft Teams FAQ Word document open on page 10 of 14, showing step-by-step instructions for making a test call via Settings > Devices > Make a test call, with annotated screenshots of the Teams interface. The Accessibility Assistant panel on the right shows 'Looks good! No issues found.'"
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        The Microsoft Teams FAQ document with anonymised content
+                        and the Accessibility Assistant confirming no issues,
+                        demonstrating GDPR-aligned and accessible resource
+                        design.
+                    </figcaption>
+                </figure>
 
                 <p>
                     In my work creating digital learning resources, I have
@@ -128,6 +177,21 @@ export default function page() {
                     as coded identifiers) may still be considered personal data
                     under the law.
                 </p>
+
+                <figure>
+                    <Image
+                        src={joiningTeamsMeetingScreenshot}
+                        alt="The Learnlight LMS Session Details page showing a scheduled lesson. Trainer is Karl Horning and the student field shows a training account. The date is 15/09/2020 at 08:00 for 30 minutes, with Connection Type set to Microsoft Teams. The Microsoft Teams meeting link, conference ID, and email address are redacted with black bars to protect personal data."
+                        width={2940}
+                        height={1912}
+                    />
+                    <figcaption>
+                        Learnlight Session Details page with the Microsoft Teams
+                        link, conference ID, and email redacted, demonstrating
+                        GDPR data minimisation in action when creating training
+                        materials.
+                    </figcaption>
+                </figure>
 
                 <p>
                     As a result, I have embedded data protection principles into
@@ -228,7 +292,11 @@ export default function page() {
                 <h3>Practical Application: Anonymisation & GDPR-by-Design</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={joiningTeamsMeetingScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Anonymised data in video tutorial (Joining a
                             Microsoft Teams meeting from the Session Details
                             Page, 2020) (Screenshot)
@@ -240,7 +308,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={microsoftTeamsFaqScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Anonymised student-facing guide (Microsoft Teams
                             FAQ, 2020) (Screenshot)
                         </a>{" "}
@@ -255,7 +327,11 @@ export default function page() {
                 <h3>Training & Institutional Compliance</h3>
                 <ul>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={dpaScreenshot}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>
                                 Data Protection Awareness course (Imperial
                                 College London, 2024)
@@ -269,7 +345,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprIntroductionCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>
                                 An Introduction to the General Data Protection
                                 Regulation (GDPR)
@@ -284,7 +364,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>General Data Protection Regulation (GDPR)</em>{" "}
                             (Learnlight, 2023) (Certificate)
                         </a>{" "}
@@ -294,7 +378,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprElementaryCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>GDPR: Elementary</em> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
@@ -305,7 +393,11 @@ export default function page() {
                         </em>
                     </li>
                     <li>
-                        <a href="" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={gdprBeginnerCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <em>GDPR: Beginner</em> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
