@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import PrevNextNav from "./PrevNextNav";
 
 /**
  * Renders the site header, sidebar navigation, and main content area.
@@ -72,7 +73,10 @@ export default function SiteShell({
                     />
                 )}
                 <main id="main-content" className="site-main">
-                    <div className="content-body">{children}</div>
+                    <div className="content-body">
+                        {children}
+                        <PrevNextNav />
+                    </div>
                     <Footer />
                 </main>
             </div>
