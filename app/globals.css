@@ -109,16 +109,14 @@ body {
 }
 
 .sidebar-brand-link {
-    font-family: var(--font-fraunces), Georgia, serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--fg);
+    display: block;
     text-decoration: none;
-    transition: color 0.15s;
 }
 
-.sidebar-brand-link:hover {
-    color: var(--accent);
+.site-logo {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Sidebar */
