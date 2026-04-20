@@ -7,6 +7,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import BackToTop from "./BackToTop";
 import Footer from "./Footer";
 import Nav from "./Nav";
@@ -42,28 +43,27 @@ export default function SiteShell({
 
     return (
         <>
-            <header className="site-header">
-                <Link href="/" className="site-brand">
-                    <span>Karl Horning</span>
-                    <span className="brand-separator" aria-hidden="true">
-                        —
-                    </span>
-                    <span className="brand-subtitle">CMALT Portfolio</span>
-                </Link>
-                <button
-                    type="button"
-                    className="nav-toggle-btn"
-                    onClick={() => setOpenAt(open ? null : pathname)}
-                    aria-expanded={open ? "true" : "false"}
-                    aria-controls="nav-list"
-                    aria-label={open ? "Close navigation" : "Open navigation"}
-                >
-                    <span aria-hidden="true">{open ? "✕" : "☰"}</span>
-                </button>
-            </header>
+            <button
+                type="button"
+                className="nav-toggle-btn"
+                onClick={() => setOpenAt(open ? null : pathname)}
+                aria-expanded={open}
+                aria-controls="site-sidebar"
+                aria-label={open ? "Close navigation" : "Open navigation"}
+            >
+                {open ? <FaTimes aria-hidden="true" /> : <FaBars aria-hidden="true" />}
+            </button>
 
             <div className="site-layout">
-                <aside className={`site-sidebar${open ? " site-sidebar--open" : ""}`}>
+                <aside
+                    id="site-sidebar"
+                    className={`site-sidebar${open ? " site-sidebar--open" : ""}`}
+                >
+                    <div className="sidebar-brand">
+                        <Link href="/" className="sidebar-brand-link" aria-label="Karl Horning — CMALT Portfolio, home">
+                            KH.
+                        </Link>
+                    </div>
                     <Nav />
                 </aside>
                 {open && (
