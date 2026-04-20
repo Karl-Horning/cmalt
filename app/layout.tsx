@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
+// To change fonts: swap the imports below and update the two variable names in
+// the html className and the --font-* custom properties in globals.css.
 import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
+import {
+    AUTHOR_NAME,
+    AUTHOR_URL,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SITE_TITLE,
+    SITE_URL,
+} from "@/lib/config";
 import SiteShell from "./components/SiteShell";
 
 const fraunces = Fraunces({
@@ -16,16 +26,15 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://cmalt.karlhorning.dev"),
+    metadataBase: new URL(SITE_URL),
     title: {
-        template: "%s | CMALT Portfolio | Karl Horning",
-        default: "CMALT Portfolio | Karl Horning",
+        template: `%s | ${SITE_TITLE} | ${AUTHOR_NAME}`,
+        default: `${SITE_TITLE} | ${AUTHOR_NAME}`,
     },
-    description:
-        "CMALT portfolio for Karl Horning, full-stack developer. Peer-assessed professional accreditation completed alongside continued development work.",
-    authors: [{ name: "Karl Horning", url: "https://github.com/Karl-Horning" }],
+    description: SITE_DESCRIPTION,
+    authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
     openGraph: {
-        siteName: "Karl Horning CMALT Portfolio",
+        siteName: SITE_NAME,
         locale: "en_GB",
         type: "website",
     },
