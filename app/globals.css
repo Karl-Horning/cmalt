@@ -72,29 +72,6 @@ body {
     top: 0;
 }
 
-.site-brand {
-    font-family: var(--font-fraunces), Georgia, serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--fg);
-    text-decoration: none;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-}
-
-.brand-separator {
-    color: var(--muted);
-    font-weight: 300;
-}
-
-.brand-subtitle {
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
-    letter-spacing: 0.04em;
-}
 
 /* Layout */
 .site-layout {
