@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import JsonLd from "./components/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
+import KSiteIcon from "./components/icons/KSiteIcon";
 
 export const metadata: Metadata = {
     title: "CMALT Portfolio — Karl Horning",
@@ -14,7 +15,12 @@ export const metadata: Metadata = {
         description:
             "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
         url: SITE_URL,
-        images: [{ url: "/og/preview-image.png", alt: "Karl Horning CMALT Portfolio" }],
+        images: [
+            {
+                url: "/og/preview-image.png",
+                alt: "Karl Horning CMALT Portfolio",
+            },
+        ],
         type: "website",
     },
     twitter: {
@@ -53,16 +59,13 @@ export default function Home() {
                 <p className="home-subtitle">Full-Stack Developer</p>
                 <p>
                     Full-stack developer with commercial experience building
-                    production systems across Node.js, GraphQL, Python, and
-                    AWS. CMALT is a peer-assessed professional credential
-                    requiring three or more years of demonstrated experience.
-                    This portfolio was completed alongside continued development
+                    production systems across Node.js, GraphQL, Python, and AWS.
+                    CMALT is a peer-assessed professional credential requiring
+                    three or more years of demonstrated experience. This
+                    portfolio was completed alongside continued development
                     work.
                 </p>
-                <nav
-                    className="home-links"
-                    aria-label="External profiles"
-                >
+                <nav className="home-links" aria-label="External profiles">
                     <a
                         href="https://github.com/Karl-Horning"
                         target="_blank"
@@ -87,7 +90,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="home-link"
                     >
-                        <FaGlobe aria-hidden="true" />
+                        <KSiteIcon aria-hidden="true" />
                         karlhorning.dev
                     </a>
                 </nav>

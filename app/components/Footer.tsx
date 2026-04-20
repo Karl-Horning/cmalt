@@ -3,14 +3,17 @@
  */
 
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import KSiteIcon from "./icons/KSiteIcon";
 import { navStructure } from "@/lib/nav";
 
 /** First year of the portfolio, used as the start of the copyright range. */
 const START_YEAR = 2025;
 const currentYear = new Date().getFullYear();
 const copyrightRange =
-    currentYear > START_YEAR ? `${START_YEAR}–${currentYear}` : String(START_YEAR);
+    currentYear > START_YEAR
+        ? `${START_YEAR}–${currentYear}`
+        : String(START_YEAR);
 
 /**
  * Renders the site footer with a full sitemap, external profile links, and a
@@ -83,7 +86,7 @@ export default function Footer() {
                         aria-label="Karl Horning's personal portfolio"
                         className="footer-social-link"
                     >
-                        <FaGlobe aria-hidden="true" />
+                        <KSiteIcon aria-hidden="true" />
                     </a>
                 </div>
             </div>
