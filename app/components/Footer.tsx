@@ -27,6 +27,7 @@ export default function Footer() {
             <nav className="footer-sitemap" aria-label="Site map">
                 {navStructure.map((item) => {
                     if (item.type === "standalone") {
+                        if (item.utility) return null;
                         return (
                             <div key={item.href} className="footer-group">
                                 <Link href={item.href} className="footer-link">

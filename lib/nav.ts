@@ -7,6 +7,8 @@ export interface StandaloneItem {
     type: "standalone";
     href: string;
     label: string;
+    /** Utility pages (e.g. search) are excluded from prev/next and footer sitemap. */
+    utility?: boolean;
 }
 
 /** A grouped nav section containing one or more child links. */
@@ -18,6 +20,12 @@ export interface GroupItem {
 
 /** All portfolio sections in display order, grouped to reflect CMALT structure. */
 export const navStructure: (StandaloneItem | GroupItem)[] = [
+    {
+        type: "standalone",
+        href: "/search",
+        label: "Search",
+        utility: true,
+    },
     {
         type: "group",
         label: "CMALT Portfolio",
