@@ -33,6 +33,50 @@ export const metadata: Metadata = {
     },
     description: SITE_DESCRIPTION,
     authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+    icons: {
+        icon: [
+            {
+                url: "/favicons/light/favicon-32x32.png",
+                sizes: "32x32",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon-32x32.png",
+                sizes: "32x32",
+                media: "(prefers-color-scheme: dark)",
+            },
+            {
+                url: "/favicons/light/favicon-16x16.png",
+                sizes: "16x16",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon-16x16.png",
+                sizes: "16x16",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+        shortcut: [
+            {
+                url: "/favicons/light/favicon.ico",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon.ico",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+        apple: [
+            {
+                url: "/favicons/light/apple-icon.png",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/apple-icon.png",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+    },
     openGraph: {
         siteName: SITE_NAME,
         locale: "en_GB",
