@@ -19,9 +19,9 @@ export interface GroupItem {
 /** All portfolio sections in display order, grouped to reflect CMALT structure. */
 export const navStructure: (StandaloneItem | GroupItem)[] = [
     {
-        type: "standalone",
-        href: "/contextual-statement",
-        label: "Contextual Statement",
+        type: "group",
+        label: "CMALT Portfolio",
+        items: [{ href: "/contextual-statement", label: "Contextual Statement" }],
     },
     {
         type: "group",
