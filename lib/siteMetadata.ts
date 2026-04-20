@@ -3,18 +3,14 @@
  */
 
 import type { Metadata } from "next";
+import {
+    AUTHOR_NAME,
+    AUTHOR_URL,
+    SITE_NAME,
+    SITE_URL,
+} from "@/lib/config";
 
-/** Canonical base URL for the deployed site. */
-export const SITE_URL = "https://cmalt.karlhorning.dev";
-
-/** Display name used across metadata and structured data. */
-export const AUTHOR_NAME = "Karl Horning";
-
-/** Canonical author URL used in structured data. */
-export const AUTHOR_URL = "https://github.com/Karl-Horning";
-
-/** Site name used in OpenGraph metadata. */
-export const SITE_NAME = "Karl Horning CMALT Portfolio";
+export { AUTHOR_NAME, AUTHOR_URL, SITE_NAME, SITE_URL };
 
 interface PageMeta {
     title: string;

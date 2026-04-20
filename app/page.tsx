@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FaGithub, FaGlobe, FaLinkedin } from "react-icons/fa";
 import JsonLd from "./components/JsonLd";
-import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/siteMetadata";
+import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
     title: "CMALT Portfolio — Karl Horning",

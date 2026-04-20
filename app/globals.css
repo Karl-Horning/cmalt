@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
+/* =============================================================================
+   Theme configuration — edit these values per project.
+   ============================================================================= */
 :root {
+    /* Layout */
     --header-height: 60px;
     --sidebar-width: 260px;
 
+    /* Colours */
     --bg: #faf8f5;
     --fg: #2c2825;
     --accent: #1b6b6b;
@@ -26,6 +31,7 @@
         --nav-label: #9a8f8c;
     }
 }
+/* ============================================================================= */
 
 *,
 *::before,
@@ -253,7 +259,7 @@ body {
     font-size: 1.625rem;
     margin: 2.5rem 0 0.75rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); /* remove this line to drop heading rules */
 }
 
 .content-body h3 {
