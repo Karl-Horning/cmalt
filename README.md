@@ -22,6 +22,8 @@ A statically exported Next.js portfolio built to support [CMALT accreditation](h
 
 **Accessibility testing** — Playwright with `@axe-core/playwright` for automated accessibility checks alongside manual review.
 
+**Search** — Client-side fuzzy search with [Fuse.js](https://fusejs.io/). The index is bundled at build time from each page's metadata — no build script, no external service. Supports `Cmd+K` / `Ctrl+K` from anywhere on the site.
+
 ## Local development
 
 ```bash
