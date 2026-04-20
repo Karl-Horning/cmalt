@@ -15,7 +15,7 @@ import { navStructure } from "@/lib/nav";
  */
 const pages = navStructure.flatMap((item) =>
     item.type === "standalone"
-        ? [{ href: item.href, label: item.label }]
+        ? item.utility ? [] : [{ href: item.href, label: item.label }]
         : item.items.map((sub) => ({ href: sub.href, label: sub.label }))
 );
 

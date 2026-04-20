@@ -5,7 +5,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import BackToTop from "./BackToTop";
@@ -31,6 +31,7 @@ export default function SiteShell({
     children: React.ReactNode;
 }) {
     const pathname = usePathname();
+    const router = useRouter();
     const [openAt, setOpenAt] = useState<string | null>(null);
     const open = openAt === pathname;
 
@@ -40,6 +41,17 @@ export default function SiteShell({
             document.body.style.overflow = "";
         };
     }, [open]);
+
+    useEffect(() => {
+        const onKeyDown = (e: KeyboardEvent) => {
+            if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+                e.preventDefault();
+                router.push("/search");
+            }
+        };
+        window.addEventListener("keydown", onKeyDown);
+        return () => window.removeEventListener("keydown", onKeyDown);
+    }, [router]);
 
     return (
         <>
