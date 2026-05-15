@@ -5,6 +5,8 @@
  * certificates hosted by third-party platforms.
  */
 
+export const cmaltCertificate = "/certificates/cmalt-2026.pdf";
+
 export const appleTeacherCertificate =
     "/certificates/apple-teacher-swift-playgrounds-2025.pdf";
 

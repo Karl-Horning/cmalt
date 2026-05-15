@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import JsonLd from "./components/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
+import { cmaltCertificate, cmaltBadge } from "@/lib/constants";
 import KSiteIcon from "./components/icons/KSiteIcon";
 
 export const metadata: Metadata = {
     title: "CMALT Portfolio — Karl Horning",
     description:
-        "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+        "Full-stack developer with commercial experience building production systems. CMALT awarded May 2026 — a peer-assessed professional credential requiring three or more years of demonstrated experience.",
     alternates: { canonical: SITE_URL },
     openGraph: {
         title: "CMALT Portfolio — Karl Horning",
         description:
-            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+            "Full-stack developer with commercial experience building production systems. CMALT awarded May 2026 — a peer-assessed professional credential requiring three or more years of demonstrated experience.",
         url: SITE_URL,
         images: [
             {
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     twitter: {
         title: "CMALT Portfolio — Karl Horning",
         description:
-            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+            "Full-stack developer with commercial experience building production systems. CMALT awarded May 2026 — a peer-assessed professional credential requiring three or more years of demonstrated experience.",
         images: ["/og/preview-image.png"],
     },
 };
@@ -61,10 +63,21 @@ export default function Home() {
                     Full-stack developer with commercial experience building
                     production systems across Node.js, GraphQL, Python, and AWS.
                     CMALT is a peer-assessed professional credential requiring
-                    three or more years of demonstrated experience. This
-                    portfolio was completed alongside continued development
-                    work.
+                    three or more years of demonstrated experience, awarded May
+                    2026.
                 </p>
+                <a
+                    href={cmaltCertificate}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Image
+                        src={cmaltBadge}
+                        alt="CMALT — Certified Member of the Association for Learning Technology badge"
+                        width={120}
+                        height={120}
+                    />
+                </a>
                 <nav className="home-links" aria-label="External profiles">
                     <a
                         href="https://github.com/Karl-Horning"

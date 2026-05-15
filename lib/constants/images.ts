@@ -4,6 +4,8 @@
  * Values are file paths relative to `public/`.
  */
 
+export const cmaltBadge = "/images/cmalt-badge.png";
+
 export const ebbinghausForgettingCurveImage =
     "/images/ebbinghaus-forgetting-curve.webp";
 
