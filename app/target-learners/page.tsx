@@ -283,24 +283,20 @@ export default function page() {
                         <a href={firstSessionQuestionsDocument} target="_blank" rel="noopener noreferrer">
                             First Session Questions (PDF)
                         </a>{" "}
-                        <em>
                             Structured needs analysis capturing goals, workplace
                             tasks, confidence by skill, and pain points; anchors
                             personalised planning and ongoing course
                             adjustments.
-                        </em>
                     </li>
                     <li>
                         <a href={designingAnEnglishCourseDocument} target="_blank" rel="noopener noreferrer">
                             Designing a Bespoke English Course for Professionals
                             (PDF)
                         </a>{" "}
-                        <em>
                             Example ten-week curriculum aligned to real
                             scenarios (meetings, calls, requests); shows
                             constructive alignment from needs analysis to
                             objectives, activities, and assessment.
-                        </em>
                     </li>
                 </ul>
 
@@ -310,11 +306,9 @@ export default function page() {
                         <a href={exampleFeedbackDocument} target="_blank" rel="noopener noreferrer">
                             Example Feedback: Complete &amp; Full (Markdown)
                         </a>{" "}
-                        <em>
                             Targeted written feedback addressing false friends
                             and nuanced usage; models clear explanations that
                             build accuracy, confidence, and workplace transfer.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -325,10 +319,10 @@ export default function page() {
                 <ul>
                     <li>
                         Ball, S. (2024).{" "}
-                        <em>
+                        <cite>
                             Bridging the gap: How to equip English learners with
                             workplace-ready language skills
-                        </em>
+                        </cite>
                         . Pearson. Available at:{" "}
                         <a
                             href="https://www.pearson.com/languages/community/blogs/getting-students-ready-for-the-workplace-3-24.html"
@@ -340,10 +334,10 @@ export default function page() {
                     </li>
                     <li>
                         Bridge Education Group (2023).{" "}
-                        <em>
+                        <cite>
                             How (And Why) English Teachers Should Improve the
                             Employability of Their Students
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://bridge.edu/tefl/blog/english-teachers-improve-students-employability/"
@@ -355,15 +349,15 @@ export default function page() {
                     </li>
                     <li>
                         Nation, I.S.P. (2009).{" "}
-                        <em>Teaching ESL/EFL Listening and Speaking</em>.
+                        <cite>Teaching ESL/EFL Listening and Speaking</cite>.
                         Routledge.
                     </li>
                     <li>
                         Ohidujjaman, A.H.M. (2023).{" "}
-                        <em>
+                        <cite>
                             A Step-by-Step Guide to Needs Analysis of Adult ESL
                             Learners
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://eslinfo.com/a-guide-to-needs-analysis-of-adults-esl-learners/"

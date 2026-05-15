@@ -274,12 +274,10 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                        <em>
                             Demonstrates hands-on evaluation of LMS API
                             functionality and interoperability; translates
                             Swagger documentation into practical testing
                             workflows for IAM, analytics, and configuration.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -289,11 +287,9 @@ export default function page() {
                         >
                             ICT Analyst test script (Screenshot)
                         </a>{" "}
-                        <em>
                             Structured manual test plan reflecting academic
                             workflows; evidences reproducible checks of
                             navigation, bulk actions, and activity logs.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -303,12 +299,10 @@ export default function page() {
                         >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
-                        <em>
                             Further evidence of applied testing aligned to
                             administrative requirements; supports dual
                             technical-pedagogic perspective in LMS evaluation
                             and training readiness.
-                        </em>
                     </li>
                 </ul>
 
@@ -322,13 +316,11 @@ export default function page() {
                         >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
-                        <em>
                             Case study of large-scale LMS development for over
                             700,000 registered learners, demonstrating API
                             optimisation, automated testing, and user-focused
                             improvements to accessibility and mobile
                             performance.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -339,12 +331,10 @@ export default function page() {
                             Oxford Learner&apos;s Dictionaries API Entry Fetcher
                             (Repository)
                         </a>{" "}
-                        <em>
                             Node.js prototype integrating third-party content;
                             uses Cheerio and semantic HTML to deliver
                             accessible, in-context definitions for blended
                             learning.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -354,12 +344,10 @@ export default function page() {
                         >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
-                        <em>
                             Bespoke cross-platform desktop tool for staff
                             onboarding; shows pragmatic trade-offs for speed,
                             deployment, and maintainability under institutional
                             constraints.
-                        </em>
                     </li>
                 </ul>
 
@@ -373,12 +361,10 @@ export default function page() {
                         >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
-                        <em>
                             Formal training underpinning API design and
                             optimisation work; evidences continued professional
                             development directly supporting learning-technology
                             projects.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -389,10 +375,10 @@ export default function page() {
                 <ul>
                     <li>
                         Cheerio{" "}
-                        <em>
+                        <cite>
                             Cheerio: Fast, Flexible, and Lean Implementation of
                             Core jQuery
-                        </em>
+                        </cite>
                         . npm. Available at:{" "}
                         <a
                             href="https://www.npmjs.com/package/cheerio"
@@ -404,10 +390,10 @@ export default function page() {
                     </li>
                     <li>
                         Electron{" "}
-                        <em>
+                        <cite>
                             Build Cross-Platform Desktop Apps with JavaScript,
                             HTML, and CSS
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://www.electronjs.org/"
@@ -419,7 +405,7 @@ export default function page() {
                     </li>
                     <li>
                         GraphQL Foundation{" "}
-                        <em>GraphQL: A Query Language for Your API</em>.
+                        <cite>GraphQL: A Query Language for Your API</cite>.
                         Available at:{" "}
                         <a
                             href="https://graphql.org/"
@@ -431,10 +417,10 @@ export default function page() {
                     </li>
                     <li>
                         Mocha{" "}
-                        <em>
+                        <cite>
                             Mocha: Simple, Flexible, Fun JavaScript Test
                             Framework for Node.js &amp; the Browser
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://mochajs.org/"
@@ -446,7 +432,7 @@ export default function page() {
                     </li>
                     <li>
                         Oxford University Press{" "}
-                        <em>Oxford Learner&apos;s Dictionaries API</em>.
+                        <cite>Oxford Learner&apos;s Dictionaries API</cite>.
                         Available at:{" "}
                         <a
                             href="https://languages.oup.com/oxford-learners-dictionaries-api/"
@@ -457,7 +443,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Postman <em>Postman API Platform</em>. Available at:{" "}
+                        Postman <cite>Postman API Platform</cite>. Available at:{" "}
                         <a
                             href="https://www.postman.com/"
                             target="_blank"

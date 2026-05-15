@@ -43,7 +43,7 @@ export default function page() {
                     </a>{" "}
                     to support trainers through the institutional transition to
                     Teams. I also created a video walkthrough,{" "}
-                    <em>Microsoft Teams Guide</em>, which was used to deliver
+                    <cite>Microsoft Teams Guide</cite>, which was used to deliver
                     asynchronous training.
                 </p>
 
@@ -87,7 +87,7 @@ export default function page() {
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>
-                        An excerpt from <em>Microsoft Teams Guide</em>
+                        An excerpt from <cite>Microsoft Teams Guide</cite>
                     </figcaption>
                 </figure>
 
@@ -262,11 +262,9 @@ export default function page() {
                             Testing LMS APIs: What an OpenAPI Spec Gives You
                             (and What It Doesn&apos;t) (2025) (Blog post)
                         </a>{" "}
-                        <em>
                             Public, post informed by DEPP testing; demonstrates
                             clear dissemination of API evaluation methods and
                             supports reproducible endpoint testing.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -276,12 +274,10 @@ export default function page() {
                         >
                             Using Postman with Apollo Server (2023) (PDF)
                         </a>{" "}
-                        <em>
                             Internal developer documentation for GraphQL
                             workflows (auth, JWT storage, queries/mutations);
                             underpins consistent onboarding and team-wide
                             technical practice.
-                        </em>
                     </li>
                 </ul>
 
@@ -295,12 +291,10 @@ export default function page() {
                         >
                             Microsoft Teams FAQ (2021) (PDF)
                         </a>{" "}
-                        <em>
                             Trainer-focused guide produced during the Skype for
                             Business → Teams transition; plain-English support
                             that reduced friction and queries during
                             institutional change.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -310,11 +304,9 @@ export default function page() {
                         >
                             Microsoft Teams Guide (Video)
                         </a>{" "}
-                        <em>
                             Short asynchronous walkthrough used alongside the
                             FAQ; provides accessible, on-demand training to
                             support deployment at scale.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -324,7 +316,7 @@ export default function page() {
 
                 <ul>
                     <li>
-                        Apollo GraphQL. <em>Introduction to Apollo Server</em>.
+                        Apollo GraphQL. <cite>Introduction to Apollo Server</cite>.
                         Available at:{" "}
                         <a
                             href="https://www.apollographql.com/docs/apollo-server"
@@ -335,7 +327,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        GeeksforGeeks. <em>JSON Web Token (JWT)</em>. Available
+                        GeeksforGeeks. <cite>JSON Web Token (JWT)</cite>. Available
                         at:{" "}
                         <a
                             href="https://www.geeksforgeeks.org/web-tech/json-web-token-jwt/"
@@ -347,7 +339,7 @@ export default function page() {
                     </li>
                     <li>
                         Imperial College London.{" "}
-                        <em>Digital Education Platform Project (DEPP)</em>.
+                        <cite>Digital Education Platform Project (DEPP)</cite>.
                         Available at:{" "}
                         <a
                             href={deppProjectLink}
@@ -359,7 +351,7 @@ export default function page() {
                     </li>
 
                     <li>
-                        Postman. <em>Collections</em>. Available at:{" "}
+                        Postman. <cite>Collections</cite>. Available at:{" "}
                         <a
                             href="https://www.postman.com/product/collections/"
                             target="_blank"
@@ -369,7 +361,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Postman. <em>GraphQL in Postman</em>. Available at:{" "}
+                        Postman. <cite>GraphQL in Postman</cite>. Available at:{" "}
                         <a
                             href="https://learning.postman.com/docs/sending-requests/graphql/graphql-overview/"
                             target="_blank"
@@ -379,7 +371,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Postman. <em>What is Postman?</em>. Available at:{" "}
+                        Postman. <cite>What is Postman?</cite>. Available at:{" "}
                         <a
                             href="https://www.postman.com/product/what-is-postman/"
                             target="_blank"
@@ -389,7 +381,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        SmartBear Software. <em>Swagger</em>. Available at:{" "}
+                        SmartBear Software. <cite>Swagger</cite>. Available at:{" "}
                         <a
                             href="https://swagger.io/"
                             target="_blank"

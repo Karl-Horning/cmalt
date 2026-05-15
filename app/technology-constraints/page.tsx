@@ -72,7 +72,7 @@ export default function page() {
                 <p>
                     We then had to decide which elements should be provided
                     natively within the LMS and which could be supported through
-                    external tools such as <em>ColourVeil</em>. To justify this,
+                    external tools such as <cite>ColourVeil</cite>. To justify this,
                     we compared the degree to which each platform could natively
                     preserve accessibility when colour schemes were customised.
                     For instance, one LMS automatically adjusted text colour (to
@@ -84,7 +84,7 @@ export default function page() {
 
                 <p>
                     To ensure claims about accessibility could be validated,
-                    testers used <em>Accessibility Insights</em> to check that
+                    testers used <cite>Accessibility Insights</cite> to check that
                     colour customisations met WCAG standards. Links to this
                     testing resource were included directly in the evaluation
                     scripts, making the process transparent and reproducible.
@@ -299,12 +299,10 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                        <em>
                             Demonstrates critical evaluation of LMS API
                             functionality and interoperability through hands-on
                             testing; used to explore constraints and affordances
                             of Blackboard Ultra&apos;s integration model.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -314,12 +312,10 @@ export default function page() {
                         >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
-                        <em>
                             Shows how structured manual test scripts were used
                             to evaluate platform functionality, identify
                             limitations, and simulate user journeys with
                             reproducible steps.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -330,12 +326,10 @@ export default function page() {
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
-                        <em>
                             Captures the institutional evaluation context —
                             multiple LMS platforms compared against timelines,
                             accessibility, scalability, and integration
                             requirements.
-                        </em>
                     </li>
                 </ul>
 
@@ -349,12 +343,10 @@ export default function page() {
                         >
                             Colour Accessibility User Stories (Screenshot)
                         </a>{" "}
-                        <em>
                             Evidence of user-centred requirements (acceptance
                             criteria, contrast needs, preset schemes) informing
                             evaluation and decision-making; demonstrates
                             alignment with inclusive design principles.
-                        </em>
                     </li>
                 </ul>
 
@@ -368,12 +360,10 @@ export default function page() {
                         >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
-                        <em>
                             Shows custom tool development under infrastructure
                             and access constraints; justifies cross-platform
                             delivery and documents trade-offs between
                             performance, maintainability, and scalability.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -383,7 +373,7 @@ export default function page() {
 
                 <ul>
                     <li>
-                        Anthology <em>Anthology REST API documentation</em>.{" "}
+                        Anthology <cite>Anthology REST API documentation</cite>.{" "}
                         <a
                             href="https://developer.blackboard.com/portal/displayApi"
                             target="_blank"
@@ -393,7 +383,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Anthology <em>Blackboard Ultra</em>.{" "}
+                        Anthology <cite>Blackboard Ultra</cite>.{" "}
                         <a
                             href="https://www.anthology.com/products/teaching-and-learning/learning-effectiveness/blackboard"
                             target="_blank"
@@ -404,9 +394,9 @@ export default function page() {
                     </li>
                     <li>
                         Atlassian{" "}
-                        <em>
+                        <cite>
                             Acceptance Criteria: Examples and Best Practices
-                        </em>
+                        </cite>
                         .{" "}
                         <a
                             href="https://www.atlassian.com/work-management/project-management/acceptance-criteria"
@@ -418,10 +408,10 @@ export default function page() {
                     </li>
                     <li>
                         Carr, P. (2023).{" "}
-                        <em>
+                        <cite>
                             Digital Transformation 101: How to Choose the Right
                             Technology
-                        </em>
+                        </cite>
                         .{" "}
                         <a
                             href="https://www.engineering.com/digital-transformation-101-how-to-choose-the-right-technology/"
@@ -432,7 +422,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        D2L <em>Brightspace API Reference</em>.{" "}
+                        D2L <cite>Brightspace API Reference</cite>.{" "}
                         <a
                             href="https://docs.valence.desire2learn.com/reference.html"
                             target="_blank"
@@ -442,7 +432,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        D2L <em>Brightspace by D2L</em>.{" "}
+                        D2L <cite>Brightspace by D2L</cite>.{" "}
                         <a
                             href="https://www.d2l.com/en-eu/brightspace/"
                             target="_blank"
@@ -452,7 +442,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Instructure <em>Canvas LMS</em>.{" "}
+                        Instructure <cite>Canvas LMS</cite>.{" "}
                         <a
                             href="https://www.instructure.com/canvas"
                             target="_blank"
@@ -462,7 +452,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Instructure <em>Canvas LMS API Documentation</em>.{" "}
+                        Instructure <cite>Canvas LMS API Documentation</cite>.{" "}
                         <a
                             href="https://www.canvas.instructure.com/doc/api/"
                             target="_blank"
@@ -472,7 +462,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        ProductPlan <em>MoSCoW Prioritization</em>.{" "}
+                        ProductPlan <cite>MoSCoW Prioritization</cite>.{" "}
                         <a
                             href="https://www.productplan.com/glossary/moscow-prioritization/"
                             target="_blank"
@@ -483,7 +473,7 @@ export default function page() {
                     </li>
                     <li>
                         Rehkopf, M.{" "}
-                        <em>User Stories with Examples and a Template</em>.
+                        <cite>User Stories with Examples and a Template</cite>.
                         Atlassian.{" "}
                         <a
                             href="https://www.atlassian.com/agile/project-management/user-stories"
