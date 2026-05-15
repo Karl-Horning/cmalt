@@ -11,7 +11,7 @@ import {
     SITE_TITLE,
     SITE_URL,
 } from "@/lib/config";
-import SiteShell from "./components/SiteShell";
+import SiteShell from "@/components/SiteShell";
 
 const fraunces = Fraunces({
     variable: "--font-fraunces",
