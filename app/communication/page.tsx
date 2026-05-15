@@ -355,7 +355,6 @@ export default function page() {
                             PoC Data Cleaning Collaboration Screenshot (June
                             2025) (Image)
                         </a>{" "}
-                        <em>
                             Screenshot from Microsoft Teams showing
                             collaborative communication with a Business School
                             colleague during the Proof of Concept data-cleaning
@@ -363,7 +362,6 @@ export default function page() {
                             discussed, clarified, and actioned in real time.
                             Shared with the colleague&apos;s consent;
                             anonymisation not required.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -374,14 +372,12 @@ export default function page() {
                             LMS Project Group Meeting Notes (October 2025)
                             (Screenshot)
                         </a>{" "}
-                        <em>
                             Example of structured, agenda-linked notes produced
                             during the DEPP meetings. Demonstrates learning from
                             colleagues&apos; communication practices and the
                             application of accessible formatting principles.
                             Shared with the consent of project leads;
                             anonymisation not required.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -392,12 +388,10 @@ export default function page() {
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
-                        <em>
                             Presentation delivered to ICT colleagues outlining
                             milestones, testing processes, and feedback
                             mechanisms — demonstrating cross-departmental
                             communication and facilitation.
-                        </em>
                     </li>
                 </ul>
 
@@ -411,11 +405,9 @@ export default function page() {
                         >
                             Microsoft Teams FAQ (PDF)
                         </a>{" "}
-                        <em>
                             Plain-English staff guide demonstrating inclusive
                             writing, accessible structure, and responsiveness to
                             user needs.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -425,10 +417,8 @@ export default function page() {
                         >
                             Using Postman with Apollo Server (PDF)
                         </a>{" "}
-                        <em>
                             Technical guide for developers showing clear,
                             step-by-step communication of complex processes.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -438,12 +428,10 @@ export default function page() {
                         >
                             Testing LMS APIs: What an OpenAPI Spec Gives You (and What It Doesn&apos;t) (Link)
                         </a>{" "}
-                        <em>
                             Blog post disseminating institutional testing
                             practice and reusable methods for evaluating APIs —
                             an example of outward-facing professional
                             communication.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -454,11 +442,9 @@ export default function page() {
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
-                        <em>
                             Curated resource shared with the DEPP colleagues,
                             supporting accessible design and awareness of
                             WCAG-aligned best practice.
-                        </em>
                     </li>
                 </ul>
 
@@ -473,13 +459,11 @@ export default function page() {
                             Understanding Manual Testing (LinkedIn Learning,
                             2024) (Certificate)
                         </a>{" "}
-                        <em>
                             Completed ahead of the DEPP Proof of Concept testing
                             to strengthen communication between technical and
                             academic stakeholders. Demonstrates reflective
                             development and understanding of user behaviour
                             beyond automated testing.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -490,10 +474,10 @@ export default function page() {
                 <ul>
                     <li>
                         Forbes Coaches Council. (2024).{" "}
-                        <em>
+                        <cite>
                             18 Expert Tips for Communicating with Hybrid and
                             Remote Teams
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://www.forbes.com/councils/forbescoachescouncil/2024/06/27/18-expert-tips-for-communicating-with-hybrid-and-remote-teams/"
@@ -505,10 +489,10 @@ export default function page() {
                     </li>
                     <li>
                         GOV.UK. (2021).{" "}
-                        <em>
+                        <cite>
                             Inclusive communication: Plain English and
                             accessibility guidelines
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://www.gov.uk/government/publications/inclusive-communication"
@@ -520,10 +504,10 @@ export default function page() {
                     </li>
                     <li>
                         NHS England. (2023).{" "}
-                        <em>
+                        <cite>
                             Accessible Information Standard: Principles for
                             inclusive communication
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://www.england.nhs.uk/publication/accessible-information-standard/"
@@ -535,7 +519,7 @@ export default function page() {
                     </li>
                     <li>
                         Nielsen Norman Group. (2024).{" "}
-                        <em>Accessibility and Inclusivity: Study Guide</em>.
+                        <cite>Accessibility and Inclusivity: Study Guide</cite>.
                         Available at:{" "}
                         <a
                             href="https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/"

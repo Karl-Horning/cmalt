@@ -19,10 +19,10 @@ export default function page() {
                     development to improve learning experiences. As a
                     CELTA-qualified English teacher, I&apos;ve delivered over
                     10,000 lessons with consistently high ratings, and used my{" "}
-                    <em>
+                    <cite>
                         Level 4 Preparing to Teach in the Lifelong Learning
                         Sector
-                    </em>{" "}
+                    </cite>{" "}
                     (PTLLS) to design and deliver training in academic English
                     and study skills in both further and higher education.
                 </p>

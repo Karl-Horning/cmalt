@@ -345,7 +345,7 @@ export default function page() {
                     where I try to make my repositories accessible and easy to
                     follow, and I&apos;ve recently launched a blog inspired by
                     posts such as{" "}
-                    <em>
+                    <cite>
                         <a
                             href="https://netflixtechblog.com/our-learnings-from-adopting-graphql-f099de39ae5f"
                             target="_blank"
@@ -353,9 +353,9 @@ export default function page() {
                         >
                             Our learnings from adopting GraphQL
                         </a>
-                    </em>{" "}
+                    </cite>{" "}
                     and{" "}
-                    <em>
+                    <cite>
                         <a
                             href="https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72"
                             target="_blank"
@@ -363,7 +363,7 @@ export default function page() {
                         >
                             Migrating Netflix to GraphQL safely
                         </a>
-                    </em>
+                    </cite>
                     . My goal is to reflect on development challenges and
                     explain concepts in a way that&apos;s approachable and
                     useful to others.
@@ -436,13 +436,11 @@ export default function page() {
                         >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
-                        <em>
                             Case study of large-scale LMS development for over
                             700,000 registered learners, demonstrating API
                             optimisation, automated testing, and user-focused
                             improvements to accessibility and mobile
                             performance.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -452,11 +450,9 @@ export default function page() {
                         >
                             GraphQL Rate Limit Demo (Repository)
                         </a>{" "}
-                        <em>
                             Demonstrates performance/stability safeguards at
                             scale; evidence of proactive risk management and
                             measurable backend optimisation.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -467,11 +463,9 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                        <em>
                             Adapts developer tooling for institutional
                             evaluation; bridges API analysis with authentic HE
                             workflows used in DEPP.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -482,11 +476,9 @@ export default function page() {
                             Karl Horning&apos;s GitHub: github.com/Karl-Horning
                             (Repository)
                         </a>{" "}
-                        <em>
                             Ongoing code artefacts and utilities; showcases
                             breadth across the stack and commitment to
                             transparent, reusable engineering practice.
-                        </em>
                     </li>
                 </ul>
 
@@ -502,11 +494,9 @@ export default function page() {
                             Postman Collection and Make an API Call (Blog Post,
                             2025)
                         </a>{" "}
-                        <em>
                             Public write-up translating internal DEPP testing
                             into reusable guidance; evidence of dissemination
                             and sector contribution.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -517,11 +507,9 @@ export default function page() {
                             Karl Horning&apos;s personal portfolio:
                             karlhorning.dev
                         </a>{" "}
-                        <em>
                             Curated showcase of projects and documentation;
                             supports reflective practice and communicates impact
                             to non-technical audiences.
-                        </em>
                     </li>
                 </ul>
 
@@ -536,11 +524,9 @@ export default function page() {
                             Karl Horning&apos;s LinkedIn profile:
                             linkedin.com/in/karl-horning
                         </a>{" "}
-                        <em>
                             Verifies career trajectory, skills, and
                             endorsements; complements technical evidence with
                             professional context.
-                        </em>
                     </li>
                 </ul>
 
@@ -554,10 +540,8 @@ export default function page() {
                         >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
-                        <em>
                             Directly underpins GraphQL optimisation, batching,
                             and schema design used in production.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -568,10 +552,8 @@ export default function page() {
                             Next JS: The Complete Developer&apos;s Guide (Udemy,
                             2024) (Certificate)
                         </a>{" "}
-                        <em>
                             Front-end performance and DX improvements; supports
                             full-stack delivery and rapid prototyping.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -581,10 +563,8 @@ export default function page() {
                         >
                             Master Electron (Udemy, 2024) (Certificate)
                         </a>{" "}
-                        <em>
                             Desktop tooling expertise enabling cross-platform
                             internal apps for staff workflows.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -595,10 +575,8 @@ export default function page() {
                             The Web Developer Bootcamp (Udemy, 2019)
                             (Certificate)
                         </a>{" "}
-                        <em>
                             Foundational web engineering skills underpinning
                             full-stack practice.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -608,11 +586,9 @@ export default function page() {
                         >
                             Jira Fundamentals (Atlassian, 2024) (Screenshot)
                         </a>{" "}
-                        <em>
                             Agile project operations and collaboration
                             essentials; supports delivery at team and programme
                             scale.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -623,11 +599,9 @@ export default function page() {
                             Apple Teacher (Swift Playgrounds) (Apple, 2025)
                             (Certificate)
                         </a>{" "}
-                        <em>
                             Signals the pedagogy-engineering link: ability to
                             teach technical concepts and design learner-centred
                             resources.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -638,9 +612,9 @@ export default function page() {
                 <ul>
                     <li>
                         Apollo Odyssey.{" "}
-                        <em>
+                        <cite>
                             Data loaders with TypeScript &amp; Apollo Server
-                        </em>
+                        </cite>
                         . Available at:{" "}
                         <a
                             href="https://www.apollographql.com/tutorials/dataloaders-typescript"
@@ -652,7 +626,7 @@ export default function page() {
                     </li>
                     <li>
                         Fadhil, A. (2019).{" "}
-                        <em>How to use GraphQL DataLoader</em>. Available at:{" "}
+                        <cite>How to use GraphQL DataLoader</cite>. Available at:{" "}
                         <a
                             href="https://rahmanfadhil.com/graphql-dataloader/"
                             target="_blank"
@@ -663,7 +637,7 @@ export default function page() {
                     </li>
                     <li>
                         LetsLearnGraphQL (2023).{" "}
-                        <em>Rate limiting and throttling in GraphQL</em>.
+                        <cite>Rate limiting and throttling in GraphQL</cite>.
                         Available at:{" "}
                         <a
                             href="https://letslearngraphql.com/rate-limiting-and-throttling-in-graphql"
@@ -674,7 +648,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        MDN Web Docs. <em>JavaScript guide</em>. Available at:{" "}
+                        MDN Web Docs. <cite>JavaScript guide</cite>. Available at:{" "}
                         <a
                             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
                             target="_blank"
@@ -685,7 +659,7 @@ export default function page() {
                     </li>
                     <li>
                         Messinger, J. (2017).{" "}
-                        <em>API testing tips from a Postman professional</em>.
+                        <cite>API testing tips from a Postman professional</cite>.
                         Available at:{" "}
                         <a
                             href="https://blog.postman.com/api-testing-tips-from-a-postman-professional/"
@@ -696,7 +670,7 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Salesforce, Inc. <em>The Twelve-Factor App</em>.
+                        Salesforce, Inc. <cite>The Twelve-Factor App</cite>.
                         Available at:{" "}
                         <a
                             href="https://12factor.net/"
@@ -708,7 +682,7 @@ export default function page() {
                     </li>
                     <li>
                         Shtatnov, A. &amp; Ranganathan, R.S. (2018).{" "}
-                        <em>Our learnings from adopting GraphQL</em>. Netflix
+                        <cite>Our learnings from adopting GraphQL</cite>. Netflix
                         Technology Blog. Available at:{" "}
                         <a
                             href="https://netflixtechblog.com/our-learnings-from-adopting-graphql-f099de39ae5f"
@@ -720,7 +694,7 @@ export default function page() {
                     </li>
                     <li>
                         Shin, J., Shikhare, T., &amp; Emmanuel, W. (2023).{" "}
-                        <em>Migrating Netflix to GraphQL safely</em>. Netflix
+                        <cite>Migrating Netflix to GraphQL safely</cite>. Netflix
                         Technology Blog. Available at:{" "}
                         <a
                             href="https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72"

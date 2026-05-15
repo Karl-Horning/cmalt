@@ -46,7 +46,7 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>GDPR: Beginner</em> (12 Oct 2021, Kaspersky)
+                            <cite>GDPR: Beginner</cite> (12 Oct 2021, Kaspersky)
                         </a>
                     </li>
                     <li>
@@ -55,7 +55,7 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>GDPR: Elementary</em> (20 Dec 2021, Kaspersky)
+                            <cite>GDPR: Elementary</cite> (20 Dec 2021, Kaspersky)
                         </a>
                     </li>
                     <li>
@@ -64,7 +64,7 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>General Data Protection Regulation (GDPR)</em>{" "}
+                            <cite>General Data Protection Regulation (GDPR)</cite>{" "}
                             (2 May 2023, Learnlight)
                         </a>
                     </li>
@@ -74,10 +74,10 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>
+                            <cite>
                                 An Introduction to the General Data Protection
                                 Regulation (GDPR)
-                            </em>{" "}
+                            </cite>{" "}
                             (15 March 2024, Kevin Mitnick Security Awareness
                             Training)
                         </a>
@@ -88,7 +88,7 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>Data Protection Awareness course</em> (1 August
+                            <cite>Data Protection Awareness course</cite> (1 August
                             2024, Imperial College London)
                         </a>
                     </li>
@@ -306,11 +306,9 @@ export default function page() {
                             Microsoft Teams meeting from the Session Details
                             Page, 2020) (Screenshot)
                         </a>{" "}
-                        <em>
                             Shows data minimisation in visual media;
                             demonstrates safe screen-recording practice with no
                             personally identifiable information (PII) exposed.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -321,11 +319,9 @@ export default function page() {
                             Anonymised student-facing guide (Microsoft Teams
                             FAQ, 2020) (Screenshot)
                         </a>{" "}
-                        <em>
                             Example of anonymised artefacts used in learner
                             materials; aligns with institutional guidance on
                             anonymisation and lawful processing.
-                        </em>
                     </li>
                 </ul>
 
@@ -337,17 +333,15 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>
+                            <cite>
                                 Data Protection Awareness course (Imperial
                                 College London, 2024)
-                            </em>{" "}
+                            </cite>{" "}
                             (Screenshot)
                         </a>{" "}
-                        <em>
                             Institution-specific training evidencing alignment
                             with Imperial policies and procedures for lawful,
                             ethical handling of data.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -355,18 +349,16 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>
+                            <cite>
                                 An Introduction to the General Data Protection
                                 Regulation (GDPR)
-                            </em>{" "}
+                            </cite>{" "}
                             (Kevin Mitnick Security Awareness Training, 2024)
                             (Certificate)
                         </a>{" "}
-                        <em>
                             Confirms current understanding of GDPR principles
                             and risk-aware behaviours in digital learning
                             contexts.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -374,13 +366,11 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>General Data Protection Regulation (GDPR)</em>{" "}
+                            <cite>General Data Protection Regulation (GDPR)</cite>{" "}
                             (Learnlight, 2023) (Certificate)
                         </a>{" "}
-                        <em>
                             Ongoing professional development linking GDPR
                             requirements to educational platforms and workflows.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -388,14 +378,12 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>GDPR: Elementary</em> (Kaspersky, 2021)
+                            <cite>GDPR: Elementary</cite> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
-                        <em>
                             Consolidates core concepts beyond foundational
                             level; supports ethical handling of personal data
                             across teams.
-                        </em>
                     </li>
                     <li>
                         <a
@@ -403,14 +391,12 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <em>GDPR: Beginner</em> (Kaspersky, 2021)
+                            <cite>GDPR: Beginner</cite> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
-                        <em>
                             Baseline GDPR training establishing fundamental
                             principles for subsequent practice and
                             certification.
-                        </em>
                     </li>
                 </ul>
             </section>
@@ -420,7 +406,7 @@ export default function page() {
                 <ul>
                     <li>
                         Imperial College London{" "}
-                        <em>Data protection guidance</em>. Available at:{" "}
+                        <cite>Data protection guidance</cite>. Available at:{" "}
                         <a
                             href="https://www.imperial.ac.uk/admin-services/secretariat/policies-and-guidance/guidance/"
                             target="_blank"
@@ -431,7 +417,7 @@ export default function page() {
                     </li>
                     <li>
                         Information Commissioner&apos;s Office{" "}
-                        <em>The UK GDPR</em>. Available at:{" "}
+                        <cite>The UK GDPR</cite>. Available at:{" "}
                         <a
                             href="https://ico.org.uk/for-organisations/data-protection-and-the-eu/data-protection-and-the-eu-in-detail/the-uk-gdpr/"
                             target="_blank"
@@ -442,7 +428,7 @@ export default function page() {
                     </li>
                     <li>
                         Information Commissioner&apos;s Office{" "}
-                        <em>UK GDPR guidance and resources</em>. Available at:{" "}
+                        <cite>UK GDPR guidance and resources</cite>. Available at:{" "}
                         <a
                             href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/"
                             target="_blank"
