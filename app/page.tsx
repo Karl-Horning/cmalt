@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import JsonLd from "./components/JsonLd";
+import JsonLd from "@/components/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
 import { cmaltCertificate, cmaltBadge } from "@/lib/constants";
-import KSiteIcon from "./components/icons/KSiteIcon";
+import KSiteIcon from "@/components/icons/KSiteIcon";
 
 export const metadata: Metadata = {
     title: "CMALT Portfolio — Karl Horning",
