@@ -1,16 +1,9 @@
 /**
- * @fileoverview Karl Horning personal site icon as an inline SVG component.
+ * @fileoverview SVG icon matching the "K" logo used across the Karl Horning
+ * personal site brand.
  */
 
-/**
- * Renders the karlhorning.dev site icon as an inline SVG.
- *
- * Accepts all standard SVG props so it can be used identically to React Icons
- * components. Fill inherits `currentColor` from the parent element.
- *
- * @param props - SVG element props.
- * @returns The rendered SVG element.
- */
+/** Inline SVG rendering the K site logo at the current font size (`1em`). */
 export default function KSiteIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg

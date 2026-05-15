@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import styles from "./not-found.module.css";
 
 export const metadata: Metadata = {
     title: "Page Not Found",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
     return (
-        <div className="not-found-body">
+        <div className={styles.notFoundBody}>
             <h1>Page not found</h1>
             <p>
                 The page you&apos;re looking for doesn&apos;t exist or may have

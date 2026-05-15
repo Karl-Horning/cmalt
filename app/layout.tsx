@@ -11,7 +11,8 @@ import {
     SITE_TITLE,
     SITE_URL,
 } from "@/lib/config";
-import SiteShell from "@/components/SiteShell";
+import SiteShell from "@/components/SiteShell/SiteShell";
+import layoutStyles from "./layout.module.css";
 
 const fraunces = Fraunces({
     variable: "--font-fraunces",
@@ -95,7 +96,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${fraunces.variable} ${outfit.variable}`}>
             <body>
-                <a href="#main-content" className="skip-link">
+                <a href="#main-content" className={layoutStyles.skipLink}>
                     Skip to main content
                 </a>
                 <SiteShell>{children}</SiteShell>

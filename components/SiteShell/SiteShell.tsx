@@ -1,5 +1,6 @@
 /**
- * @fileoverview Top-level layout shell for the CMALT portfolio site.
+ * @fileoverview Top-level layout shell wrapping every page with the sidebar
+ * navigation, mobile nav toggle, back-to-top button, and site footer.
  */
 
 "use client";
@@ -8,23 +9,13 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import BackToTop from "./BackToTop";
-import Footer from "./Footer";
-import Nav from "./Nav";
-import PrevNextNav from "./PrevNextNav";
+import BackToTop from "@/components/BackToTop/BackToTop";
+import Footer from "@/components/Footer/Footer";
+import Nav from "@/components/Nav/Nav";
+import PrevNextNav from "@/components/PrevNextNav/PrevNextNav";
+import styles from "./SiteShell.module.css";
 
-/**
- * Renders the site header, sidebar navigation, and main content area.
- *
- * Mobile navigation state is stored as the pathname at which the menu was
- * opened rather than a plain boolean. This means navigating to a new page
- * automatically closes the menu without needing a synchronous setState call
- * inside an effect, which would cause an extra render cycle on every navigation.
- *
- * @param props - Component props.
- * @param props.children - Page content rendered inside the main element.
- * @returns The rendered site shell fragment.
- */
+/** Root layout shell; wraps page content with sidebar, footer, and utilities. */
 export default function SiteShell({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const router = useRouter();
@@ -53,7 +44,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <>
             <button
                 type="button"
-                className="nav-toggle-btn"
+                className={styles.navToggleBtn}
                 onClick={() => setOpenAt(open ? null : pathname)}
                 aria-expanded={open}
                 aria-controls="site-sidebar"
@@ -66,19 +57,19 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 )}
             </button>
 
-            <div className="site-layout">
+            <div className={styles.siteLayout}>
                 <aside
                     id="site-sidebar"
-                    className={`site-sidebar${open ? " site-sidebar--open" : ""}`}
+                    className={`${styles.siteSidebar}${open ? ` ${styles.open}` : ""}`}
                 >
-                    <div className="sidebar-brand">
+                    <div className={styles.sidebarBrand}>
                         <Link
                             href="/"
-                            className="sidebar-brand-link"
+                            className={styles.sidebarBrandLink}
                             aria-label="Karl Horning — CMALT Portfolio, home"
                         >
                             <svg
-                                className="site-logo"
+                                className={styles.siteLogo}
                                 viewBox="0 0 1920 1080"
                                 xmlns="http://www.w3.org/2000/svg"
                                 style={{ fillRule: "evenodd" }}
@@ -111,14 +102,14 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </aside>
                 {open && (
                     <div
-                        className="nav-backdrop"
+                        className={styles.navBackdrop}
                         onClick={() => setOpenAt(null)}
                         aria-hidden="true"
                     />
                 )}
                 <BackToTop />
-                <main id="main-content" className="site-main">
-                    <div className="content-body">
+                <main id="main-content" className={styles.siteMain}>
+                    <div className={styles.contentBody}>
                         {children}
                         <PrevNextNav />
                     </div>

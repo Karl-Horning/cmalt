@@ -1,0 +1,51 @@
+/* Styles for the sidebar navigation. */
+
+.navList {
+    padding: 0.75rem 0 2rem;
+}
+
+.navStandalone {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.navGroup {
+    margin-top: 0.5rem;
+}
+
+.navGroupLabel {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--nav-label);
+    padding: 0.75rem 1.25rem 0.25rem;
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    margin: 0;
+}
+
+.navItem {
+    display: block;
+    padding: 0.3rem 1.25rem;
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    border-left: 2px solid transparent;
+    transition:
+        color 0.15s,
+        background-color 0.15s;
+}
+
+.navItem:hover {
+    color: var(--accent);
+    background-color: rgba(27, 107, 107, 0.06);
+}
+
+.navItem[aria-current="page"] {
+    color: var(--accent);
+    border-left-color: var(--accent);
+    font-weight: 500;
+    background-color: rgba(27, 107, 107, 0.06);
+}

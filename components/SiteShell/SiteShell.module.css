@@ -1,0 +1,205 @@
+/* Styles for the top-level site layout shell. */
+
+.siteLayout {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+}
+
+.siteSidebar {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebarBrand {
+    padding: 1.25rem 1.25rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebarBrandLink {
+    display: block;
+    text-decoration: none;
+}
+
+.siteLogo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navToggleBtn {
+    display: none;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 110;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.15s;
+}
+
+.navToggleBtn:hover {
+    background: var(--accent-hover);
+}
+
+.navBackdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.siteMain {
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contentBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contentBody h1,
+.contentBody h2,
+.contentBody h3,
+.contentBody h4 {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--fg);
+}
+
+.contentBody h1 {
+    font-size: 2.25rem;
+    margin: 0 0 1.5rem;
+}
+
+.contentBody h2 {
+    font-size: 1.625rem;
+    margin: 2.5rem 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.contentBody h3 {
+    font-size: 1.125rem;
+    margin: 1.75rem 0 0.5rem;
+}
+
+.contentBody p {
+    margin: 0 0 1.25rem;
+}
+
+.contentBody ul,
+.contentBody ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.contentBody ul {
+    list-style-type: square;
+}
+
+.contentBody ol {
+    list-style-type: decimal;
+}
+
+.contentBody li {
+    margin-bottom: 0.4rem;
+}
+
+.contentBody video,
+.contentBody img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.contentBody figure {
+    margin: 0 0 1.25rem;
+}
+
+.contentBody figure img {
+    margin-bottom: 0.5rem;
+}
+
+.contentBody figcaption {
+    font-size: 0.8125rem;
+    color: var(--muted);
+}
+
+.contentBody a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+}
+
+.contentBody a:hover {
+    color: var(--accent-hover);
+}
+
+.contentBody blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--muted);
+    background-color: rgba(27, 107, 107, 0.05);
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+}
+
+.contentBody blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .navToggleBtn {
+        display: flex;
+    }
+
+    .siteLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .siteSidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--sidebar-width);
+        bottom: 0;
+        z-index: 90;
+        overflow-y: auto;
+        border-right: 1px solid var(--border);
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    .siteMain {
+        padding: 1.5rem 1.25rem;
+        min-height: 100vh;
+    }
+}
