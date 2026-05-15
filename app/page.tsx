@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import JsonLd from "@/components/JsonLd";
+import JsonLd from "@/components/JsonLd/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
 import { cmaltCertificate, cmaltBadge } from "@/lib/constants";
-import KSiteIcon from "@/components/icons/KSiteIcon";
+import KSiteIcon from "@/components/icons/KSiteIcon/KSiteIcon";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
     title: "CMALT Portfolio — Karl Horning",
@@ -56,9 +57,9 @@ export default function Home() {
     return (
         <>
             <JsonLd data={homeJsonLd} />
-            <div className="home-hero">
+            <div className={styles.homeHero}>
                 <h1>Karl Horning</h1>
-                <p className="home-subtitle">Full-Stack Developer</p>
+                <p className={styles.homeSubtitle}>Full-Stack Developer</p>
                 <p>
                     Full-stack developer with commercial experience building
                     production systems across Node.js, GraphQL, Python, and AWS.
@@ -78,12 +79,12 @@ export default function Home() {
                         height={120}
                     />
                 </a>
-                <nav className="home-links" aria-label="External profiles">
+                <nav className={styles.homeLinks} aria-label="External profiles">
                     <a
                         href="https://github.com/Karl-Horning"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="home-link"
+                        className={styles.homeLink}
                     >
                         <FaGithub aria-hidden="true" />
                         GitHub
@@ -92,7 +93,7 @@ export default function Home() {
                         href="https://www.linkedin.com/in/karl-horning"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="home-link"
+                        className={styles.homeLink}
                     >
                         <FaLinkedin aria-hidden="true" />
                         LinkedIn
@@ -101,7 +102,7 @@ export default function Home() {
                         href="https://www.karlhorning.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="home-link"
+                        className={styles.homeLink}
                     >
                         <KSiteIcon aria-hidden="true" />
                         karlhorning.dev
@@ -117,7 +118,7 @@ export default function Home() {
                     communication, and a specialist section on JavaScript
                     development.
                 </p>
-                <Link href="/contextual-statement" className="home-cta">
+                <Link href="/contextual-statement" className={styles.homeCta}>
                     Begin with the Contextual Statement →
                 </Link>
             </section>

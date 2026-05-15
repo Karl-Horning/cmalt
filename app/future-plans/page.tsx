@@ -1,7 +1,7 @@
-import JsonLd from "@/components/JsonLd";
+import JsonLd from "@/components/JsonLd/JsonLd";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
-import PageHeader from "@/components/PageHeader";
+import PageHeader from "@/components/PageHeader/PageHeader";
 
 export const metadata = generatePageMetadata(meta);
 import Link from "next/link";

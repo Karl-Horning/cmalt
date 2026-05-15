@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SearchPage from "@/components/SearchPage";
+import SearchPage from "@/components/SearchPage/SearchPage";
 
 export const metadata: Metadata = {
     title: "Search",
