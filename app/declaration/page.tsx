@@ -71,6 +71,7 @@ export default function page() {
                     href={cmaltCertificate}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ display: "block", marginBottom: "1.25rem" }}
                 >
                     <Image
                         src={cmaltBadge}

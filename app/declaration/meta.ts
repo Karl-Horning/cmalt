@@ -12,7 +12,7 @@ export const meta = {
         "ALT",
         "Association for Learning Technology",
     ],
-    date: "2025-11-11",
+    date: "2026-05-15",
     readingTime: 1,
     slug: "declaration",
     draft: false,
