@@ -1,7 +1,13 @@
+import Image from "next/image";
 import JsonLd from "../components/JsonLd";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 import PageHeader from "../components/PageHeader";
+import {
+    cmaltAssessmentTranscript,
+    cmaltBadge,
+    cmaltCertificate,
+} from "@/lib/constants";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -51,6 +57,49 @@ export default function page() {
                     I am nominating Kiran K Gawali as an assessor for this
                     submission.
                 </p>
+            </section>
+
+            <section id="outcome">
+                <h2>Outcome</h2>
+
+                <p>
+                    This portfolio was assessed and CMALT was awarded in May
+                    2026.
+                </p>
+
+                <a
+                    href={cmaltCertificate}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Image
+                        src={cmaltBadge}
+                        alt="CMALT — Certified Member of the Association for Learning Technology badge"
+                        width={120}
+                        height={120}
+                    />
+                </a>
+
+                <ul>
+                    <li>
+                        <a
+                            href={cmaltCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            CMALT Certificate (May 2026)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href={cmaltAssessmentTranscript}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            CMALT Assessment Transcript (May 2026)
+                        </a>
+                    </li>
+                </ul>
             </section>
         </>
     );
