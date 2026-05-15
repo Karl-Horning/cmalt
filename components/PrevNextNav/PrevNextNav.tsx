@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Previous / next page navigation derived from the site's nav
+ * structure, rendered at the bottom of each content page.
+ */
+
 "use client";
 
 import Link from "next/link";

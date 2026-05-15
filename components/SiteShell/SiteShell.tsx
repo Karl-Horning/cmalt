@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Top-level layout shell wrapping every page with the sidebar
+ * navigation, mobile nav toggle, back-to-top button, and site footer.
+ */
+
 "use client";
 
 import Link from "next/link";
@@ -10,6 +15,7 @@ import Nav from "@/components/Nav/Nav";
 import PrevNextNav from "@/components/PrevNextNav/PrevNextNav";
 import styles from "./SiteShell.module.css";
 
+/** Root layout shell; wraps page content with sidebar, footer, and utilities. */
 export default function SiteShell({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     const router = useRouter();

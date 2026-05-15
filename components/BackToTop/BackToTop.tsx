@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Floating scroll-to-top button that appears after scrolling past
+ * a threshold and hides when the site footer enters the viewport.
+ */
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -6,6 +11,7 @@ import styles from "./BackToTop.module.css";
 
 const SCROLL_THRESHOLD = 400;
 
+/** Floating button that scrolls the page back to `#main-content`. */
 export default function BackToTop() {
     const [visible, setVisible] = useState(false);
 

@@ -1,11 +1,21 @@
+/**
+ * @fileoverview Page-level header displaying the title, publication date, and
+ * estimated reading time.
+ */
+
 import styles from "./PageHeader.module.css";
 
+/** Props for the {@link PageHeader} component. */
 interface PageHeaderProps {
+    /** Page title rendered as an `<h1>`. */
     title: string;
+    /** ISO 8601 date string (YYYY-MM-DD) used for the `<time>` element. */
     date: string;
+    /** Estimated reading time in minutes. */
     readingTime: number;
 }
 
+/** Header block shown at the top of each content page. */
 export default function PageHeader({
     title,
     date,

@@ -1,3 +1,5 @@
+/* Styles for the root layout, including the skip-to-content link. */
+
 .skipLink {
     position: absolute;
     top: -100%;

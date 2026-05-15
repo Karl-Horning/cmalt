@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Site footer containing a sitemap nav, copyright notice, and
+ * social media links.
+ */
+
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import KSiteIcon from "@/components/icons/KSiteIcon/KSiteIcon";

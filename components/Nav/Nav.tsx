@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Sidebar navigation rendered from the shared `navStructure`
+ * config, with `aria-current="page"` applied to the active link.
+ */
+
 "use client";
 
 import Link from "next/link";
@@ -5,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { navStructure } from "@/lib/nav";
 import styles from "./Nav.module.css";
 
+/** Primary sidebar navigation for the portfolio site. */
 export default function Nav() {
     const pathname = usePathname();
 

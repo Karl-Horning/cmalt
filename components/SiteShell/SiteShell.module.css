@@ -1,3 +1,5 @@
+/* Styles for the top-level site layout shell. */
+
 .siteLayout {
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;

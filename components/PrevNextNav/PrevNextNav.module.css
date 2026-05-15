@@ -1,3 +1,5 @@
+/* Styles for the previous/next page navigation. */
+
 .prevNextNav {
     display: grid;
     grid-template-columns: 1fr 1fr;
