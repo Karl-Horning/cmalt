@@ -1,9 +1,14 @@
 /* Styles for the home page. */
 
 .homeHero {
-    padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border);
+    padding: 2.25rem 2rem 2rem;
+    margin: 0 -2rem 2.5rem;
+    border-radius: 20px;
+    background: radial-gradient(
+        ellipse 100% 90% at 50% -10%,
+        var(--accent-tint),
+        transparent 70%
+    );
 }
 
 .homeSubtitle {
