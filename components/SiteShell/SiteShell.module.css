@@ -109,6 +109,29 @@
     margin: 0 0 1.25rem;
 }
 
+.contentBody code {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    color: var(--code-fg);
+    background: var(--code-bg);
+    padding: 0.15em 0.4em;
+    border-radius: 5px;
+}
+
+.contentBody section[id="evidence"],
+.contentBody section[id="further-reading"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.25rem 1.5rem 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.contentBody section[id="evidence"] h2,
+.contentBody section[id="further-reading"] h2 {
+    margin-top: 1.5rem;
+}
+
 .contentBody ul,
 .contentBody ol {
     margin: 0 0 1.25rem;
@@ -125,6 +148,10 @@
 
 .contentBody li {
     margin-bottom: 0.4rem;
+}
+
+.contentBody li::marker {
+    color: var(--accent);
 }
 
 .contentBody video,
@@ -148,14 +175,18 @@
 }
 
 .contentBody a {
-    color: var(--accent);
+    color: inherit;
     text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
     overflow-wrap: anywhere;
+    transition: text-decoration-color 0.15s, text-decoration-thickness 0.15s;
 }
 
 .contentBody a:hover {
-    color: var(--accent-hover);
+    text-decoration-color: var(--accent-hover);
+    text-decoration-thickness: 2px;
 }
 
 .contentBody blockquote {
@@ -163,7 +194,7 @@
     padding: 0.75rem 1.25rem;
     margin: 1.5rem 0;
     color: var(--muted);
-    background-color: rgba(27, 107, 107, 0.05);
+    background-color: var(--accent-tint);
     border-radius: 0 4px 4px 0;
     font-style: italic;
 }
