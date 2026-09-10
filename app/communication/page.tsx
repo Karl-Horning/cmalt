@@ -28,44 +28,54 @@ export default function page() {
                 <h2>Description</h2>
 
                 <p>
-                    Effective communication underpins my work as an ICT Learning
-                    Technologist at Imperial College London. I prioritise{" "}
-                    clarity, empathy, and inclusivity, translating between
-                    academic, administrative, and technical groups so that
-                    shared goals are understood and achievable. In hybrid and
-                    remote settings, I use shared documentation, structured
-                    updates, and active listening to keep projects moving and to
-                    make contributions visible.
+                    Effective communication underpinned my work as an ICT
+                    Learning Technologist at Imperial College London. I
+                    prioritised clarity, empathy, and inclusivity, translating
+                    between academic, administrative, and technical groups so
+                    that shared goals were understood and achievable. In
+                    hybrid and remote settings, I used shared documentation,
+                    structured updates, and active listening to keep projects
+                    moving and make contributions visible.
                 </p>
 
                 <p>
-                    My communication strategies vary according to audience and
-                    purpose — from producing accessible written guides and
-                    visual technical documentation, to delivering departmental
+                    My communication strategies varied according to audience
+                    and purpose, from producing accessible written guides and
+                    visual technical documentation to delivering departmental
                     presentations and preparing structured meeting summaries.
-                    This adaptability is essential when collaborating across
+                    This adaptability was essential when collaborating across
                     cross-functional groups such as the Digital Education
-                    Platform Project&apos;s (DEPP) technical and academic teams,
-                    and collaboration more broadly is central to my role. I work
-                    with colleagues across faculties and support teams to
-                    co-design learning experiences and advise on the use of
-                    Canvas LMS and related technologies.
+                    Platform Project&apos;s (DEPP) technical and academic
+                    teams, where collaboration more broadly was central to my
+                    role. I worked with colleagues across faculties and
+                    support teams to co-design learning experiences and advise
+                    on the use of Canvas LMS and related technologies.
                 </p>
 
                 <p>
-                    For instance, I have been working closely with learning
-                    technologists from the Business School, Interdisciplinary
-                    EdTech Lab, Faculty of Natural Sciences, Faculty of
-                    Medicine, and Faculty of Engineering, alongside ICT
-                    developers and platform specialists, ensuring that academic
-                    perspectives informed technical decision-making and vice
-                    versa. A significant part of my current work is within the
-                    DEPP, supporting Imperial&apos;s transition from Blackboard
-                    to Canvas. Within the Platform Integration and Migration and
-                    Testing and Evaluation groups, I help surface technical
-                    dependencies, coordinate feedback loops, and ensure
-                    actionable outcomes are captured in Asana so they can be
-                    implemented by the right teams.
+                    For instance, I worked closely with learning technologists
+                    from:
+                </p>
+
+                <ul>
+                    <li>The Business School</li>
+                    <li>The Interdisciplinary EdTech Lab</li>
+                    <li>The Faculty of Natural Sciences</li>
+                    <li>The Faculty of Medicine</li>
+                    <li>The Faculty of Engineering</li>
+                </ul>
+
+                <p>
+                    Alongside ICT developers and platform specialists, this
+                    ensured that academic perspectives informed technical
+                    decision-making and vice versa. A significant part of my
+                    work was within the DEPP, supporting Imperial&apos;s
+                    transition from Blackboard to Canvas. Within the Platform
+                    Integration and Migration, and Testing and Evaluation
+                    groups, I helped surface technical dependencies,
+                    coordinate feedback loops, and get actionable outcomes
+                    captured in Asana so they could be implemented by the
+                    right teams.
                 </p>
 
                 <p>
@@ -111,8 +121,8 @@ export default function page() {
                     helped me appreciate how manual testing complements
                     automation by capturing the user experience and uncovering
                     usability or accessibility issues that scripted tests can
-                    miss. It also improved how I communicate
-                    findings—translating technical observations into practical
+                    miss. It also improved how I communicate findings,
+                    translating technical observations into practical
                     recommendations for non-technical stakeholders.
                 </p>
 
@@ -188,18 +198,19 @@ export default function page() {
                     communication practice. I have learned that plain-English
                     explanations, clear documentation of decisions, and explicit
                     next steps are essential for maintaining momentum and trust.
-                    In the DEPP, this has meant translating complex platform
+                    In the DEPP, this meant translating complex platform
                     evaluations and test findings into concise updates that
-                    productively guide technical and academic teams.
+                    guided technical and academic teams.
                 </p>
 
                 <p>
                     Through my involvement in the DEPP meetings, I have learned
                     the value of structured preparation and documentation from
-                    colleagues who model effective facilitation practices.
-                    Project owners consistently share agendas in advance and
-                    follow them closely during meetings, which helps maintain
-                    focus and ensure that all voices are heard. On two
+                    colleagues who modelled effective facilitation practices.
+                    Project owners consistently shared agendas in advance and
+                    followed them closely during meetings, which helped
+                    maintain focus and ensured that all voices were heard. On
+                    two
                     occasions,{" "}
                     <a
                         href={lmsProjectGroupNotesScreenshot}
@@ -221,7 +232,7 @@ export default function page() {
                     >
                         GOV.UK&apos;s Inclusive Communication
                     </a>{" "}
-                    resource, supports clarity and inclusivity by making
+                    resource, supported clarity and inclusivity by making
                     information concise, scannable, and easy to follow for all
                     participants.
                 </p>
@@ -247,13 +258,13 @@ export default function page() {
                 </p>
 
                 <p>
-                    Adapting communication formats — from technical
-                    documentation to plain-language guides and visual summaries
-                    — helps ensure accessibility for colleagues with differing
-                    technical confidence or learning preferences. This
-                    flexibility is key to inclusive and effective collaboration
-                    across Imperial&apos;s diverse academic and professional
-                    communities.
+                    Adapting communication formats, from technical
+                    documentation to plain-language guides and visual
+                    summaries, helped ensure accessibility for colleagues with
+                    differing technical confidence or learning preferences.
+                    This flexibility was key to inclusive and effective
+                    collaboration across Imperial&apos;s diverse academic and
+                    professional communities.
                 </p>
 
                 <p>
@@ -275,7 +286,7 @@ export default function page() {
                     diplomatic communication. By clarifying ambiguity,
                     synthesising perspectives, and moderating between
                     pedagogical and technical needs, I have built trust and
-                    fostered a supportive environment within hybrid teams.
+                    created a supportive environment within hybrid teams.
                 </p>
 
                 <p>

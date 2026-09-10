@@ -32,12 +32,10 @@ export default function page() {
                 <p>
                     My specialist area is full-stack JavaScript development,
                     with a focus on building and optimising GraphQL APIs and
-                    working with relational databases like PostgreSQL — skills
-                    that go beyond basic web development. What makes this work
-                    distinct isn&apos;t just the technical complexity, but how
-                    I&apos;ve applied it within an educational context to
-                    improve learner access, system performance, and platform
-                    reliability.
+                    working with relational databases like PostgreSQL. What
+                    makes this work distinct is how I&apos;ve applied it
+                    within an educational context to improve learner access,
+                    system performance, and platform reliability.
                 </p>
 
                 <p>
@@ -101,9 +99,9 @@ export default function page() {
                     This work combined programming, systems thinking, and user
                     empathy to make sure that performance improvements aligned
                     with the real needs of our learners and staff. For example,
-                    optimising backend calls wasn&apos;t just about efficiency:
-                    it helped improve access in low-bandwidth regions and
-                    reduced operational costs. Aligning technical systems with
+                    optimising backend calls improved access in low-bandwidth
+                    regions and reduced operational costs, alongside
+                    efficiency gains. Aligning technical systems with
                     educational outcomes is what drives my approach to
                     development.
                 </p>
@@ -114,16 +112,16 @@ export default function page() {
                     processes that directly impacted how quickly and safely new
                     features could be deployed, which is especially critical in
                     always-on learning environments. I&apos;m comfortable
-                    working across the stack, utilising React and Next.js on the
+                    working across the stack, using React and Next.js on the
                     front end, Node.js and PostgreSQL on the back end, and
                     collaborating with Agile teams using tools such as Jira,
                     Confluence, and Git.
                 </p>
 
                 <p>
-                    More recently, I have applied this specialist knowledge
-                    within my role as a Learning Technologist at Imperial
-                    College London, particularly through the{" "}
+                    I later applied this specialist knowledge within my role
+                    as a Learning Technologist at Imperial College London,
+                    particularly through the{" "}
                     <a
                         href={deppProjectLink}
                         target="_blank"
@@ -263,35 +261,34 @@ export default function page() {
                     >
                         karlhorning.dev
                     </a>
-                    , which showcases my work.
+                    , which shows my work.
                 </p>
 
                 <p>
-                    Ultimately, my specialist skill set lies at the intersection
-                    of education and engineering. I develop systems that are
-                    technically sound, but always with the learner in mind. That
-                    might mean better accessibility, faster load times, clearer
-                    documentation for future contributors, or more stable APIs
-                    to support global delivery. My background allows me to
-                    navigate both pedagogical and technical challenges, and
-                    that&apos;s where I can add the most value.
+                    My specialist skill set combines education and
+                    engineering. I develop systems that are technically
+                    sound, but always with the learner in mind. That might
+                    mean better accessibility, faster load times, clearer
+                    documentation for future contributors, or more stable
+                    APIs to support global delivery. My background lets me
+                    work through both pedagogical and technical challenges.
                 </p>
             </section>
 
             <section id="reflection">
                 <h2>Reflection</h2>
                 <p>
-                    Transitioning from educator to developer has shaped not just
-                    what I build, but how and why I build it. My background in
+                    Transitioning from educator to developer has shaped what I
+                    build, and how and why I build it. My background in
                     education taught me to think about systems in terms of
                     clarity, access, and inclusion — principles I now apply in
-                    my development work. For instance, implementing performance
-                    optimisations like reducing GraphQL query duplication with{" "}
-                    <code>dataloader</code> wasn&apos;t only about technical
-                    efficiency. It also improved access for users in
-                    low-bandwidth regions and improved the trainer experience —
-                    an often-overlooked group who benefit just as much from
-                    responsive tools and reliable interfaces.
+                    my development work. For instance, implementing
+                    performance optimisations like reducing GraphQL query
+                    duplication with <code>dataloader</code> improved
+                    technical efficiency, access for users in low-bandwidth
+                    regions, and the trainer experience: an often-overlooked
+                    group who benefit just as much from responsive tools and
+                    reliable interfaces.
                 </p>
 
                 <p>
@@ -305,9 +302,8 @@ export default function page() {
                     my approach to documentation: I now write detailed READMEs,
                     use JSDoc consistently, and document GraphQL schemas so
                     they&apos;re easily understood and usable in tools like
-                    GraphQL Sandbox. I&apos;ve come to see documentation not
-                    just as a technical requirement, but as a way to support
-                    more inclusive learning and development.
+                    GraphQL Sandbox. I&apos;ve come to see documentation as a
+                    way to support more inclusive learning and development.
                 </p>
 
                 <p>
@@ -370,10 +366,9 @@ export default function page() {
                 </p>
 
                 <p>
-                    For me, development is not just a technical pursuit, but a
-                    continuation of my commitment to lifelong learning and
-                    learner empowerment — values I carry with me throughout my
-                    time in education.
+                    For me, development continues my commitment to lifelong
+                    learning and learner independence, values I carried with
+                    me from my time in education.
                 </p>
             </section>
 
@@ -476,7 +471,7 @@ export default function page() {
                             Karl Horning&apos;s GitHub: github.com/Karl-Horning
                             (Repository)
                         </a>{" "}
-                            Ongoing code artefacts and utilities; showcases
+                            Ongoing code artefacts and utilities; shows
                             breadth across the stack and commitment to
                             transparent, reusable engineering practice.
                     </li>
@@ -507,7 +502,7 @@ export default function page() {
                             Karl Horning&apos;s personal portfolio:
                             karlhorning.dev
                         </a>{" "}
-                            Curated showcase of projects and documentation;
+                            Curated collection of projects and documentation;
                             supports reflective practice and communicates impact
                             to non-technical audiences.
                     </li>

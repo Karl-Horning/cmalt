@@ -38,7 +38,7 @@ Open [http://localhost:3001](http://localhost:3001).
 | Script | Description |
 | --- | --- |
 | `dev` | Start the development server on port 3001 |
-| `build` | Production build (static export) |
+| `build` | Production build (`.next` locally; CI injects `output: "export"` via `configure-pages`, producing `out/`) |
 | `start` | Start the Next.js server (run `build` first) |
 | `lint` | Run ESLint |
 | `test` | Run Playwright tests |

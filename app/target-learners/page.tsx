@@ -123,8 +123,8 @@ export default function page() {
                 </ul>
 
                 <p>
-                    This level of detail helped learners build not only
-                    vocabulary but awareness of nuance and usage.
+                    This level of detail helped learners build vocabulary and
+                    an awareness of nuance and usage.
                 </p>
             </section>
 
@@ -153,11 +153,11 @@ export default function page() {
                     scaffolded roleplays. This success highlighted the value of
                     scenario-based tasks, but I also recognised that supporting
                     these tasks required more focused language input. The same
-                    principle shapes my staff training at Imperial: I prioritise
-                    practice in real scenarios — such as using Canvas analytics
-                    to evaluate engagement — so that colleagues leave sessions
-                    with applied confidence rather than only theoretical
-                    knowledge.
+                    principle shaped my staff training at Imperial: I
+                    prioritised practice in real scenarios, such as using
+                    Canvas analytics to evaluate engagement, so that colleagues
+                    left sessions with applied confidence rather than only
+                    theoretical knowledge.
                 </p>
 
                 <p>
@@ -168,11 +168,11 @@ export default function page() {
                     approach to provide shorter, situation-specific vocabulary
                     lists followed by immediate application in roleplay or
                     dialogue. This improved learner recall and confidence.
-                    Similarly, when designing training at Imperial, I break down
-                    complex technical features into smaller, task-specific
-                    activities. This mirrors the way shorter vocabulary sets
-                    once helped language learners, ensuring that staff can
-                    absorb key concepts without cognitive overload.
+                    Similarly, when designing training at Imperial, I broke
+                    down complex technical features into smaller,
+                    task-specific activities. This mirrored the way shorter
+                    vocabulary sets once helped language learners, so staff
+                    could absorb key concepts without cognitive overload.
                 </p>
 
                 <p>
@@ -207,7 +207,7 @@ export default function page() {
                     importance of thorough needs analysis for adult learners.
                     Ohidujjaman outlines that this process enhances engagement,
                     improves goal-setting, focuses lesson time on meaningful
-                    outcomes, and fosters learner-centred environments. This
+                    outcomes, and builds learner-centred environments. This
                     mirrors my own experience:{" "}
                     <strong>
                         learner motivation and progress significantly increased
@@ -219,15 +219,14 @@ export default function page() {
 
                 <p>
                     Building directly on these earlier insights, these same
-                    learner-centred approaches now inform my current practice at
+                    learner-centred approaches informed my practice at
                     Imperial. For example, in preparing Canvas training for
-                    staff, I have emphasised scenario-based activities — like
-                    using analytics — rather than abstract feature lists,
-                    mirroring the workplace-focused roleplays I once used with
-                    English learners. This ensures staff are confident applying
-                    the tools in their own contexts, rather than passively
-                    hearing about functionality without opportunities to
-                    practise.
+                    staff, I emphasised scenario-based activities, like using
+                    analytics, rather than abstract feature lists, mirroring
+                    the workplace-focused roleplays I once used with English
+                    learners. This helped staff feel confident applying the
+                    tools in their own contexts, rather than passively hearing
+                    about functionality without opportunities to practise.
                 </p>
             </section>
 

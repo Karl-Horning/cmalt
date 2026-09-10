@@ -27,21 +27,27 @@ export default function page() {
 
                 <p>
                     In my role as a Learning Technologist at Imperial College
-                    London, I have been part of a cross-functional team
-                    evaluating multiple LMS platforms (Blackboard Ultra,
-                    Brightspace, Canvas) to support a major institutional
-                    review.{" "}
+                    London, I was part of a cross-functional team evaluating
+                    multiple LMS platforms (Blackboard Ultra, Brightspace,
+                    Canvas) for a major institutional review.{" "}
                     <a
                         href={deppIctPresentation}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         This required direct comparison of the platforms
-                    </a>
-                    , evaluating their APIs, integration models, accessibility
-                    compliance (such as WCAG 2.1), and alignment with the
-                    pedagogical and administrative needs of various faculties.
+                    </a>{" "}
+                    across:
                 </p>
+
+                <ul>
+                    <li>Their APIs and integration models</li>
+                    <li>Accessibility compliance, such as WCAG 2.1</li>
+                    <li>
+                        Alignment with the pedagogical and administrative
+                        needs of different faculties
+                    </li>
+                </ul>
 
                 <figure>
                     <Image
@@ -198,7 +204,8 @@ export default function page() {
                     and acceptance criteria to manage stakeholder needs. This
                     has also shaped how I communicate with staff: I now place
                     greater emphasis on showing how technical decisions (such as
-                    native vs external colour accessibility) directly affect
+                    native versus external colour accessibility) directly
+                    affect
                     teaching and learning, ensuring that staff understand both
                     the benefits and the limitations of a platform.
                 </p>
