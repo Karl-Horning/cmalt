@@ -22,7 +22,7 @@
     width: 100%;
     padding: 0.85rem 1.1rem 0.85rem 2.75rem;
     font-size: 1.125rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 600;
     color: var(--fg);
     background: var(--surface);
@@ -65,7 +65,7 @@
 }
 
 .searchResultTitle {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -73,7 +73,7 @@
 .searchResultDescription {
     font-size: 0.875rem;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
 }
 
 .searchResultLink:hover .searchResultDescription {
@@ -83,6 +83,6 @@
 .searchNoResults {
     padding: 1rem 0;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-size: 0.9375rem;
 }

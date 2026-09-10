@@ -82,7 +82,7 @@
 .contentBody h2,
 .contentBody h3,
 .contentBody h4 {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     color: var(--fg);

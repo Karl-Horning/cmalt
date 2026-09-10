@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-// To change fonts: swap the imports below and update the two variable names in
-// the html className and the --font-* custom properties in globals.css.
-import { Fraunces, Outfit } from "next/font/google";
+// To change fonts: swap the import below and update the variable name in the
+// html className and the --font-* custom property in globals.css.
+import { Lexend } from "next/font/google";
 import "./globals.css";
 import {
     AUTHOR_NAME,
@@ -14,15 +14,10 @@ import {
 import SiteShell from "@/components/SiteShell/SiteShell";
 import layoutStyles from "./layout.module.css";
 
-const fraunces = Fraunces({
-    variable: "--font-fraunces",
+const lexend = Lexend({
+    variable: "--font-lexend",
     subsets: ["latin"],
-    display: "swap",
-});
-
-const outfit = Outfit({
-    variable: "--font-outfit",
-    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
     display: "swap",
 });
 
@@ -94,7 +89,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${fraunces.variable} ${outfit.variable}`}>
+        <html lang="en" className={lexend.variable}>
             <body>
                 <a href="#main-content" className={layoutStyles.skipLink}>
                     Skip to main content

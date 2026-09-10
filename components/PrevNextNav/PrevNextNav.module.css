@@ -33,7 +33,7 @@
 
 .prevNextDirection {
     font-size: 0.75rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     color: var(--muted);
     letter-spacing: 0.03em;
 }
@@ -44,6 +44,6 @@
 
 .prevNextLabel {
     font-size: 0.9375rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 500;
 }
