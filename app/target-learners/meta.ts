@@ -17,6 +17,7 @@ export const meta = {
         "CELTA",
     ],
     date: "2025-11-11",
+    lastUpdated: "2026-09-10",
     readingTime: 11,
     slug: "target-learners",
     draft: false,

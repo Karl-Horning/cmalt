@@ -29,7 +29,7 @@ export default function page() {
 
                 <p>
                     In my career as both a developer and a learning
-                    technologist, I have worked with a wide range of learning
+                    technologist, I have worked with several learning
                     technologies, including VLE platforms, accessibility tools,
                     and assessment environments. I have contributed to the
                     evaluation and optimisation of Learning Management Systems
@@ -146,7 +146,8 @@ export default function page() {
                     students to access their online lessons. The platform was
                     built for blended delivery, combining self-paced digital
                     content with synchronous teaching, so mobile performance,
-                    accessibility, and seamless user experience were critical.
+                    accessibility, and a consistent user experience were
+                    critical.
                 </p>
 
                 <p>
@@ -188,16 +189,19 @@ export default function page() {
                     These enabled broader staff participation in the evaluation
                     process and informed my training delivery. For example, the
                     ICT Senior Analyst test script exemplifies how I worked
-                    closely with academic and technical colleagues to understand
-                    their specific needs. By collecting user stories from IAM
-                    administrators and ICT Senior Analysts, I identified key API
-                    functionalities for their workflows, such as documentation
-                    accessibility, data request formats, and response
-                    limitations. This collaborative approach ensured that the
-                    testing scripts were directly relevant to real-world tasks.
-                    This dual approach allowed me to explain platform
-                    capabilities and constraints from both user and developer
-                    perspectives.
+                    closely with academic and technical colleagues to
+                    understand their specific needs.
+                </p>
+
+                <p>
+                    By collecting user stories from IAM administrators and ICT
+                    Senior Analysts, I identified key API functionalities for
+                    their workflows, such as documentation accessibility, data
+                    request formats, and response limitations. This
+                    collaborative approach ensured that the testing scripts
+                    were directly relevant to real-world tasks, and let me
+                    explain platform capabilities and constraints from both
+                    user and developer perspectives.
                 </p>
 
                 <p>
@@ -217,8 +221,8 @@ export default function page() {
 
                 <ul>
                     <li>
-                        Used a wide range of learning technologies, including
-                        VLE platforms (Blackboard Ultra, Brightspace, Canvas,
+                        Used several learning technologies, including VLE
+                        platforms (Blackboard Ultra, Brightspace, Canvas,
                         Moodle), assessment tools, and accessibility software
                     </li>
                     <li>

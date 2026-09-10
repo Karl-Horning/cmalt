@@ -34,8 +34,8 @@ export default function page() {
                 </p>
 
                 <p>
-                    I&apos;m increasingly drawn to the intersection of pedagogy
-                    and code, especially in projects involving LMS platforms,
+                    I&apos;m increasingly drawn to work that combines pedagogy
+                    and code, especially projects involving LMS platforms,
                     open educational resources, and interactive front ends built
                     with technologies like React, GraphQL, and PostgreSQL. I
                     hope to contribute to open-source tools or standards in this
@@ -55,13 +55,17 @@ export default function page() {
                     </Link>
                     , using it as a space to share practical examples,
                     reflective insights, and reusable solutions for the wider
-                    learning technology community. As my technical work evolves,
-                    I will keep refining my use of TypeScript — a language I
-                    increasingly value for its ability to catch errors early and
-                    promote clarity through strong typing. I also intend to
-                    expand my use of automated accessibility testing frameworks
-                    such as <code>@axe-core/playwright</code>, which I currently
-                    use on{" "}
+                    learning technology community.
+                </p>
+
+                <p>
+                    As my technical work evolves, I will keep refining my use
+                    of TypeScript, a language I increasingly value for its
+                    ability to catch errors early and promote clarity through
+                    strong typing. I also intend to expand my use of automated
+                    accessibility testing frameworks such as{" "}
+                    <code>@axe-core/playwright</code>, which I currently use
+                    on{" "}
                     <Link
                         href="https://karlhorning.dev"
                         target="_blank"
@@ -70,28 +74,39 @@ export default function page() {
                         karlhorning.dev
                     </Link>{" "}
                     to identify and resolve accessibility issues during
-                    development. This experience has shown how valuable
-                    automated testing can be in catching issues early and
-                    embedding accessibility as a core part of the development
-                    process rather than an afterthought, and I plan to continue
-                    applying it in future projects alongside manual testing.
+                    development.
+                </p>
+
+                <p>
+                    This experience has shown how valuable automated testing
+                    can be in catching issues early and embedding
+                    accessibility as a core part of the development process,
+                    rather than an afterthought. I plan to continue applying
+                    it in future projects alongside manual testing.
                 </p>
 
                 <p>
                     In future projects, I aim to deepen my data-informed
                     approach to accessibility evaluation, combining automated
-                    testing with analytics on issue trends and resolution rates
-                    to establish evidence-based accessibility benchmarks. I also
-                    plan to deepen my commitment to consistent documentation
-                    standards — covering READMEs, CSS, comments, and Git
-                    commits — by aligning more closely with established guides
-                    such as those published by Google. Building on this, I
-                    intend to create accessible, maintainable coding examples
-                    and guidance that support inclusive engineering practices.
-                    This will allow me to unite my background as an educator
-                    with my technical expertise, helping others apply clarity,
-                    accessibility, and sustainability principles in their own
-                    development work.
+                    testing with analytics on issue trends and resolution
+                    rates to establish evidence-based accessibility
+                    benchmarks.
+                </p>
+
+                <p>
+                    I also plan to deepen my commitment to consistent
+                    documentation standards, covering READMEs, CSS, comments,
+                    and Git commits, by aligning more closely with established
+                    guides such as those published by Google.
+                </p>
+
+                <p>
+                    Building on this, I intend to create accessible,
+                    maintainable coding examples and guidance that support
+                    inclusive engineering practices. This will let me unite my
+                    background as an educator with my technical expertise,
+                    helping others apply clarity, accessibility, and
+                    sustainability principles in their own development work.
                 </p>
 
                 <p>
@@ -106,8 +121,9 @@ export default function page() {
                     Continuing professional development will remain a priority.
                     I plan to undertake further formal training in digital
                     accessibility and ethics in AI, and to stay actively engaged
-                    with ALT and other professional networks that foster the
-                    sharing of inclusive, evidence-based practice. I am also
+                    with ALT and other professional networks that encourage
+                    the sharing of inclusive, evidence-based practice. I am
+                    also
                     considering CMALT Lead or Senior CMALT in the future,
                     particularly if I move into a role with strategic oversight
                     of learning technologies or staff development.

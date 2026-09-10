@@ -192,8 +192,8 @@ export default function page() {
                 </figure>
 
                 <p>
-                    These same accessibility principles now informing my
-                    practice at Imperial. In my{" "}
+                    These same accessibility principles informed my practice
+                    at Imperial. In my{" "}
                     <a
                         href={deppIctPresentation}
                         target="_blank"
@@ -298,15 +298,14 @@ export default function page() {
 
                 <p>
                     As my earlier practice demonstrated the value of design
-                    clarity and needs analysis, I now extend these principles
-                    into Imperial&apos;s context by exploring how AI-powered
-                    tools, like automated feedback generators and
+                    clarity and needs analysis, I&apos;m extending these
+                    principles into my current practice by exploring how
+                    AI-powered tools, like automated feedback generators and
                     grammar-checking assistants, can support more personalised
                     learning pathways. These tools help reduce the time staff
-                    spend on routine administrative tasks, allowing more
-                    attention to be directed towards targeted, high-value
-                    support. At the same time, I encourage colleagues to see
-                    these tools not simply as shortcuts, but as opportunities to
+                    spend on routine administrative tasks, freeing up attention
+                    for targeted, high-value support. At the same time, I
+                    encourage colleagues to treat these tools as a chance to
                     develop learner agency and critical thinking.
                 </p>
 
@@ -319,13 +318,13 @@ export default function page() {
                     ChatGPT — to ask <em>why</em> a correction has been made,
                     not just <em>what</em> has changed. This reflective process
                     turns passive use into <strong>active learning</strong>,
-                    aligning with my broader goal of fostering transferable
+                    aligning with my broader goal of building transferable
                     skills and learner independence.
                 </p>
 
                 <p>
-                    Finally, because Imperial is a highly international
-                    university, I am especially mindful of advising staff on
+                    Finally, because higher education is often highly
+                    international, I am especially mindful of advising staff on
                     inclusive design that supports colleagues and learners
                     working in a second language. Building on my experience of
                     scaffolding complex tasks and introducing glossaries in
@@ -373,10 +372,10 @@ export default function page() {
                         , especially when learners interact with AI tools.
                     </li>
                     <li>
-                        Framed <strong>AI-enhanced learning</strong> not just as
-                        automation, but as an opportunity to foster{" "}
-                        <strong>active learning</strong> and build{" "}
-                        <strong>transferable skills</strong> and learner
+                        Framed <strong>AI-enhanced learning</strong> as an
+                        opportunity to build{" "}
+                        <strong>active learning</strong>,{" "}
+                        <strong>transferable skills</strong>, and learner
                         independence.
                     </li>
                     <li>
@@ -384,7 +383,7 @@ export default function page() {
                         <strong>
                             learning theories and inclusive design strategies
                         </strong>{" "}
-                        from language teaching to my current role at Imperial,
+                        from language teaching to my role at Imperial,
                         including accessible presentation design, glossary
                         development, and needs assessments to support staff and
                         international cohorts effectively.

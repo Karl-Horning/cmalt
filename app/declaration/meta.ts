@@ -13,6 +13,7 @@ export const meta = {
         "Association for Learning Technology",
     ],
     date: "2026-05-15",
+    lastUpdated: "2026-09-10",
     readingTime: 1,
     slug: "declaration",
     draft: false,

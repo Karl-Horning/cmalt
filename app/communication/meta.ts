@@ -18,6 +18,7 @@ export const meta = {
         "presentation",
     ],
     date: "2025-11-11",
+    lastUpdated: "2026-09-10",
     readingTime: 12,
     slug: "communication",
     draft: false,

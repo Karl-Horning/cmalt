@@ -19,6 +19,7 @@ export const meta = {
         "OpenAPI",
     ],
     date: "2025-09-29",
+    lastUpdated: "2026-09-10",
     readingTime: 9,
     slug: "technology-deployment",
     draft: false,

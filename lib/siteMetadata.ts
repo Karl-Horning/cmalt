@@ -17,6 +17,7 @@ interface PageMeta {
     description: string;
     slug: string;
     date?: string;
+    lastUpdated?: string;
 }
 
 /**
@@ -79,6 +80,7 @@ export function generatePageJsonLd(meta: PageMeta): Record<string, unknown> {
             url: AUTHOR_URL,
         },
         ...(meta.date ? { datePublished: meta.date } : {}),
+        ...(meta.lastUpdated ? { dateModified: meta.lastUpdated } : {}),
         inLanguage: "en-GB",
     };
 }

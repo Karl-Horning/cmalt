@@ -144,8 +144,8 @@ export default function page() {
 
                 <p>
                     As with accessibility standards explored in Section 3a, I
-                    see data protection not just as a compliance requirement,
-                    but as a core element of ethical, inclusive learning design.
+                    see data protection as a core element of ethical,
+                    inclusive learning design.
                     GDPR training has deepened my understanding of how easily
                     personal data can be exposed, particularly in visual media
                     like screenshots or screen recordings. This awareness has
@@ -245,7 +245,7 @@ export default function page() {
                     environments. My approach reflects both institutional
                     policies and broader sector expectations around the
                     responsible use of learner data, such as those outlined by
-                    the Information Commissioner&apos;s Office (ICO) .
+                    the Information Commissioner&apos;s Office.
                 </p>
             </section>
 
@@ -308,7 +308,7 @@ export default function page() {
                         </a>{" "}
                             Shows data minimisation in visual media;
                             demonstrates safe screen-recording practice with no
-                            personally identifiable information (PII) exposed.
+                            personally identifiable information exposed.
                     </li>
                     <li>
                         <a

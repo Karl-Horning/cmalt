@@ -112,7 +112,7 @@ export default function page() {
                     </a>
                     , which explored the adoption of new LMS platforms. In the
                     blog&apos;s &ldquo;Blackboard: the platform with a Swagger
-                    file&ldquo;, I reference a script adapted from one I
+                    file&rdquo;, I reference a script adapted from one I
                     originally developed to authenticate with Learnlight&apos;s
                     bespoke language learning platform — demonstrating how
                     techniques from previous roles fed into current work.
@@ -124,7 +124,7 @@ export default function page() {
 
                 <p>
                     Looking across these resources, I can trace a development in
-                    both approach and design — moving from instructional
+                    both approach and design, moving from instructional
                     documents focused on immediate technical tasks to more
                     accessible, learner-centred materials that anticipate
                     different levels of user confidence.
@@ -142,7 +142,7 @@ export default function page() {
                     included lengthy text blocks and oversized arrows that
                     partially obscured key content. By contrast, my more recent
                     API and Postman guides are more concise, streamlined, and
-                    visually clearer — reflecting lessons learned about
+                    visually clearer, reflecting lessons learned about
                     information overload, visual accessibility, and cognitive
                     load. Similarly, my{" "}
                     <a
@@ -152,8 +152,8 @@ export default function page() {
                     >
                         Using Postman with Apollo Server
                     </a>{" "}
-                    guide — created in Confluence — omitted annotated visuals
-                    entirely, a gap I now actively address through better use of
+                    guide, created in Confluence, omitted annotated visuals, a
+                    gap I now actively address through better use of
                     screenshots, highlights, and contextual labelling.
                 </p>
 
@@ -163,11 +163,11 @@ export default function page() {
                     involves building user confidence, collecting feedback, and
                     iterating support based on real experiences. At Imperial,
                     this has meant creating resources that cater to a diverse
-                    tester group across academic departments — with varying
+                    tester group across academic departments, with varying
                     levels of technical fluency. I&apos;ve provided asynchronous
                     walkthroughs and clear reference materials that reduce the
-                    need for live support and empower users to explore new
-                    systems independently.
+                    need for live support and let users explore new systems
+                    independently.
                 </p>
 
                 <p>
@@ -186,8 +186,8 @@ export default function page() {
                     was shown. This adjustment made the test more flexible and
                     scalable, while still achieving the goal of verifying
                     assignment submissions. Feedback from administrative staff
-                    also influenced revisions — for example, simplifying
-                    language or prioritising practical marking workflows over
+                    also influenced revisions: simplifying language or
+                    prioritising practical marking workflows over
                     advanced features. These contributions frequently drew my
                     attention to areas I might not have identified alone,
                     reinforcing the importance of team-based evaluation.
@@ -200,9 +200,9 @@ export default function page() {
                     key to this: co-developing resources, running pilot
                     sessions, and integrating structured team feedback has
                     consistently improved the quality and uptake of the
-                    materials I produce. I now approach training and resource
-                    development with this mindset, aiming not just to instruct
-                    but to support learning in the broader sense.
+                    materials I produce. I now bring this mindset to training
+                    and resource development, aiming to support learning as a
+                    whole.
                 </p>
             </section>
 

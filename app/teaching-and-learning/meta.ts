@@ -19,6 +19,7 @@ export const meta = {
         "assessment",
     ],
     date: "2025-11-11",
+    lastUpdated: "2026-09-10",
     readingTime: 14,
     slug: "teaching-and-learning",
     draft: false,

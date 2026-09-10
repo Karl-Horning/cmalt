@@ -22,6 +22,7 @@ export const meta = {
         "DEPP",
     ],
     date: "2025-09-18",
+    lastUpdated: "2026-09-10",
     readingTime: 11,
     slug: "technology-constraints",
     draft: false,

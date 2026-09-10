@@ -15,53 +15,59 @@ export default function page() {
 
                 <p>
                     I have over a decade of experience in blended and digital
-                    learning, combining pedagogical expertise with technical
-                    development to improve learning experiences. As a
-                    CELTA-qualified English teacher, I&apos;ve delivered over
-                    10,000 lessons with consistently high ratings, and used my{" "}
+                    learning. My background combines classroom teaching with
+                    technical development.
+                </p>
+
+                <p>
+                    As a CELTA-qualified English teacher, I&apos;ve delivered
+                    over 10,000 lessons with consistently high ratings. I also
+                    used my{" "}
                     <cite>
                         Level 4 Preparing to Teach in the Lifelong Learning
                         Sector
                     </cite>{" "}
                     (PTLLS) to design and deliver training in academic English
-                    and study skills in both further and higher education.
+                    and study skills, in further and higher education.
                 </p>
 
                 <p>
-                    I transitioned from teaching to learning technology through
-                    a growing interest in programming, which began when I
-                    automated tasks in Visual Basic for Applications (VBA) as a
-                    university administrator. While teaching in Portugal, I
-                    deepened this interest through self-study on platforms such
-                    as Khan Academy and freeCodeCamp, applying what I learned to
-                    improve workflows and enhance digital resources. As I took
-                    on new responsibilities, I expanded my work with APIs and
-                    automation, which led to a full-time development role and
-                    confirmed my path into educational technology.
+                    My move from teaching into learning technology started with
+                    programming. As a university administrator, I automated
+                    tasks in Visual Basic for Applications (VBA), and while
+                    teaching in Portugal I deepened this through self-study on
+                    platforms such as Khan Academy and freeCodeCamp.
+                </p>
+
+                <p>
+                    I applied what I learned to improve workflows and build
+                    better digital resources. As my responsibilities grew to
+                    include APIs and automation, this led to a full-time
+                    development role and confirmed my path into educational
+                    technology.
                 </p>
 
                 <p>
                     I&apos;ve led the development of scalable backend systems
                     and optimised GraphQL APIs for a custom Learning Management
                     System (LMS) supporting over 700,000 registered learners.
-                    This dual perspective — both educational and technical —
-                    enables me to design learner-centred solutions grounded in
-                    pedagogical principles and responsive to real-world needs.
+                    Having worked on both sides — the classroom and the
+                    codebase — lets me design solutions grounded in pedagogical
+                    principles and real learner needs.
                 </p>
 
                 <p>
-                    Throughout my career, I&apos;ve remained passionate about
-                    using digital tools to enhance teaching and learning. As a
-                    Virtual Onboarder, I trained new teachers in a custom LMS
-                    via Microsoft Teams, supported by tailored sessions and
-                    video training. I&apos;ve also created bespoke business
-                    English courses for professionals, adapting content to
-                    learner needs and industry contexts.
+                    Throughout my career, digital tools have shaped how I teach
+                    and support learning. As a Virtual Onboarder, I trained new
+                    teachers on a custom LMS over Microsoft Teams, using
+                    tailored sessions and video training. I also created
+                    bespoke business English courses for professionals,
+                    adapting content to their needs and industry.
                 </p>
 
                 <p>
-                    My experience as a university administrator using Moodle and
-                    SharePoint helped shape the design of an intuitive LMS for
+                    My experience using Moodle and SharePoint as a university
+                    administrator shaped the design of an LMS built for
                     international use. Drawing on my teaching background, I
                     refined features such as automated flashcards and
                     pronunciation feedback to support personalisation and
@@ -70,65 +76,95 @@ export default function page() {
 
                 <p>
                     Accessibility is a key focus of my work. I&apos;ve created
-                    content to support non-native speakers and neurodiverse
-                    learners — including visual documentation, explainer videos,
-                    and GIFs designed for clarity and retention. In a prior role
-                    as a Transformation Project Manager, I automated financial
-                    workflows using Python and Pandas, and led Excel training to
-                    promote data literacy.
+                    visual documentation, explainer videos, and GIFs to support
+                    non-native speakers and neurodiverse learners, designed for
+                    clarity and retention.
+                </p>
+
+                <p>
+                    In a prior role as a Transformation Project Manager, I
+                    automated financial workflows using Python and Pandas, and
+                    led Excel training to build data literacy.
                 </p>
 
                 <p>
                     My professional development includes training in user story
                     writing, manual testing, Confluence, Jira, and several
-                    programming languages. I aim to deliver user-centred,
-                    accessible solutions grounded in good practice.
+                    programming languages.
                 </p>
 
                 <p>
-                    I currently work as a Learning Technologist within Imperial
-                    College London&apos;s ICT division, a role for which I was
-                    recruited due to my combination of technical expertise and
-                    teaching experience. My work bridges pedagogy and
-                    technology, supporting Imperial&apos;s strategic aim to
-                    deliver innovative and inclusive digital education. I
-                    collaborate with faculty-based learning technologists across
-                    the Faculty of Natural Sciences, Engineering, Business
-                    School, Medicine, and the Interdisciplinary EdTech Lab,
-                    ensuring that our solutions are coherent, scalable, and
-                    responsive to the needs of staff and students.
+                    Until May 2026, I worked as a Learning Technologist within
+                    Imperial College London&apos;s ICT division. I was
+                    recruited for this combination of technical expertise and
+                    teaching experience, and my work bridged pedagogy and
+                    technology to support Imperial&apos;s strategic aim of
+                    inclusive digital education.
+                </p>
+
+                <p>I collaborated with faculty-based learning technologists across:</p>
+
+                <ul>
+                    <li>The Faculty of Natural Sciences</li>
+                    <li>The Faculty of Engineering</li>
+                    <li>The Business School</li>
+                    <li>The Faculty of Medicine</li>
+                    <li>The Interdisciplinary EdTech Lab</li>
+                </ul>
+
+                <p>
+                    This kept our solutions coherent and responsive to the
+                    needs of staff and students across faculties.
+                </p>
+
+                <p>In practice, this involved:</p>
+
+                <ul>
+                    <li>
+                        Co-designing learning experiences with academics,
+                        administrators, and developers
+                    </li>
+                    <li>Applying technical skills to LMS migration projects</li>
+                    <li>Writing user stories and conducting manual testing</li>
+                    <li>Gathering user feedback to improve digital learning</li>
+                    <li>
+                        Advising on effective technology-enhanced learning
+                        practices
+                    </li>
+                    <li>
+                        Translating project requirements into technical
+                        specifications
+                    </li>
+                    <li>
+                        Recommending integrated solutions, with accessibility
+                        built in from the start
+                    </li>
+                </ul>
+
+                <p>
+                    Grounded in classroom teaching and strengthened by
+                    technical development, I can act as both a pedagogical
+                    partner and a technical specialist. At Imperial, I
+                    contributed to communities of practice, shared what I
+                    learned with colleagues, and helped keep standards
+                    consistent across the institution&apos;s digital education
+                    work.
                 </p>
 
                 <p>
-                    In practice, this involves co-designing learning experiences
-                    with academics, administrators, and developers, applying
-                    technical skills to LMS migration projects, writing user
-                    stories, conducting manual testing, and gathering user
-                    feedback to enhance digital learning. I also provide
-                    guidance on effective technology-enhanced learning
-                    practices, translate project requirements into technical
-                    specifications, and recommend integrated solutions, ensuring
-                    accessibility and inclusivity at every stage.
-                </p>
-
-                <p>
-                    This dual perspective — grounded in classroom teaching and
-                    strengthened by technical development — enables me to act as
-                    both a pedagogical partner and a technical specialist. I
-                    contribute to communities of practice, share emerging
-                    knowledge with colleagues, and help maintain consistent
-                    standards across Imperial&apos;s diverse digital education
-                    landscape.
+                    In May 2026, I moved to King&apos;s College London as a Web
+                    Developer (Digital Education). I now lead development of
+                    King&apos;s Moodle theme, with a particular focus on
+                    accessibility and a number of broader architectural
+                    decisions.
                 </p>
 
                 <p>
                     I am submitting this portfolio for CMALT accreditation to
-                    formally recognise my contributions to learning technology.
-                    It marks a key step in my professional development,
-                    reflecting my commitment to innovation and inclusion in
-                    education. This portfolio demonstrates the depth and breadth
-                    of my practice and affirms the influence of my work across
-                    the sector.
+                    formally recognise my contribution to learning technology.
+                    It marks a key step in my professional development, and
+                    reflects my commitment to innovation and inclusion in
+                    education.
                 </p>
             </section>
         </>
