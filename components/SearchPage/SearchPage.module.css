@@ -22,13 +22,12 @@
     width: 100%;
     padding: 0.85rem 1.1rem 0.85rem 2.75rem;
     font-size: 1.125rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 600;
     color: var(--fg);
     background: var(--surface);
     border: 2px solid var(--border);
     border-radius: 8px;
-    outline: none;
     transition: border-color 0.15s;
 }
 
@@ -40,32 +39,31 @@
     list-style: none;
     padding: 1rem 0 0;
     margin: 2.5rem 0 0;
-}
-
-.searchResult {
-    border-bottom: 1px solid var(--border);
-}
-
-.searchResult:last-child {
-    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .searchResultLink {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    padding: 0.9rem 0;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
     text-decoration: none;
     color: var(--fg);
-    transition: color 0.15s;
+    transition:
+        color 0.15s,
+        background-color 0.15s;
 }
 
 .searchResultLink:hover {
+    background-color: var(--accent-tint);
     color: var(--accent);
 }
 
 .searchResultTitle {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -73,7 +71,7 @@
 .searchResultDescription {
     font-size: 0.875rem;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
 }
 
 .searchResultLink:hover .searchResultDescription {
@@ -83,6 +81,6 @@
 .searchNoResults {
     padding: 1rem 0;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-size: 0.9375rem;
 }

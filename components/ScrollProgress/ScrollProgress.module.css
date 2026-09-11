@@ -1,0 +1,24 @@
+/* Styles for the scroll progress bar. */
+
+.track {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 68;
+    pointer-events: none;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    transition: width 0.1s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bar {
+        transition: none;
+    }
+}

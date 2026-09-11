@@ -7,7 +7,7 @@ export interface StandaloneItem {
     type: "standalone";
     href: string;
     label: string;
-    /** Utility pages (e.g. search) are excluded from prev/next and footer sitemap. */
+    /** Utility pages, for example search, are excluded from prev/next and footer sitemap. */
     utility?: boolean;
 }
 
@@ -24,6 +24,12 @@ export const navStructure: (StandaloneItem | GroupItem)[] = [
         type: "standalone",
         href: "/search",
         label: "Search",
+        utility: true,
+    },
+    {
+        type: "standalone",
+        href: "/accessibility-statement",
+        label: "Accessibility Statement",
         utility: true,
     },
     {
@@ -79,6 +85,16 @@ export const navStructure: (StandaloneItem | GroupItem)[] = [
             { href: "/declaration", label: "Declaration" },
         ],
     },
+];
+
+const navGroups = navStructure.filter(
+    (item): item is GroupItem => item.type === "group",
+);
+
+/** The site sections split into two independent, page-count-balanced columns. */
+export const navColumns: [GroupItem[], GroupItem[]] = [
+    navGroups.slice(0, 3),
+    navGroups.slice(3),
 ];
 
 /** Flat list of all routes, including the home page. Used by tests. */

@@ -1,8 +1,7 @@
 /**
  * Certificate assets supporting the CMALT portfolio.
  *
- * Values are file paths relative to `public/`, or external URLs for
- * certificates hosted by third-party platforms.
+ * Values are file paths relative to `public/`, or external URLs for certificates hosted by third-party platforms.
  */
 
 export const cmaltCertificate = "/certificates/cmalt-2026.pdf";

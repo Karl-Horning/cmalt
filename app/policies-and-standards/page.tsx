@@ -22,7 +22,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -55,7 +57,8 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <cite>GDPR: Elementary</cite> (20 Dec 2021, Kaspersky)
+                            <cite>GDPR: Elementary</cite> (20 Dec 2021,
+                            Kaspersky)
                         </a>
                     </li>
                     <li>
@@ -64,7 +67,9 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <cite>General Data Protection Regulation (GDPR)</cite>{" "}
+                            <cite>
+                                General Data Protection Regulation (GDPR)
+                            </cite>{" "}
                             (2 May 2023, Learnlight)
                         </a>
                     </li>
@@ -88,8 +93,8 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <cite>Data Protection Awareness course</cite> (1 August
-                            2024, Imperial College London)
+                            <cite>Data Protection Awareness course</cite> (1
+                            August 2024, Imperial College London)
                         </a>
                     </li>
                 </ul>
@@ -144,13 +149,12 @@ export default function page() {
 
                 <p>
                     As with accessibility standards explored in Section 3a, I
-                    see data protection as a core element of ethical,
-                    inclusive learning design.
-                    GDPR training has deepened my understanding of how easily
-                    personal data can be exposed, particularly in visual media
-                    like screenshots or screen recordings. This awareness has
-                    shaped how I plan and deliver digital learning resources,
-                    ensuring they are lawful, transparent, and
+                    see data protection as a core element of ethical, inclusive
+                    learning design. GDPR training has deepened my understanding
+                    of how easily personal data can be exposed, particularly in
+                    visual media like screenshots or screen recordings. This
+                    awareness has shaped how I plan and deliver digital learning
+                    resources, ensuring they are lawful, transparent, and
                     privacy-conscious.
                 </p>
 
@@ -306,9 +310,9 @@ export default function page() {
                             Microsoft Teams meeting from the Session Details
                             Page, 2020) (Screenshot)
                         </a>{" "}
-                            Shows data minimisation in visual media;
-                            demonstrates safe screen-recording practice with no
-                            personally identifiable information exposed.
+                        Shows data minimisation in visual media; demonstrates
+                        safe screen-recording practice with no personally
+                        identifiable information exposed.
                     </li>
                     <li>
                         <a
@@ -319,9 +323,9 @@ export default function page() {
                             Anonymised student-facing guide (Microsoft Teams
                             FAQ, 2020) (Screenshot)
                         </a>{" "}
-                            Example of anonymised artefacts used in learner
-                            materials; aligns with institutional guidance on
-                            anonymisation and lawful processing.
+                        Example of anonymised artefacts used in learner
+                        materials; aligns with institutional guidance on
+                        anonymisation and lawful processing.
                     </li>
                 </ul>
 
@@ -339,9 +343,9 @@ export default function page() {
                             </cite>{" "}
                             (Screenshot)
                         </a>{" "}
-                            Institution-specific training evidencing alignment
-                            with Imperial policies and procedures for lawful,
-                            ethical handling of data.
+                        Institution-specific training evidencing alignment with
+                        Imperial policies and procedures for lawful, ethical
+                        handling of data.
                     </li>
                     <li>
                         <a
@@ -356,9 +360,8 @@ export default function page() {
                             (Kevin Mitnick Security Awareness Training, 2024)
                             (Certificate)
                         </a>{" "}
-                            Confirms current understanding of GDPR principles
-                            and risk-aware behaviours in digital learning
-                            contexts.
+                        Confirms current understanding of GDPR principles and
+                        risk-aware behaviours in digital learning contexts.
                     </li>
                     <li>
                         <a
@@ -366,11 +369,13 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <cite>General Data Protection Regulation (GDPR)</cite>{" "}
+                            <cite>
+                                General Data Protection Regulation (GDPR)
+                            </cite>{" "}
                             (Learnlight, 2023) (Certificate)
                         </a>{" "}
-                            Ongoing professional development linking GDPR
-                            requirements to educational platforms and workflows.
+                        Ongoing professional development linking GDPR
+                        requirements to educational platforms and workflows.
                     </li>
                     <li>
                         <a
@@ -381,9 +386,8 @@ export default function page() {
                             <cite>GDPR: Elementary</cite> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
-                            Consolidates core concepts beyond foundational
-                            level; supports ethical handling of personal data
-                            across teams.
+                        Consolidates core concepts beyond foundational level;
+                        supports ethical handling of personal data across teams.
                     </li>
                     <li>
                         <a
@@ -394,9 +398,8 @@ export default function page() {
                             <cite>GDPR: Beginner</cite> (Kaspersky, 2021)
                             (Certificate)
                         </a>{" "}
-                            Baseline GDPR training establishing fundamental
-                            principles for subsequent practice and
-                            certification.
+                        Baseline GDPR training establishing fundamental
+                        principles for subsequent practice and certification.
                     </li>
                 </ul>
             </section>
@@ -428,7 +431,8 @@ export default function page() {
                     </li>
                     <li>
                         Information Commissioner&apos;s Office{" "}
-                        <cite>UK GDPR guidance and resources</cite>. Available at:{" "}
+                        <cite>UK GDPR guidance and resources</cite>. Available
+                        at:{" "}
                         <a
                             href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/"
                             target="_blank"

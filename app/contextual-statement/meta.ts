@@ -21,6 +21,10 @@ export const meta = {
     date: "2025-11-10",
     lastUpdated: "2026-09-10",
     readingTime: 5,
+    headerImage: {
+        src: "/headers/contextual-statement.avif",
+        alt: "A robotic hand reaching toward a glowing network of connected points",
+    },
     slug: "contextual-statement",
     draft: false,
 };

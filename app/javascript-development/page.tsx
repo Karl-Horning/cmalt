@@ -25,7 +25,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -33,9 +35,9 @@ export default function page() {
                     My specialist area is full-stack JavaScript development,
                     with a focus on building and optimising GraphQL APIs and
                     working with relational databases like PostgreSQL. What
-                    makes this work distinct is how I&apos;ve applied it
-                    within an educational context to improve learner access,
-                    system performance, and platform reliability.
+                    makes this work distinct is how I&apos;ve applied it within
+                    an educational context to improve learner access, system
+                    performance, and platform reliability.
                 </p>
 
                 <p>
@@ -100,10 +102,9 @@ export default function page() {
                     empathy to make sure that performance improvements aligned
                     with the real needs of our learners and staff. For example,
                     optimising backend calls improved access in low-bandwidth
-                    regions and reduced operational costs, alongside
-                    efficiency gains. Aligning technical systems with
-                    educational outcomes is what drives my approach to
-                    development.
+                    regions and reduced operational costs, alongside efficiency
+                    gains. Aligning technical systems with educational outcomes
+                    is what drives my approach to development.
                 </p>
 
                 <p>
@@ -119,8 +120,8 @@ export default function page() {
                 </p>
 
                 <p>
-                    I later applied this specialist knowledge within my role
-                    as a Learning Technologist at Imperial College London,
+                    I later applied this specialist knowledge within my role as
+                    a Learning Technologist at Imperial College London,
                     particularly through the{" "}
                     <a
                         href={deppProjectLink}
@@ -265,13 +266,13 @@ export default function page() {
                 </p>
 
                 <p>
-                    My specialist skill set combines education and
-                    engineering. I develop systems that are technically
-                    sound, but always with the learner in mind. That might
-                    mean better accessibility, faster load times, clearer
-                    documentation for future contributors, or more stable
-                    APIs to support global delivery. My background lets me
-                    work through both pedagogical and technical challenges.
+                    My specialist skill set combines education and engineering.
+                    I develop systems that are technically sound, but always
+                    with the learner in mind. That might mean better
+                    accessibility, faster load times, clearer documentation for
+                    future contributors, or more stable APIs to support global
+                    delivery. My background lets me work through both
+                    pedagogical and technical challenges.
                 </p>
             </section>
 
@@ -282,13 +283,12 @@ export default function page() {
                     build, and how and why I build it. My background in
                     education taught me to think about systems in terms of
                     clarity, access, and inclusion — principles I now apply in
-                    my development work. For instance, implementing
-                    performance optimisations like reducing GraphQL query
-                    duplication with <code>dataloader</code> improved
-                    technical efficiency, access for users in low-bandwidth
-                    regions, and the trainer experience: an often-overlooked
-                    group who benefit just as much from responsive tools and
-                    reliable interfaces.
+                    my development work. For instance, implementing performance
+                    optimisations like reducing GraphQL query duplication with{" "}
+                    <code>dataloader</code> improved technical efficiency,
+                    access for users in low-bandwidth regions, and the trainer
+                    experience: an often-overlooked group who benefit just as
+                    much from responsive tools and reliable interfaces.
                 </p>
 
                 <p>
@@ -367,8 +367,8 @@ export default function page() {
 
                 <p>
                     For me, development continues my commitment to lifelong
-                    learning and learner independence, values I carried with
-                    me from my time in education.
+                    learning and learner independence, values I carried with me
+                    from my time in education.
                 </p>
             </section>
 
@@ -431,11 +431,10 @@ export default function page() {
                         >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
-                            Case study of large-scale LMS development for over
-                            700,000 registered learners, demonstrating API
-                            optimisation, automated testing, and user-focused
-                            improvements to accessibility and mobile
-                            performance.
+                        Case study of large-scale LMS development for over
+                        700,000 registered learners, demonstrating API
+                        optimisation, automated testing, and user-focused
+                        improvements to accessibility and mobile performance.
                     </li>
                     <li>
                         <a
@@ -445,9 +444,9 @@ export default function page() {
                         >
                             GraphQL Rate Limit Demo (Repository)
                         </a>{" "}
-                            Demonstrates performance/stability safeguards at
-                            scale; evidence of proactive risk management and
-                            measurable backend optimisation.
+                        Demonstrates performance/stability safeguards at scale;
+                        evidence of proactive risk management and measurable
+                        backend optimisation.
                     </li>
                     <li>
                         <a
@@ -458,9 +457,9 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                            Adapts developer tooling for institutional
-                            evaluation; bridges API analysis with authentic HE
-                            workflows used in DEPP.
+                        Adapts developer tooling for institutional evaluation;
+                        bridges API analysis with authentic HE workflows used in
+                        DEPP.
                     </li>
                     <li>
                         <a
@@ -471,9 +470,9 @@ export default function page() {
                             Karl Horning&apos;s GitHub: github.com/Karl-Horning
                             (Repository)
                         </a>{" "}
-                            Ongoing code artefacts and utilities; shows
-                            breadth across the stack and commitment to
-                            transparent, reusable engineering practice.
+                        Ongoing code artefacts and utilities; shows breadth
+                        across the stack and commitment to transparent, reusable
+                        engineering practice.
                     </li>
                 </ul>
 
@@ -489,9 +488,9 @@ export default function page() {
                             Postman Collection and Make an API Call (Blog Post,
                             2025)
                         </a>{" "}
-                            Public write-up translating internal DEPP testing
-                            into reusable guidance; evidence of dissemination
-                            and sector contribution.
+                        Public write-up translating internal DEPP testing into
+                        reusable guidance; evidence of dissemination and sector
+                        contribution.
                     </li>
                     <li>
                         <a
@@ -502,9 +501,9 @@ export default function page() {
                             Karl Horning&apos;s personal portfolio:
                             karlhorning.dev
                         </a>{" "}
-                            Curated collection of projects and documentation;
-                            supports reflective practice and communicates impact
-                            to non-technical audiences.
+                        Curated collection of projects and documentation;
+                        supports reflective practice and communicates impact to
+                        non-technical audiences.
                     </li>
                 </ul>
 
@@ -519,9 +518,9 @@ export default function page() {
                             Karl Horning&apos;s LinkedIn profile:
                             linkedin.com/in/karl-horning
                         </a>{" "}
-                            Verifies career trajectory, skills, and
-                            endorsements; complements technical evidence with
-                            professional context.
+                        Verifies career trajectory, skills, and endorsements;
+                        complements technical evidence with professional
+                        context.
                     </li>
                 </ul>
 
@@ -535,8 +534,8 @@ export default function page() {
                         >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
-                            Directly underpins GraphQL optimisation, batching,
-                            and schema design used in production.
+                        Directly underpins GraphQL optimisation, batching, and
+                        schema design used in production.
                     </li>
                     <li>
                         <a
@@ -547,8 +546,8 @@ export default function page() {
                             Next JS: The Complete Developer&apos;s Guide (Udemy,
                             2024) (Certificate)
                         </a>{" "}
-                            Front-end performance and DX improvements; supports
-                            full-stack delivery and rapid prototyping.
+                        Front-end performance and DX improvements; supports
+                        full-stack delivery and rapid prototyping.
                     </li>
                     <li>
                         <a
@@ -558,8 +557,8 @@ export default function page() {
                         >
                             Master Electron (Udemy, 2024) (Certificate)
                         </a>{" "}
-                            Desktop tooling expertise enabling cross-platform
-                            internal apps for staff workflows.
+                        Desktop tooling expertise enabling cross-platform
+                        internal apps for staff workflows.
                     </li>
                     <li>
                         <a
@@ -570,8 +569,8 @@ export default function page() {
                             The Web Developer Bootcamp (Udemy, 2019)
                             (Certificate)
                         </a>{" "}
-                            Foundational web engineering skills underpinning
-                            full-stack practice.
+                        Foundational web engineering skills underpinning
+                        full-stack practice.
                     </li>
                     <li>
                         <a
@@ -581,9 +580,8 @@ export default function page() {
                         >
                             Jira Fundamentals (Atlassian, 2024) (Screenshot)
                         </a>{" "}
-                            Agile project operations and collaboration
-                            essentials; supports delivery at team and programme
-                            scale.
+                        Agile project operations and collaboration essentials;
+                        supports delivery at team and programme scale.
                     </li>
                     <li>
                         <a
@@ -594,9 +592,8 @@ export default function page() {
                             Apple Teacher (Swift Playgrounds) (Apple, 2025)
                             (Certificate)
                         </a>{" "}
-                            Signals the pedagogy-engineering link: ability to
-                            teach technical concepts and design learner-centred
-                            resources.
+                        Signals the pedagogy-engineering link: ability to teach
+                        technical concepts and design learner-centred resources.
                     </li>
                 </ul>
             </section>
@@ -621,7 +618,8 @@ export default function page() {
                     </li>
                     <li>
                         Fadhil, A. (2019).{" "}
-                        <cite>How to use GraphQL DataLoader</cite>. Available at:{" "}
+                        <cite>How to use GraphQL DataLoader</cite>. Available
+                        at:{" "}
                         <a
                             href="https://rahmanfadhil.com/graphql-dataloader/"
                             target="_blank"
@@ -643,7 +641,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        MDN Web Docs. <cite>JavaScript guide</cite>. Available at:{" "}
+                        MDN Web Docs. <cite>JavaScript guide</cite>. Available
+                        at:{" "}
                         <a
                             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
                             target="_blank"
@@ -654,8 +653,10 @@ export default function page() {
                     </li>
                     <li>
                         Messinger, J. (2017).{" "}
-                        <cite>API testing tips from a Postman professional</cite>.
-                        Available at:{" "}
+                        <cite>
+                            API testing tips from a Postman professional
+                        </cite>
+                        . Available at:{" "}
                         <a
                             href="https://blog.postman.com/api-testing-tips-from-a-postman-professional/"
                             target="_blank"
@@ -677,8 +678,8 @@ export default function page() {
                     </li>
                     <li>
                         Shtatnov, A. &amp; Ranganathan, R.S. (2018).{" "}
-                        <cite>Our learnings from adopting GraphQL</cite>. Netflix
-                        Technology Blog. Available at:{" "}
+                        <cite>Our learnings from adopting GraphQL</cite>.
+                        Netflix Technology Blog. Available at:{" "}
                         <a
                             href="https://netflixtechblog.com/our-learnings-from-adopting-graphql-f099de39ae5f"
                             target="_blank"
@@ -689,8 +690,8 @@ export default function page() {
                     </li>
                     <li>
                         Shin, J., Shikhare, T., &amp; Emmanuel, W. (2023).{" "}
-                        <cite>Migrating Netflix to GraphQL safely</cite>. Netflix
-                        Technology Blog. Available at:{" "}
+                        <cite>Migrating Netflix to GraphQL safely</cite>.
+                        Netflix Technology Blog. Available at:{" "}
                         <a
                             href="https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72"
                             target="_blank"

@@ -1,6 +1,5 @@
 /**
- * @fileoverview Site-wide configuration. Update these values when using this
- * repo as a template for a new documentation project.
+ * @fileoverview Site-wide configuration. Update these values when using this repo as a template for a new documentation project.
  */
 
 /** Canonical base URL for the deployed site. */

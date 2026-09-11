@@ -20,6 +20,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 12,
+    headerImage: {
+        src: "/headers/communication.avif",
+        alt: "A person in a shirt and tie speaking into a megaphone",
+    },
     slug: "communication",
     draft: false,
 };

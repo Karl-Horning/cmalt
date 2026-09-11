@@ -1,49 +1,37 @@
-/**
- * @fileoverview Sidebar navigation rendered from the shared `navStructure`
- * config, with `aria-current="page"` applied to the active link.
- */
+/** @fileoverview Full site menu rendered from the shared `navStructure` config. */
 
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navStructure } from "@/lib/nav";
+import { navColumns } from "@/lib/nav";
 import styles from "./Nav.module.css";
 
-/** Primary sidebar navigation for the portfolio site. */
-export default function Nav() {
+/** Props for the {@link Nav} component. */
+interface NavProps {
+    /** Called when a link is followed, so the menu panel can close. */
+    onNavigate?: () => void;
+}
+
+/** Full-site menu grid shown inside the header's "Sections" panel. */
+export default function Nav({ onNavigate }: NavProps) {
     const pathname = usePathname();
 
     return (
-        <nav aria-label="Portfolio sections">
-            <div id="nav-list" className={styles.navList}>
-                {navStructure.map((item) => {
-                    if (item.type === "standalone") {
-                        return (
-                            <div key={item.href} className={styles.navStandalone}>
-                                <Link
-                                    href={item.href}
-                                    className={styles.navItem}
-                                    aria-current={
-                                        pathname === item.href
-                                            ? "page"
-                                            : undefined
-                                    }
-                                >
-                                    {item.label}
-                                </Link>
-                            </div>
-                        );
-                    }
-
-                    return (
+        <div className={styles.navColumns}>
+            {navColumns.map((column, columnIndex) => (
+                <div key={columnIndex} className={styles.navColumn}>
+                    {column.map((item) => (
                         <div key={item.label} className={styles.navGroup}>
-                            <p className={styles.navGroupLabel}>{item.label}</p>
+                            <p className={styles.navGroupLabel}>
+                                {item.label}
+                            </p>
                             {item.items.map((subItem) => (
                                 <Link
                                     key={subItem.href}
                                     href={subItem.href}
                                     className={styles.navItem}
+                                    onClick={onNavigate}
                                     aria-current={
                                         pathname === subItem.href
                                             ? "page"
@@ -54,9 +42,9 @@ export default function Nav() {
                                 </Link>
                             ))}
                         </div>
-                    );
-                })}
-            </div>
-        </nav>
+                    ))}
+                </div>
+            ))}
+        </div>
     );
 }

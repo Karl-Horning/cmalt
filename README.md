@@ -20,7 +20,7 @@ A statically exported Next.js portfolio built to support [CMALT accreditation](h
 
 **CI/CD** — GitHub Actions builds and deploys to GitHub Pages on every push to main.
 
-**Accessibility testing** — Playwright with `@axe-core/playwright` for automated accessibility checks alongside manual review.
+**Accessibility testing** — Playwright with `@axe-core/playwright` runs automated accessibility checks on every push and pull request, alongside manual review.
 
 **Search** — Client-side fuzzy search with [Fuse.js](https://fusejs.io/). The index is bundled at build time from each page's metadata — no build script, no external service. Supports `Cmd+K` / `Ctrl+K` from anywhere on the site.
 
@@ -45,6 +45,8 @@ Open [http://localhost:3001](http://localhost:3001).
 | `test:ui` | Run Playwright tests with the interactive UI |
 | `check-links` | Check for broken links on the live site |
 | `check-links:local` | Check for broken links on the local server |
+| `generate:favicons` | Regenerate favicons and touch icons from `design/favicon-logo.svg` |
+| `generate:og-images` | Regenerate OpenGraph card images for every page |
 
 ## License
 

@@ -22,7 +22,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -333,16 +335,16 @@ export default function page() {
                 <p>
                     Looking back, I recognise that these practices reflect
                     ethical commitments as much as regulatory standards.
-                    Respecting learner privacy under GDPR reflects a wider
-                    duty of care in handling sensitive information. Similarly,
+                    Respecting learner privacy under GDPR reflects a wider duty
+                    of care in handling sensitive information. Similarly,
                     prioritising accessibility means more than meeting WCAG or
                     EN 301 549: it protects learners&apos; right to participate
-                    fully and equitably. By providing
-                    subtitles, transcripts, and accessible documents, I aim to
-                    reduce barriers and support learner autonomy, acknowledging
-                    the moral responsibility I have as an educator and
-                    technologist, both in international and UK contexts, to
-                    create inclusive and respectful learning environments.
+                    fully and equitably. By providing subtitles, transcripts,
+                    and accessible documents, I aim to reduce barriers and
+                    support learner autonomy, acknowledging the moral
+                    responsibility I have as an educator and technologist, both
+                    in international and UK contexts, to create inclusive and
+                    respectful learning environments.
                 </p>
             </section>
 
@@ -395,9 +397,9 @@ export default function page() {
                             SRT subtitle file (Joining a Microsoft Teams meeting
                             from the Session Details Page, 2020) (Subtitle File)
                         </a>{" "}
-                            Manually authored captions meeting WCAG 2.1 SC
-                            1.2.2; demonstrates accurate timing and readable
-                            phrasing for inclusive video delivery.
+                        Manually authored captions meeting WCAG 2.1 SC 1.2.2;
+                        demonstrates accurate timing and readable phrasing for
+                        inclusive video delivery.
                     </li>
                     <li>
                         <a
@@ -407,9 +409,8 @@ export default function page() {
                         >
                             Embedded subtitles using Subler (Screenshot)
                         </a>{" "}
-                            Shows subtitles multiplexed into MP4 for offline
-                            access; aligns with BBC guidance on single-sentence
-                            captions.
+                        Shows subtitles multiplexed into MP4 for offline access;
+                        aligns with BBC guidance on single-sentence captions.
                     </li>
                     <li>
                         <a
@@ -419,8 +420,8 @@ export default function page() {
                         >
                             SRT subtitle file in Visual Studio Code (Screenshot)
                         </a>{" "}
-                            Workflow view of precise caption timing with VS Code
-                            + Subtitles Editor extension.
+                        Workflow view of precise caption timing with VS Code +
+                        Subtitles Editor extension.
                     </li>
                 </ul>
 
@@ -435,9 +436,9 @@ export default function page() {
                             Document with accessible layout and navigation
                             (Microsoft Teams FAQ, 2020) (Screenshot)
                         </a>{" "}
-                            Learner-facing example using clear heading
-                            hierarchy, meaningful sequence, and
-                            screen-reader-friendly structure.
+                        Learner-facing example using clear heading hierarchy,
+                        meaningful sequence, and screen-reader-friendly
+                        structure.
                     </li>
                 </ul>
 
@@ -452,9 +453,9 @@ export default function page() {
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
-                            Curated framework used in audits and improvements;
-                            operationalises WCAG 2.1 and EN 301 549 within
-                            day-to-day practice.
+                        Curated framework used in audits and improvements;
+                        operationalises WCAG 2.1 and EN 301 549 within
+                        day-to-day practice.
                     </li>
                     <li>
                         <a
@@ -465,9 +466,9 @@ export default function page() {
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia — proof of completed modules (2025) (Badge)
                         </a>{" "}
-                            Recent CPD focused on neurodivergent learner needs;
-                            informs captioning choices, document design, and
-                            inclusive communication.
+                        Recent CPD focused on neurodivergent learner needs;
+                        informs captioning choices, document design, and
+                        inclusive communication.
                     </li>
                     <li>
                         <a
@@ -478,8 +479,8 @@ export default function page() {
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia (2020) (Certificate)
                         </a>{" "}
-                            Foundational certification evidencing long-term
-                            commitment to accessible practice.
+                        Foundational certification evidencing long-term
+                        commitment to accessible practice.
                     </li>
                 </ul>
             </section>
@@ -489,8 +490,8 @@ export default function page() {
 
                 <ul>
                     <li>
-                        BBC. <cite>Subtitle Guidelines</cite> (Version 1.2.3, June
-                        2024). Available at:{" "}
+                        BBC. <cite>Subtitle Guidelines</cite> (Version 1.2.3,
+                        June 2024). Available at:{" "}
                         <a
                             href="https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/"
                             target="_blank"
@@ -527,7 +528,9 @@ export default function page() {
                     </li>
                     <li>
                         Vimeo.{" "}
-                        <cite>How do I add captions or subtitles to my video?</cite>{" "}
+                        <cite>
+                            How do I add captions or subtitles to my video?
+                        </cite>{" "}
                         Available at:{" "}
                         <a
                             href="https://help.vimeo.com/hc/en-us/articles/21956884955537-How-do-I-add-captions-or-subtitles-to-my-video"
@@ -560,8 +563,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        W3C. <cite>Meaningful Sequence</cite> - WCAG 2.1. Available
-                        at:{" "}
+                        W3C. <cite>Meaningful Sequence</cite> - WCAG 2.1.
+                        Available at:{" "}
                         <a
                             href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html"
                             target="_blank"
@@ -571,7 +574,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        W3C. <cite>Non-text Content</cite> - WCAG 2.1. Available at:{" "}
+                        W3C. <cite>Non-text Content</cite> - WCAG 2.1. Available
+                        at:{" "}
                         <a
                             href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
                             target="_blank"
@@ -582,7 +586,9 @@ export default function page() {
                     </li>
                     <li>
                         W3C.{" "}
-                        <cite>Success Criterion 1.2.2 Captions (Prerecorded)</cite>{" "}
+                        <cite>
+                            Success Criterion 1.2.2 Captions (Prerecorded)
+                        </cite>{" "}
                         - WCAG 2.1 Reference. Available at:{" "}
                         <a
                             href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded"
@@ -593,7 +599,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        W3C. <cite>Use of Colour</cite> - WCAG 2.1. Available at:{" "}
+                        W3C. <cite>Use of Colour</cite> - WCAG 2.1. Available
+                        at:{" "}
                         <a
                             href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html"
                             target="_blank"
@@ -618,8 +625,8 @@ export default function page() {
                     </li>
                     <li>
                         YouTube.{" "}
-                        <cite>Supported subtitle and closed caption files</cite>.
-                        Available at:{" "}
+                        <cite>Supported subtitle and closed caption files</cite>
+                        . Available at:{" "}
                         <a
                             href="https://support.google.com/youtube/answer/2734698#zippy=%2Cbasic-file-formats%2Csubrip-srt-example"
                             target="_blank"

@@ -1,6 +1,5 @@
 /**
- * @fileoverview SVG icon matching the "K" logo used across the Karl Horning
- * personal site brand.
+ * @fileoverview SVG icon matching the "K" logo used across the Karl Horning personal site brand.
  */
 
 /** Inline SVG rendering the K site logo at the current font size (`1em`). */

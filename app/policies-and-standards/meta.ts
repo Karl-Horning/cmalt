@@ -18,6 +18,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 8,
+    headerImage: {
+        src: "/headers/policies-and-standards.avif",
+        alt: "A typewriter with a sheet of paper reading Privacy Policy",
+    },
     slug: "policies-and-standards",
     draft: false,
 };

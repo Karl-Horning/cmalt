@@ -28,7 +28,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -192,8 +194,8 @@ export default function page() {
                 </figure>
 
                 <p>
-                    These same accessibility principles informed my practice
-                    at Imperial. In my{" "}
+                    These same accessibility principles informed my practice at
+                    Imperial. In my{" "}
                     <a
                         href={deppIctPresentation}
                         target="_blank"
@@ -373,8 +375,7 @@ export default function page() {
                     </li>
                     <li>
                         Framed <strong>AI-enhanced learning</strong> as an
-                        opportunity to build{" "}
-                        <strong>active learning</strong>,{" "}
+                        opportunity to build <strong>active learning</strong>,{" "}
                         <strong>transferable skills</strong>, and learner
                         independence.
                     </li>
@@ -383,10 +384,10 @@ export default function page() {
                         <strong>
                             learning theories and inclusive design strategies
                         </strong>{" "}
-                        from language teaching to my role at Imperial,
-                        including accessible presentation design, glossary
-                        development, and needs assessments to support staff and
-                        international cohorts effectively.
+                        from language teaching to my role at Imperial, including
+                        accessible presentation design, glossary development,
+                        and needs assessments to support staff and international
+                        cohorts effectively.
                     </li>
                 </ul>
             </section>
@@ -405,10 +406,10 @@ export default function page() {
                             &quot;After&quot; slide showing accessibility
                             improvements (Screenshot)
                         </a>{" "}
-                            Accessibility-led redesign (contrast, font, layout,
-                            visuals) aligned with WCAG principles; demonstrates
-                            concrete improvement to learner access and cognitive
-                            load.
+                        Accessibility-led redesign (contrast, font, layout,
+                        visuals) aligned with WCAG principles; demonstrates
+                        concrete improvement to learner access and cognitive
+                        load.
                     </li>
                     <li>
                         <a
@@ -419,9 +420,8 @@ export default function page() {
                             &quot;Before&quot; slide showing accessibility
                             issues (Screenshot)
                         </a>{" "}
-                            Baseline for the redesign; evidences reflective
-                            practice and the rationale for accessibility
-                            changes.
+                        Baseline for the redesign; evidences reflective practice
+                        and the rationale for accessibility changes.
                     </li>
                     <li>
                         <a
@@ -432,9 +432,8 @@ export default function page() {
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
-                            Curated framework used in audits and improvements;
-                            shows process-led, reusable support for inclusive
-                            design.
+                        Curated framework used in audits and improvements; shows
+                        process-led, reusable support for inclusive design.
                     </li>
                     <li>
                         <a
@@ -444,9 +443,9 @@ export default function page() {
                         >
                             DEPP ICT Presentation (Slides)
                         </a>{" "}
-                            Application of accessibility principles in HE
-                            context; aligns personal practice with Imperial’s
-                            guidance on accessible PowerPoint design.
+                        Application of accessibility principles in HE context;
+                        aligns personal practice with Imperial’s guidance on
+                        accessible PowerPoint design.
                     </li>
                 </ul>
 
@@ -460,9 +459,9 @@ export default function page() {
                         >
                             First Session Questions (PDF)
                         </a>{" "}
-                            Structured needs assessment capturing goals,
-                            context, and preferences; underpins constructive
-                            alignment and inclusive lesson design.
+                        Structured needs assessment capturing goals, context,
+                        and preferences; underpins constructive alignment and
+                        inclusive lesson design.
                     </li>
                     <li>
                         <a
@@ -472,9 +471,9 @@ export default function page() {
                         >
                             Kolb&apos;s Experiential Learning Cycle (Diagram)
                         </a>{" "}
-                            Adapted visual used to structure reflection and
-                            iteration; evidences the theory-to-practice link in
-                            goal-setting and course adaptation.
+                        Adapted visual used to structure reflection and
+                        iteration; evidences the theory-to-practice link in
+                        goal-setting and course adaptation.
                     </li>
                     <li>
                         <a
@@ -484,9 +483,9 @@ export default function page() {
                         >
                             Ebbinghaus&apos; Forgetting Curve (Diagram)
                         </a>{" "}
-                            Supports spaced repetition and retrieval practice
-                            decisions; shows application of memory theory to
-                            sequencing and review.
+                        Supports spaced repetition and retrieval practice
+                        decisions; shows application of memory theory to
+                        sequencing and review.
                     </li>
                 </ul>
 
@@ -500,9 +499,8 @@ export default function page() {
                         >
                             Session report rating of 4.9/5 (Screenshot)
                         </a>{" "}
-                            Evidence of learner-perceived clarity, relevance,
-                            and support following accessibility and design
-                            improvements.
+                        Evidence of learner-perceived clarity, relevance, and
+                        support following accessibility and design improvements.
                     </li>
                     <li>
                         <a
@@ -512,9 +510,9 @@ export default function page() {
                         >
                             Session evaluation rating of 4.5/5 (Screenshot)
                         </a>{" "}
-                            Participant evaluations from training sessions
-                            focused on inclusive practice; demonstrates
-                            sustained impact on professional learning.
+                        Participant evaluations from training sessions focused
+                        on inclusive practice; demonstrates sustained impact on
+                        professional learning.
                     </li>
                 </ul>
 
@@ -530,8 +528,8 @@ export default function page() {
                             English to Speakers of Other Languages (CELTA)
                             (2013) (Certificate)
                         </a>{" "}
-                            Foundation in learner-centred pedagogy and
-                            differentiated instruction for diverse groups.
+                        Foundation in learner-centred pedagogy and
+                        differentiated instruction for diverse groups.
                     </li>
                     <li>
                         <a
@@ -542,8 +540,8 @@ export default function page() {
                             Level 4 Preparing to Teach in the Lifelong Learning
                             Sector (PTLLS) (2012) (Certificate)
                         </a>{" "}
-                            Formal teacher training covering planning,
-                            assessment, and curriculum delivery.
+                        Formal teacher training covering planning, assessment,
+                        and curriculum delivery.
                     </li>
                     <li>
                         <a
@@ -554,9 +552,8 @@ export default function page() {
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia — proof of completed modules (2025) (Badge)
                         </a>{" "}
-                            Recent CPD focused on neurodivergent learners;
-                            informs inclusive design choices and accessible
-                            communication.
+                        Recent CPD focused on neurodivergent learners; informs
+                        inclusive design choices and accessible communication.
                     </li>
                     <li>
                         <a
@@ -567,8 +564,8 @@ export default function page() {
                             Dyslexia Awareness: In partnership with Made By
                             Dyslexia (2020) (Certificate)
                         </a>{" "}
-                            Prior certification evidencing ongoing commitment to
-                            accessibility and learner support.
+                        Prior certification evidencing ongoing commitment to
+                        accessibility and learner support.
                     </li>
                 </ul>
             </section>
@@ -588,8 +585,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        Main, P. (2023) <cite>Ebbinghaus forgetting curve</cite>.
-                        Structural Learning. Available at:{" "}
+                        Main, P. (2023) <cite>Ebbinghaus forgetting curve</cite>
+                        . Structural Learning. Available at:{" "}
                         <a
                             href="https://www.structural-learning.com/post/ebbinghaus-forgetting-curve"
                             target="_blank"
@@ -627,8 +624,10 @@ export default function page() {
                     </li>
                     <li>
                         WCAG (2025){" "}
-                        <cite>Text over images: The impact on accessibility</cite>.
-                        Available at:{" "}
+                        <cite>
+                            Text over images: The impact on accessibility
+                        </cite>
+                        . Available at:{" "}
                         <a
                             href="https://www.wcag.com/blog/content-over-images-how-does-this-ux-ui-trend-impact-accessibility/"
                             target="_blank"

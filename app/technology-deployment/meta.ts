@@ -21,6 +21,10 @@ export const meta = {
     date: "2025-09-29",
     lastUpdated: "2026-09-10",
     readingTime: 9,
+    headerImage: {
+        src: "/headers/technology-deployment.avif",
+        alt: "Fibre network cables connected to a data centre server rack",
+    },
     slug: "technology-deployment",
     draft: false,
 };

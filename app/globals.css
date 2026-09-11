@@ -1,37 +1,70 @@
 @import "tailwindcss";
 
-/* =============================================================================
-   Theme configuration — edit these values per project.
-   ============================================================================= */
+/* Theme configuration — edit these values per project. */
 :root {
     /* Layout */
     --header-height: 60px;
-    --sidebar-width: 260px;
 
-    /* Colours */
-    --bg: #faf8f5;
-    --fg: #2c2825;
-    --accent: #1b6b6b;
-    --accent-hover: #155454;
-    --muted: #6b6360;
-    --border: #e0dad4;
-    --surface: #f2ede7;
-    --nav-label: #665b58;
+    /* Colours — every text/background pairing below clears WCAG AAA (7:1) */
+    --bg: #f7f3ee;
+    --fg: #14181d;
+    --accent: #8e1451;
+    --accent-hover: #6e0f3f;
+    --muted: #514b48;
+    --border: #d5cfc8;
+    --surface: #ede9e3;
+    --nav-label: #514b48;
+    --accent-tint: rgba(142, 20, 81, 0.06);
+
+    /* Secondary hue — reserved for code, don't reuse it elsewhere. */
+    --code-fg: #7a3c0e;
+    --code-bg: #fbf3e4;
+
+    --footer-bg: #0d0d0d;
+    --footer-fg: #b9bfc8;
+    --footer-muted: #98a2b0;
+    --footer-accent: #ed84b9;
+    --footer-border: rgba(255, 255, 255, 0.08);
+
+    /* Opacity is chosen so text stays readable against the brightest realistic photo. */
+    --header-overlay: rgba(13, 13, 16, 0.85);
+    --header-fg: #b9bfc8;
+
+    /* Focus outline — keep the same value in both themes. */
+    --focus-outline: #ffdd00;
+
+    --logo-fg: var(--fg);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #1c1917;
-        --fg: #f5f1eb;
-        --accent: #3d9e9e;
-        --accent-hover: #57baba;
-        --muted: #a09895;
-        --border: #2e2b28;
-        --surface: #221f1d;
-        --nav-label: #9a8f8c;
+        --bg: #111015;
+        --fg: #b9bfc8;
+        --accent: #ed84b9;
+        --accent-hover: #f2a2c8;
+        --muted: #ab9fba;
+        --border: #2a2035;
+        --surface: #1a1522;
+        --nav-label: #ab9fba;
+        --accent-tint: rgba(237, 132, 185, 0.1);
+
+        --code-fg: #fcd34d;
+        --code-bg: #2b2013;
+
+        --footer-bg: #0c0a10;
+        --footer-fg: #b9bfc8;
+        --footer-muted: #98a2b0;
+        --footer-accent: #ed84b9;
+        --footer-border: rgba(255, 255, 255, 0.08);
+
+        --header-overlay: rgba(13, 13, 16, 0.85);
+        --header-fg: #b9bfc8;
+
+        --focus-outline: #ffdd00;
+
+        --logo-fg: var(--muted);
     }
 }
-/* ============================================================================= */
 
 *,
 *::before,
@@ -42,7 +75,7 @@
 html {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-lexend), system-ui, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -51,4 +84,9 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus-outline);
+    outline-offset: 2px;
 }

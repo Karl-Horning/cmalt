@@ -15,6 +15,10 @@ export const meta = {
     date: "2026-05-15",
     lastUpdated: "2026-09-10",
     readingTime: 1,
+    headerImage: {
+        src: "/headers/declaration.avif",
+        alt: "A hand signing a printed form at a wooden desk",
+    },
     slug: "declaration",
     draft: false,
 };

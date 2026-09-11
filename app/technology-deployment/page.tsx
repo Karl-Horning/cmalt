@@ -19,7 +19,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -43,8 +45,8 @@ export default function page() {
                     </a>{" "}
                     to support trainers through the institutional transition to
                     Teams. I also created a video walkthrough,{" "}
-                    <cite>Microsoft Teams Guide</cite>, which was used to deliver
-                    asynchronous training.
+                    <cite>Microsoft Teams Guide</cite>, which was used to
+                    deliver asynchronous training.
                 </p>
 
                 <p>
@@ -187,10 +189,10 @@ export default function page() {
                     scalable, while still achieving the goal of verifying
                     assignment submissions. Feedback from administrative staff
                     also influenced revisions: simplifying language or
-                    prioritising practical marking workflows over
-                    advanced features. These contributions frequently drew my
-                    attention to areas I might not have identified alone,
-                    reinforcing the importance of team-based evaluation.
+                    prioritising practical marking workflows over advanced
+                    features. These contributions frequently drew my attention
+                    to areas I might not have identified alone, reinforcing the
+                    importance of team-based evaluation.
                 </p>
 
                 <p>
@@ -262,9 +264,9 @@ export default function page() {
                             Testing LMS APIs: What an OpenAPI Spec Gives You
                             (and What It Doesn&apos;t) (2025) (Blog post)
                         </a>{" "}
-                            Public, post informed by DEPP testing; demonstrates
-                            clear dissemination of API evaluation methods and
-                            supports reproducible endpoint testing.
+                        Public, post informed by DEPP testing; demonstrates
+                        clear dissemination of API evaluation methods and
+                        supports reproducible endpoint testing.
                     </li>
                     <li>
                         <a
@@ -274,10 +276,9 @@ export default function page() {
                         >
                             Using Postman with Apollo Server (2023) (PDF)
                         </a>{" "}
-                            Internal developer documentation for GraphQL
-                            workflows (auth, JWT storage, queries/mutations);
-                            underpins consistent onboarding and team-wide
-                            technical practice.
+                        Internal developer documentation for GraphQL workflows
+                        (auth, JWT storage, queries/mutations); underpins
+                        consistent onboarding and team-wide technical practice.
                     </li>
                 </ul>
 
@@ -291,10 +292,10 @@ export default function page() {
                         >
                             Microsoft Teams FAQ (2021) (PDF)
                         </a>{" "}
-                            Trainer-focused guide produced during the Skype for
-                            Business → Teams transition; plain-English support
-                            that reduced friction and queries during
-                            institutional change.
+                        Trainer-focused guide produced during the Skype for
+                        Business → Teams transition; plain-English support that
+                        reduced friction and queries during institutional
+                        change.
                     </li>
                     <li>
                         <a
@@ -304,9 +305,9 @@ export default function page() {
                         >
                             Microsoft Teams Guide (Video)
                         </a>{" "}
-                            Short asynchronous walkthrough used alongside the
-                            FAQ; provides accessible, on-demand training to
-                            support deployment at scale.
+                        Short asynchronous walkthrough used alongside the FAQ;
+                        provides accessible, on-demand training to support
+                        deployment at scale.
                     </li>
                 </ul>
             </section>
@@ -316,8 +317,9 @@ export default function page() {
 
                 <ul>
                     <li>
-                        Apollo GraphQL. <cite>Introduction to Apollo Server</cite>.
-                        Available at:{" "}
+                        Apollo GraphQL.{" "}
+                        <cite>Introduction to Apollo Server</cite>. Available
+                        at:{" "}
                         <a
                             href="https://www.apollographql.com/docs/apollo-server"
                             target="_blank"
@@ -327,8 +329,8 @@ export default function page() {
                         </a>
                     </li>
                     <li>
-                        GeeksforGeeks. <cite>JSON Web Token (JWT)</cite>. Available
-                        at:{" "}
+                        GeeksforGeeks. <cite>JSON Web Token (JWT)</cite>.
+                        Available at:{" "}
                         <a
                             href="https://www.geeksforgeeks.org/web-tech/json-web-token-jwt/"
                             target="_blank"

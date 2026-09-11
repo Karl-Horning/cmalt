@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CredentialChip from "@/components/CredentialChip/CredentialChip";
 import JsonLd from "@/components/JsonLd/JsonLd";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
@@ -8,6 +8,7 @@ import {
     cmaltBadge,
     cmaltCertificate,
 } from "@/lib/constants";
+import styles from "./page.module.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -15,7 +16,13 @@ export default function page() {
     return (
         <>
             <JsonLd data={generatePageJsonLd(meta)} />
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                lastUpdated={meta.lastUpdated}
+                readingTime={meta.readingTime}
+                image={meta.headerImage}
+            />
             <section id="declaration">
                 <h2>Declaration</h2>
 
@@ -67,19 +74,14 @@ export default function page() {
                     2026.
                 </p>
 
-                <a
-                    href={cmaltCertificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: "block", marginBottom: "1.25rem" }}
-                >
-                    <Image
-                        src={cmaltBadge}
-                        alt="CMALT — Certified Member of the Association for Learning Technology badge"
-                        width={120}
-                        height={120}
+                <div className={styles.credentialAlign}>
+                    <CredentialChip
+                        href={cmaltCertificate}
+                        badgeSrc={cmaltBadge}
+                        title="CMALT Certified"
+                        subtitle="Awarded May 2026"
                     />
-                </a>
+                </div>
 
                 <ul>
                     <li>

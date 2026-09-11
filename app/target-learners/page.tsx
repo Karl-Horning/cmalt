@@ -14,7 +14,13 @@ export default function page() {
     return (
         <>
             <JsonLd data={generatePageJsonLd(meta)} />
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                lastUpdated={meta.lastUpdated}
+                readingTime={meta.readingTime}
+                image={meta.headerImage}
+            />
             <section id="description">
                 <h2>Description</h2>
 
@@ -33,7 +39,11 @@ export default function page() {
                 <p>
                     To tailor the learning experience from the start, I created
                     a document titled{" "}
-                    <a href={firstSessionQuestionsDocument} target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={firstSessionQuestionsDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         First Session Questions
                     </a>
                     , which I used as a structured needs analysis tool. It
@@ -45,7 +55,11 @@ export default function page() {
 
                 <p>
                     Based on this information,{" "}
-                    <a href={designingAnEnglishCourseDocument} target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={designingAnEnglishCourseDocument}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         I designed bespoke ten-week courses
                     </a>
                     . For example, one group needed to improve clarity in
@@ -123,8 +137,8 @@ export default function page() {
                 </ul>
 
                 <p>
-                    This level of detail helped learners build vocabulary and
-                    an awareness of nuance and usage.
+                    This level of detail helped learners build vocabulary and an
+                    awareness of nuance and usage.
                 </p>
             </section>
 
@@ -154,9 +168,9 @@ export default function page() {
                     scenario-based tasks, but I also recognised that supporting
                     these tasks required more focused language input. The same
                     principle shaped my staff training at Imperial: I
-                    prioritised practice in real scenarios, such as using
-                    Canvas analytics to evaluate engagement, so that colleagues
-                    left sessions with applied confidence rather than only
+                    prioritised practice in real scenarios, such as using Canvas
+                    analytics to evaluate engagement, so that colleagues left
+                    sessions with applied confidence rather than only
                     theoretical knowledge.
                 </p>
 
@@ -168,11 +182,11 @@ export default function page() {
                     approach to provide shorter, situation-specific vocabulary
                     lists followed by immediate application in roleplay or
                     dialogue. This improved learner recall and confidence.
-                    Similarly, when designing training at Imperial, I broke
-                    down complex technical features into smaller,
-                    task-specific activities. This mirrored the way shorter
-                    vocabulary sets once helped language learners, so staff
-                    could absorb key concepts without cognitive overload.
+                    Similarly, when designing training at Imperial, I broke down
+                    complex technical features into smaller, task-specific
+                    activities. This mirrored the way shorter vocabulary sets
+                    once helped language learners, so staff could absorb key
+                    concepts without cognitive overload.
                 </p>
 
                 <p>
@@ -219,11 +233,11 @@ export default function page() {
 
                 <p>
                     Building directly on these earlier insights, these same
-                    learner-centred approaches informed my practice at
-                    Imperial. For example, in preparing Canvas training for
-                    staff, I emphasised scenario-based activities, like using
-                    analytics, rather than abstract feature lists, mirroring
-                    the workplace-focused roleplays I once used with English
+                    learner-centred approaches informed my practice at Imperial.
+                    For example, in preparing Canvas training for staff, I
+                    emphasised scenario-based activities, like using analytics,
+                    rather than abstract feature lists, mirroring the
+                    workplace-focused roleplays I once used with English
                     learners. This helped staff feel confident applying the
                     tools in their own contexts, rather than passively hearing
                     about functionality without opportunities to practise.
@@ -279,35 +293,46 @@ export default function page() {
                 <h3>Needs Analysis & Course Design</h3>
                 <ul>
                     <li>
-                        <a href={firstSessionQuestionsDocument} target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={firstSessionQuestionsDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             First Session Questions (PDF)
                         </a>{" "}
-                            Structured needs analysis capturing goals, workplace
-                            tasks, confidence by skill, and pain points; anchors
-                            personalised planning and ongoing course
-                            adjustments.
+                        Structured needs analysis capturing goals, workplace
+                        tasks, confidence by skill, and pain points; anchors
+                        personalised planning and ongoing course adjustments.
                     </li>
                     <li>
-                        <a href={designingAnEnglishCourseDocument} target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={designingAnEnglishCourseDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Designing a Bespoke English Course for Professionals
                             (PDF)
                         </a>{" "}
-                            Example ten-week curriculum aligned to real
-                            scenarios (meetings, calls, requests); shows
-                            constructive alignment from needs analysis to
-                            objectives, activities, and assessment.
+                        Example ten-week curriculum aligned to real scenarios
+                        (meetings, calls, requests); shows constructive
+                        alignment from needs analysis to objectives, activities,
+                        and assessment.
                     </li>
                 </ul>
 
                 <h3>Personalised Feedback & Usage Clarity</h3>
                 <ul>
                     <li>
-                        <a href={exampleFeedbackDocument} target="_blank" rel="noopener noreferrer">
+                        <a
+                            href={exampleFeedbackDocument}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Example Feedback: Complete &amp; Full (Markdown)
                         </a>{" "}
-                            Targeted written feedback addressing false friends
-                            and nuanced usage; models clear explanations that
-                            build accuracy, confidence, and workplace transfer.
+                        Targeted written feedback addressing false friends and
+                        nuanced usage; models clear explanations that build
+                        accuracy, confidence, and workplace transfer.
                     </li>
                 </ul>
             </section>

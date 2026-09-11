@@ -1,8 +1,7 @@
 /**
  * Videos used in teaching or training sessions.
  *
- * Each entry groups the related assets for a single video: the source file,
- * a WebVTT subtitle track, and a poster image.
+ * Each entry groups the related assets for a single video: the source file, a WebVTT subtitle track, and a poster image.
  *
  * Values are file paths relative to `public/`.
  */

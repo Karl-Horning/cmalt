@@ -1,6 +1,5 @@
 /**
- * @fileoverview Full-text search page powered by Fuse.js, searching page
- * titles, keywords, descriptions, and content.
+ * @fileoverview Full-text search page powered by Fuse.js, searching page titles, keywords, descriptions, and content.
  */
 
 "use client";
@@ -20,9 +19,15 @@ const fuse = new Fuse(searchIndex, {
         { name: "description", weight: 1 },
     ],
     threshold: 0.3,
+    ignoreLocation: true,
 });
 
-export default function SearchPage() {
+interface SearchPageProps {
+    /** Called when a result link is followed, so an overlay can close. */
+    onNavigate?: () => void;
+}
+
+export default function SearchPage({ onNavigate }: SearchPageProps) {
     const [query, setQuery] = useState("");
 
     const results = useMemo(
@@ -56,6 +61,7 @@ export default function SearchPage() {
                                 <Link
                                     href={`/${item.slug}`}
                                     className={styles.searchResultLink}
+                                    onClick={onNavigate}
                                 >
                                     <span className={styles.searchResultTitle}>
                                         {item.title}

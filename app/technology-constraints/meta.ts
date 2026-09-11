@@ -24,6 +24,10 @@ export const meta = {
     date: "2025-09-18",
     lastUpdated: "2026-09-10",
     readingTime: 11,
+    headerImage: {
+        src: "/headers/technology-constraints.avif",
+        alt: "A laptop keyboard lit with colourful backlighting in a dark room",
+    },
     slug: "technology-constraints",
     draft: false,
 };

@@ -9,7 +9,13 @@ export default function page() {
     return (
         <>
             <JsonLd data={generatePageJsonLd(meta)} />
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                lastUpdated={meta.lastUpdated}
+                readingTime={meta.readingTime}
+                image={meta.headerImage}
+            />
             <section id="description">
                 <h2>My Journey in Learning Technology</h2>
 
@@ -51,8 +57,8 @@ export default function page() {
                     I&apos;ve led the development of scalable backend systems
                     and optimised GraphQL APIs for a custom Learning Management
                     System (LMS) supporting over 700,000 registered learners.
-                    Having worked on both sides — the classroom and the
-                    codebase — lets me design solutions grounded in pedagogical
+                    Having worked on both sides — the classroom and the codebase
+                    — lets me design solutions grounded in pedagogical
                     principles and real learner needs.
                 </p>
 
@@ -60,9 +66,9 @@ export default function page() {
                     Throughout my career, digital tools have shaped how I teach
                     and support learning. As a Virtual Onboarder, I trained new
                     teachers on a custom LMS over Microsoft Teams, using
-                    tailored sessions and video training. I also created
-                    bespoke business English courses for professionals,
-                    adapting content to their needs and industry.
+                    tailored sessions and video training. I also created bespoke
+                    business English courses for professionals, adapting content
+                    to their needs and industry.
                 </p>
 
                 <p>
@@ -95,14 +101,17 @@ export default function page() {
 
                 <p>
                     Until May 2026, I worked as a Learning Technologist within
-                    Imperial College London&apos;s ICT division. I was
-                    recruited for this combination of technical expertise and
-                    teaching experience, and my work bridged pedagogy and
-                    technology to support Imperial&apos;s strategic aim of
-                    inclusive digital education.
+                    Imperial College London&apos;s ICT division. I was recruited
+                    for this combination of technical expertise and teaching
+                    experience, and my work bridged pedagogy and technology to
+                    support Imperial&apos;s strategic aim of inclusive digital
+                    education.
                 </p>
 
-                <p>I collaborated with faculty-based learning technologists across:</p>
+                <p>
+                    I collaborated with faculty-based learning technologists
+                    across:
+                </p>
 
                 <ul>
                     <li>The Faculty of Natural Sciences</li>
@@ -113,8 +122,8 @@ export default function page() {
                 </ul>
 
                 <p>
-                    This kept our solutions coherent and responsive to the
-                    needs of staff and students across faculties.
+                    This kept our solutions coherent and responsive to the needs
+                    of staff and students across faculties.
                 </p>
 
                 <p>In practice, this involved:</p>
@@ -142,13 +151,12 @@ export default function page() {
                 </ul>
 
                 <p>
-                    Grounded in classroom teaching and strengthened by
-                    technical development, I can act as both a pedagogical
-                    partner and a technical specialist. At Imperial, I
-                    contributed to communities of practice, shared what I
-                    learned with colleagues, and helped keep standards
-                    consistent across the institution&apos;s digital education
-                    work.
+                    Grounded in classroom teaching and strengthened by technical
+                    development, I can act as both a pedagogical partner and a
+                    technical specialist. At Imperial, I contributed to
+                    communities of practice, shared what I learned with
+                    colleagues, and helped keep standards consistent across the
+                    institution&apos;s digital education work.
                 </p>
 
                 <p>

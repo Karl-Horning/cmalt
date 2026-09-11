@@ -21,6 +21,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 9,
+    headerImage: {
+        src: "/headers/technical-knowledge.avif",
+        alt: "A person wearing a virtual reality headset against a vivid pink background",
+    },
     slug: "technical-knowledge",
     draft: false,
 };

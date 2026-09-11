@@ -20,7 +20,9 @@ export default function page() {
             <PageHeader
                 title={meta.title}
                 date={meta.date}
+                lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -44,8 +46,8 @@ export default function page() {
                     <li>Their APIs and integration models</li>
                     <li>Accessibility compliance, such as WCAG 2.1</li>
                     <li>
-                        Alignment with the pedagogical and administrative
-                        needs of different faculties
+                        Alignment with the pedagogical and administrative needs
+                        of different faculties
                     </li>
                 </ul>
 
@@ -78,20 +80,21 @@ export default function page() {
                 <p>
                     We then had to decide which elements should be provided
                     natively within the LMS and which could be supported through
-                    external tools such as <cite>ColourVeil</cite>. To justify this,
-                    we compared the degree to which each platform could natively
-                    preserve accessibility when colour schemes were customised.
-                    For instance, one LMS automatically adjusted text colour (to
-                    black or white) depending on the selected background,
-                    ensuring contrast ratios always remained accessible. This
-                    feature was judged particularly valuable as it reduced the
-                    reliance on external tools and prevented user error.
+                    external tools such as <cite>ColourVeil</cite>. To justify
+                    this, we compared the degree to which each platform could
+                    natively preserve accessibility when colour schemes were
+                    customised. For instance, one LMS automatically adjusted
+                    text colour (to black or white) depending on the selected
+                    background, ensuring contrast ratios always remained
+                    accessible. This feature was judged particularly valuable as
+                    it reduced the reliance on external tools and prevented user
+                    error.
                 </p>
 
                 <p>
                     To ensure claims about accessibility could be validated,
-                    testers used <cite>Accessibility Insights</cite> to check that
-                    colour customisations met WCAG standards. Links to this
+                    testers used <cite>Accessibility Insights</cite> to check
+                    that colour customisations met WCAG standards. Links to this
                     testing resource were included directly in the evaluation
                     scripts, making the process transparent and reproducible.
                 </p>
@@ -204,8 +207,7 @@ export default function page() {
                     and acceptance criteria to manage stakeholder needs. This
                     has also shaped how I communicate with staff: I now place
                     greater emphasis on showing how technical decisions (such as
-                    native versus external colour accessibility) directly
-                    affect
+                    native versus external colour accessibility) directly affect
                     teaching and learning, ensuring that staff understand both
                     the benefits and the limitations of a platform.
                 </p>
@@ -306,10 +308,10 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                            Demonstrates critical evaluation of LMS API
-                            functionality and interoperability through hands-on
-                            testing; used to explore constraints and affordances
-                            of Blackboard Ultra&apos;s integration model.
+                        Demonstrates critical evaluation of LMS API
+                        functionality and interoperability through hands-on
+                        testing; used to explore constraints and affordances of
+                        Blackboard Ultra&apos;s integration model.
                     </li>
                     <li>
                         <a
@@ -319,10 +321,9 @@ export default function page() {
                         >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
-                            Shows how structured manual test scripts were used
-                            to evaluate platform functionality, identify
-                            limitations, and simulate user journeys with
-                            reproducible steps.
+                        Shows how structured manual test scripts were used to
+                        evaluate platform functionality, identify limitations,
+                        and simulate user journeys with reproducible steps.
                     </li>
                     <li>
                         <a
@@ -333,10 +334,9 @@ export default function page() {
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
-                            Captures the institutional evaluation context —
-                            multiple LMS platforms compared against timelines,
-                            accessibility, scalability, and integration
-                            requirements.
+                        Captures the institutional evaluation context — multiple
+                        LMS platforms compared against timelines, accessibility,
+                        scalability, and integration requirements.
                     </li>
                 </ul>
 
@@ -350,10 +350,10 @@ export default function page() {
                         >
                             Colour Accessibility User Stories (Screenshot)
                         </a>{" "}
-                            Evidence of user-centred requirements (acceptance
-                            criteria, contrast needs, preset schemes) informing
-                            evaluation and decision-making; demonstrates
-                            alignment with inclusive design principles.
+                        Evidence of user-centred requirements (acceptance
+                        criteria, contrast needs, preset schemes) informing
+                        evaluation and decision-making; demonstrates alignment
+                        with inclusive design principles.
                     </li>
                 </ul>
 
@@ -367,10 +367,10 @@ export default function page() {
                         >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
-                            Shows custom tool development under infrastructure
-                            and access constraints; justifies cross-platform
-                            delivery and documents trade-offs between
-                            performance, maintainability, and scalability.
+                        Shows custom tool development under infrastructure and
+                        access constraints; justifies cross-platform delivery
+                        and documents trade-offs between performance,
+                        maintainability, and scalability.
                     </li>
                 </ul>
             </section>
