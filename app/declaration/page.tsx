@@ -8,6 +8,7 @@ import {
     cmaltBadge,
     cmaltCertificate,
 } from "@/lib/constants";
+import styles from "./page.module.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -73,12 +74,14 @@ export default function page() {
                     2026.
                 </p>
 
-                <CredentialChip
-                    href={cmaltCertificate}
-                    badgeSrc={cmaltBadge}
-                    title="CMALT Certified"
-                    subtitle="Awarded May 2026"
-                />
+                <div className={styles.credentialAlign}>
+                    <CredentialChip
+                        href={cmaltCertificate}
+                        badgeSrc={cmaltBadge}
+                        title="CMALT Certified"
+                        subtitle="Awarded May 2026"
+                    />
+                </div>
 
                 <ul>
                     <li>

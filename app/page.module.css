@@ -1,14 +1,10 @@
 /* Styles for the home page. */
 
 .homeHero {
-    padding: 2.5rem 2rem 2.25rem;
-    margin-bottom: 2.5rem;
-    border-radius: 20px;
-    background: radial-gradient(
-        ellipse 100% 90% at 50% -10%,
-        var(--accent-tint),
-        transparent 70%
-    );
+    width: 100%;
+    margin: auto 0;
+    padding: 3.5rem 1.5rem 2.5rem;
+    text-align: center;
 }
 
 .homeEyebrow {
@@ -18,8 +14,13 @@
     text-transform: uppercase;
     color: var(--accent);
     font-family: var(--font-lexend), system-ui, sans-serif;
-    max-width: 680px;
-    margin: 0 auto 0.6rem;
+    margin: 0 0 0.6rem;
+}
+
+.homeHero .homeName {
+    max-width: none;
+    font-size: clamp(2.75rem, 6vw + 1rem, 4.5rem);
+    margin: 0 auto 1.25rem;
 }
 
 .homeDescription {
@@ -28,50 +29,12 @@
     margin: 0 auto 1.5rem;
 }
 
-.homeLinks {
+.homeCtaRow {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.75rem;
-    max-width: 680px;
-    margin: 0 auto;
-}
-
-.homeLink {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: var(--fg);
-    text-decoration: none;
-    font-size: 0.9375rem;
-    font-family: var(--font-lexend), system-ui, sans-serif;
-    font-weight: 500;
-    padding: 0.4rem 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--surface);
-    transition:
-        color 0.15s,
-        border-color 0.15s;
-}
-
-.homeLink:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-}
-
-.homeIntro {
-    background: var(--surface);
-    border-radius: 20px;
-    padding: 2rem 2rem 2.25rem;
-}
-
-section#homeIntro h2 {
-    margin-top: 0;
-}
-
-.homeCtaWrap {
-    max-width: 680px;
-    margin: 0.25rem auto 0;
+    margin: 0.25rem 0 2rem;
 }
 
 .homeCta {
@@ -93,18 +56,62 @@ section#homeIntro h2 {
     background: var(--accent-hover);
 }
 
+.homeGhost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-lexend), system-ui, sans-serif;
+    font-size: 0.9375rem;
+    padding: 0.7rem 1.25rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 8px;
+    transition:
+        background-color 0.15s,
+        color 0.15s;
+}
+
+.homeGhost:hover {
+    background: var(--accent-tint);
+    color: var(--accent-hover);
+}
+
+.homeGhostBadge {
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.homeIconLinks {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.homeIconLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 1.05rem;
+    transition:
+        color 0.15s,
+        border-color 0.15s;
+}
+
+.homeIconLink:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
 @media (max-width: 640px) {
     .homeHero {
-        border-radius: 0;
-        margin-left: -1.25rem;
-        margin-right: -1.25rem;
-        padding: 1.75rem 1.25rem 1.5rem;
-    }
-
-    .homeIntro {
-        border-radius: 0;
-        margin-left: -1.25rem;
-        margin-right: -1.25rem;
-        padding: 1.75rem 1.25rem 2rem;
+        padding: 2.5rem 1.25rem 2rem;
     }
 }

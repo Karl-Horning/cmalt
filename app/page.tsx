@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
-import CredentialChip from "@/components/CredentialChip/CredentialChip";
 import JsonLd from "@/components/JsonLd/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
 import { cmaltCertificate, cmaltBadge } from "@/lib/constants";
@@ -60,66 +60,62 @@ export default function Home() {
             <JsonLd data={homeJsonLd} />
             <div className={styles.homeHero}>
                 <p className={styles.homeEyebrow}>Full-Stack Developer</p>
-                <h1>Karl Horning</h1>
+                <h1 className={styles.homeName}>Karl Horning</h1>
                 <p className={styles.homeDescription}>
-                    Full-stack developer with commercial experience building
-                    production systems across Node.js, GraphQL, Python, and AWS.
-                    CMALT is a peer-assessed professional credential requiring
-                    three or more years of demonstrated experience, awarded May
-                    2026.
+                    CMALT-accredited learning technologist and full-stack
+                    developer.
                 </p>
-                <CredentialChip
-                    href={cmaltCertificate}
-                    badgeSrc={cmaltBadge}
-                    title="CMALT Certified"
-                    subtitle="Association for Learning Technology"
-                />
-                <nav className={styles.homeLinks} aria-label="External profiles">
+                <div className={styles.homeCtaRow}>
+                    <Link href="/contextual-statement" className={styles.homeCta}>
+                        View the Portfolio
+                        <FiArrowRight aria-hidden="true" />
+                    </Link>
+                    <a
+                        href={cmaltCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.homeGhost}
+                    >
+                        <Image
+                            src={cmaltBadge}
+                            alt=""
+                            width={20}
+                            height={20}
+                            className={styles.homeGhostBadge}
+                        />
+                        CMALT Certified
+                    </a>
+                </div>
+                <nav className={styles.homeIconLinks} aria-label="External profiles">
                     <a
                         href="https://github.com/Karl-Horning"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.homeLink}
+                        className={styles.homeIconLink}
+                        aria-label="GitHub"
                     >
                         <FaGithub aria-hidden="true" />
-                        GitHub
                     </a>
                     <a
                         href="https://www.linkedin.com/in/karl-horning"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.homeLink}
+                        className={styles.homeIconLink}
+                        aria-label="LinkedIn"
                     >
                         <FaLinkedin aria-hidden="true" />
-                        LinkedIn
                     </a>
                     <a
                         href="https://www.karlhorning.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.homeLink}
+                        className={styles.homeIconLink}
+                        aria-label="karlhorning.dev"
                     >
                         <KSiteIcon aria-hidden="true" />
-                        karlhorning.dev
                     </a>
                 </nav>
             </div>
-
-            <section id="homeIntro" className={styles.homeIntro}>
-                <h2>CMALT Portfolio</h2>
-                <p>
-                    The portfolio is structured across six areas, from
-                    operational practice and teaching to legislation, policy,
-                    communication, and a specialist section on JavaScript
-                    development.
-                </p>
-                <div className={styles.homeCtaWrap}>
-                    <Link href="/contextual-statement" className={styles.homeCta}>
-                        Begin with the Contextual Statement
-                        <FiArrowRight aria-hidden="true" />
-                    </Link>
-                </div>
-            </section>
         </>
     );
 }

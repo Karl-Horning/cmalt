@@ -1,0 +1,11 @@
+/* Styles for the declaration page. */
+
+.credentialAlign {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.credentialAlign > a {
+    margin-left: 0;
+    margin-right: 0;
+}
