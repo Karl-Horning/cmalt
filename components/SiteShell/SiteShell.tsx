@@ -82,9 +82,6 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                                 </g>
                             </g>
                         </svg>
-                        <span className={styles.brandText}>
-                            Karl Horning: CMALT Portfolio
-                        </span>
                     </Link>
 
                     <div className={styles.headerActions}>

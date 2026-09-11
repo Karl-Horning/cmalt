@@ -34,16 +34,6 @@
     flex-shrink: 0;
 }
 
-.brandText {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--fg);
-    font-family: var(--font-lexend), system-ui, sans-serif;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .headerActions {
     display: flex;
     align-items: center;
@@ -365,10 +355,6 @@
 }
 
 @media (max-width: 640px) {
-    .brandText {
-        display: none;
-    }
-
     .menuToggleLabel {
         display: none;
     }
