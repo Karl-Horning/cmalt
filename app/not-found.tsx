@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 import styles from "./not-found.module.css";
 
 export const metadata: Metadata = {
@@ -9,15 +10,16 @@ export const metadata: Metadata = {
 export default function NotFound() {
     return (
         <div className={styles.notFoundBody}>
-            <h1>Page not found</h1>
-            <p>
+            <p className={styles.notFoundCode}>404</p>
+            <h1 className={styles.notFoundHeading}>Page not found</h1>
+            <p className={styles.notFoundDescription}>
                 The page you&apos;re looking for doesn&apos;t exist or may have
                 moved.
             </p>
-            <p>
-                <Link href="/">Return to the portfolio home</Link>, or use the
-                navigation to find a section.
-            </p>
+            <Link href="/" className={styles.notFoundCta}>
+                Take me home
+                <FiArrowRight aria-hidden="true" />
+            </Link>
         </div>
     );
 }

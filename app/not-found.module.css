@@ -3,6 +3,49 @@
 .notFoundBody {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex: 1;
+    text-align: center;
+}
+
+.notFoundCode {
+    font-family: var(--font-lexend), system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(3rem, 6vw + 1rem, 5rem);
+    line-height: 1;
+    color: var(--accent);
+    margin: 0 0 0.5rem;
+}
+
+.notFoundBody .notFoundHeading {
+    max-width: none;
+    margin: 0 0 1rem;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+.notFoundDescription {
+    max-width: 46ch;
+    font-size: 1.0625rem;
+    color: var(--muted);
+    margin: 0 0 1.75rem;
+}
+
+.notFoundCta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-lexend), system-ui, sans-serif;
+    font-size: 0.9375rem;
+    padding: 0.7rem 1.25rem;
+    border-radius: 8px;
+    transition: background-color 0.15s;
+}
+
+.notFoundCta:hover {
+    background: var(--accent-hover);
 }
