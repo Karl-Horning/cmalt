@@ -34,3 +34,9 @@
 .button:hover {
     background: var(--accent-hover);
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .button {
+        transition: none;
+    }
+}
