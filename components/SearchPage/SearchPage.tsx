@@ -21,7 +21,12 @@ const fuse = new Fuse(searchIndex, {
     threshold: 0.3,
 });
 
-export default function SearchPage() {
+interface SearchPageProps {
+    /** Called when a result link is followed, so an overlay can close. */
+    onNavigate?: () => void;
+}
+
+export default function SearchPage({ onNavigate }: SearchPageProps) {
     const [query, setQuery] = useState("");
 
     const results = useMemo(
@@ -55,6 +60,7 @@ export default function SearchPage() {
                                 <Link
                                     href={`/${item.slug}`}
                                     className={styles.searchResultLink}
+                                    onClick={onNavigate}
                                 >
                                     <span className={styles.searchResultTitle}>
                                         {item.title}

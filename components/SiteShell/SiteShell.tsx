@@ -3,8 +3,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { FiMenu, FiSearch, FiX } from "react-icons/fi";
 import BackToTop from "@/components/BackToTop/BackToTop";
 import Footer from "@/components/Footer/Footer";
@@ -12,37 +12,48 @@ import KSiteIcon from "@/components/icons/KSiteIcon/KSiteIcon";
 import Nav from "@/components/Nav/Nav";
 import PrevNextNav from "@/components/PrevNextNav/PrevNextNav";
 import ScrollProgress from "@/components/ScrollProgress/ScrollProgress";
+import SearchPage from "@/components/SearchPage/SearchPage";
 import styles from "./SiteShell.module.css";
 
 /** Root layout shell; wraps page content with header, menu, and footer. */
 export default function SiteShell({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    const router = useRouter();
     const [menuOpen, setMenuOpen] = useState(false);
+    const [searchOpen, setSearchOpen] = useState(false);
     const [lastPathname, setLastPathname] = useState(pathname);
+    const searchButtonRef = useRef<HTMLButtonElement>(null);
 
     if (pathname !== lastPathname) {
         setLastPathname(pathname);
         setMenuOpen(false);
+        setSearchOpen(false);
     }
 
     useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
+        document.body.style.overflow = menuOpen || searchOpen ? "hidden" : "";
         return () => {
             document.body.style.overflow = "";
         };
-    }, [menuOpen]);
+    }, [menuOpen, searchOpen]);
+
+    const closeSearch = () => {
+        setSearchOpen(false);
+        searchButtonRef.current?.focus();
+    };
 
     useEffect(() => {
         const onKeyDown = (e: KeyboardEvent) => {
             if ((e.metaKey || e.ctrlKey) && e.key === "k") {
                 e.preventDefault();
-                router.push("/search");
+                setMenuOpen(false);
+                setSearchOpen((v) => !v);
+            } else if (e.key === "Escape" && searchOpen) {
+                closeSearch();
             }
         };
         window.addEventListener("keydown", onKeyDown);
         return () => window.removeEventListener("keydown", onKeyDown);
-    }, [router]);
+    }, [searchOpen]);
 
     return (
         <>
@@ -85,13 +96,20 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                     </Link>
 
                     <div className={styles.headerActions}>
-                        <Link
-                            href="/search"
+                        <button
+                            type="button"
+                            ref={searchButtonRef}
                             className={styles.headerIconLink}
+                            onClick={() => {
+                                setMenuOpen(false);
+                                setSearchOpen((v) => !v);
+                            }}
+                            aria-expanded={searchOpen}
+                            aria-controls="search-overlay-panel"
                             aria-label="Search this portfolio"
                         >
                             <FiSearch aria-hidden="true" />
-                        </Link>
+                        </button>
                         <a
                             href="https://www.karlhorning.dev/"
                             target="_blank"
@@ -104,7 +122,10 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                         <button
                             type="button"
                             className={styles.menuToggleBtn}
-                            onClick={() => setMenuOpen((v) => !v)}
+                            onClick={() => {
+                                setSearchOpen(false);
+                                setMenuOpen((v) => !v);
+                            }}
                             aria-expanded={menuOpen}
                             aria-controls="site-menu-panel"
                             aria-label="Sections"
@@ -131,10 +152,13 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
             </header>
 
-            {menuOpen && (
+            {(menuOpen || searchOpen) && (
                 <div
-                    className={styles.menuBackdrop}
-                    onClick={() => setMenuOpen(false)}
+                    className={styles.overlayBackdrop}
+                    onClick={() => {
+                        setMenuOpen(false);
+                        if (searchOpen) closeSearch();
+                    }}
                     aria-hidden="true"
                 />
             )}
@@ -148,6 +172,18 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                     <Nav onNavigate={() => setMenuOpen(false)} />
                 </div>
             </div>
+
+            {searchOpen && (
+                <div
+                    id="search-overlay-panel"
+                    className={styles.searchOverlayPanel}
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Search this portfolio"
+                >
+                    <SearchPage onNavigate={() => setSearchOpen(false)} />
+                </div>
+            )}
 
             <BackToTop />
             <main id="main-content" className={styles.siteMain}>
