@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const homeJsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    name: "Karl Horning — CMALT Portfolio",
+    name: "Karl Horning: CMALT Portfolio",
     description:
         "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
     url: SITE_URL,
