@@ -49,6 +49,13 @@
     color: var(--footer-accent);
 }
 
+.footerMeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
 .footerBottom {
     display: flex;
     align-items: center;

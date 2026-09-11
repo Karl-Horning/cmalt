@@ -27,6 +27,12 @@ export const navStructure: (StandaloneItem | GroupItem)[] = [
         utility: true,
     },
     {
+        type: "standalone",
+        href: "/accessibility-statement",
+        label: "Accessibility Statement",
+        utility: true,
+    },
+    {
         type: "group",
         label: "CMALT Portfolio",
         items: [{ href: "/contextual-statement", label: "Contextual Statement" }],

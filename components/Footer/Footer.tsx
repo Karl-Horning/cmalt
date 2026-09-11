@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import KSiteIcon from "@/components/icons/KSiteIcon/KSiteIcon";
+import { cmaltCertificate } from "@/lib/constants";
 import { navStructure } from "@/lib/nav";
 import styles from "./Footer.module.css";
 
@@ -44,6 +45,20 @@ export default function Footer() {
                             </div>
                         );
                     })}
+                </nav>
+
+                <nav className={styles.footerMeta} aria-label="Legal and credentials">
+                    <Link href="/accessibility-statement" className={styles.footerLink}>
+                        Accessibility Statement
+                    </Link>
+                    <a
+                        href={cmaltCertificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.footerLink}
+                    >
+                        CMALT Certification
+                    </a>
                 </nav>
 
                 <div className={styles.footerBottom}>
