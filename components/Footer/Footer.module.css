@@ -86,7 +86,7 @@
 
 @media (max-width: 640px) {
     .siteFooter {
-        padding: 0 0 1.25rem;
+        padding: 0;
     }
 
     .footerInner {

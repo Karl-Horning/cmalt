@@ -16,6 +16,10 @@
     text-align: right;
 }
 
+.prevNextNext .prevNextDirection {
+    justify-content: flex-end;
+}
+
 .prevNextLink {
     display: flex;
     flex-direction: column;
