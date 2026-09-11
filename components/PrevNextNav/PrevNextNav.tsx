@@ -1,12 +1,12 @@
 /**
- * @fileoverview Previous / next page navigation derived from the site's nav
- * structure, rendered at the bottom of each content page.
+ * @fileoverview Previous / next page navigation derived from the site's nav structure, rendered at the bottom of each content page.
  */
 
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { navStructure } from "@/lib/nav";
 import styles from "./PrevNextNav.module.css";
 
@@ -30,7 +30,10 @@ export default function PrevNextNav() {
             <div className={styles.prevNextPrev}>
                 {prev && (
                     <Link href={prev.href} className={styles.prevNextLink}>
-                        <span className={styles.prevNextDirection}>← Previous</span>
+                        <span className={styles.prevNextDirection}>
+                            <FiArrowLeft aria-hidden="true" />
+                            Previous
+                        </span>
                         <span className={styles.prevNextLabel}>{prev.label}</span>
                     </Link>
                 )}
@@ -38,7 +41,10 @@ export default function PrevNextNav() {
             <div className={styles.prevNextNext}>
                 {next && (
                     <Link href={next.href} className={styles.prevNextLink}>
-                        <span className={styles.prevNextDirection}>Next →</span>
+                        <span className={styles.prevNextDirection}>
+                            Next
+                            <FiArrowRight aria-hidden="true" />
+                        </span>
                         <span className={styles.prevNextLabel}>{next.label}</span>
                     </Link>
                 )}

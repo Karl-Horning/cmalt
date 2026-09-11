@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiArrowRight } from "react-icons/fi";
+import CredentialChip from "@/components/CredentialChip/CredentialChip";
 import JsonLd from "@/components/JsonLd/JsonLd";
 import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
 import { cmaltCertificate, cmaltBadge } from "@/lib/constants";
@@ -58,27 +59,21 @@ export default function Home() {
         <>
             <JsonLd data={homeJsonLd} />
             <div className={styles.homeHero}>
+                <p className={styles.homeEyebrow}>Full-Stack Developer</p>
                 <h1>Karl Horning</h1>
-                <p className={styles.homeSubtitle}>Full-Stack Developer</p>
-                <p>
+                <p className={styles.homeDescription}>
                     Full-stack developer with commercial experience building
                     production systems across Node.js, GraphQL, Python, and AWS.
                     CMALT is a peer-assessed professional credential requiring
                     three or more years of demonstrated experience, awarded May
                     2026.
                 </p>
-                <a
+                <CredentialChip
                     href={cmaltCertificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        src={cmaltBadge}
-                        alt="CMALT — Certified Member of the Association for Learning Technology badge"
-                        width={120}
-                        height={120}
-                    />
-                </a>
+                    badgeSrc={cmaltBadge}
+                    title="CMALT Certified"
+                    subtitle="Association for Learning Technology"
+                />
                 <nav className={styles.homeLinks} aria-label="External profiles">
                     <a
                         href="https://github.com/Karl-Horning"
@@ -110,7 +105,7 @@ export default function Home() {
                 </nav>
             </div>
 
-            <section>
+            <section id="homeIntro" className={styles.homeIntro}>
                 <h2>CMALT Portfolio</h2>
                 <p>
                     The portfolio is structured across six areas, from
@@ -118,9 +113,12 @@ export default function Home() {
                     communication, and a specialist section on JavaScript
                     development.
                 </p>
-                <Link href="/contextual-statement" className={styles.homeCta}>
-                    Begin with the Contextual Statement →
-                </Link>
+                <div className={styles.homeCtaWrap}>
+                    <Link href="/contextual-statement" className={styles.homeCta}>
+                        Begin with the Contextual Statement
+                        <FiArrowRight aria-hidden="true" />
+                    </Link>
+                </div>
             </section>
         </>
     );

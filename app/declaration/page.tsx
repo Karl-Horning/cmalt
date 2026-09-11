@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CredentialChip from "@/components/CredentialChip/CredentialChip";
 import JsonLd from "@/components/JsonLd/JsonLd";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
@@ -67,19 +67,12 @@ export default function page() {
                     2026.
                 </p>
 
-                <a
+                <CredentialChip
                     href={cmaltCertificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: "block", marginBottom: "1.25rem" }}
-                >
-                    <Image
-                        src={cmaltBadge}
-                        alt="CMALT — Certified Member of the Association for Learning Technology badge"
-                        width={120}
-                        height={120}
-                    />
-                </a>
+                    badgeSrc={cmaltBadge}
+                    title="CMALT Certified"
+                    subtitle="Awarded May 2026"
+                />
 
                 <ul>
                     <li>

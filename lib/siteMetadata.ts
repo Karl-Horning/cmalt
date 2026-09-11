@@ -23,8 +23,7 @@ interface PageMeta {
 /**
  * Generates a Next.js {@link Metadata} object for a portfolio page.
  *
- * The OpenGraph image is derived from the page slug, matching the naming
- * convention of the files in `/public/og/`.
+ * The OpenGraph image is derived from the page slug, matching the naming convention of the files in `/public/og/`.
  *
  * @param meta - The page's meta object from its `meta.ts` file.
  * @returns A fully populated {@link Metadata} object for the page.

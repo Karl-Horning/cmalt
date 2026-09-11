@@ -1,12 +1,9 @@
 @import "tailwindcss";
 
-/* =============================================================================
-   Theme configuration — edit these values per project.
-   ============================================================================= */
+/* Theme configuration — edit these values per project. */
 :root {
     /* Layout */
     --header-height: 60px;
-    --sidebar-width: 260px;
 
     /* Colours — every text/background pairing below clears WCAG AAA (7:1) */
     --bg: #ffffff;
@@ -22,6 +19,12 @@
     /* Secondary hue — reserved for code, don't reuse it elsewhere. */
     --code-fg: #7a3c0e;
     --code-bg: #fbf3e4;
+
+    --footer-bg: #0d0f12;
+    --footer-fg: #e9edf2;
+    --footer-muted: #98a2b0;
+    --footer-accent: #809fff;
+    --footer-border: rgba(255, 255, 255, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,9 +41,14 @@
 
         --code-fg: #fcd34d;
         --code-bg: #2b2013;
+
+        --footer-bg: #171b21;
+        --footer-fg: #e9edf2;
+        --footer-muted: #98a2b0;
+        --footer-accent: #809fff;
+        --footer-border: rgba(255, 255, 255, 0.08);
     }
 }
-/* ============================================================================= */
 
 *,
 *::before,

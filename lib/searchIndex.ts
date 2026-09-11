@@ -1,6 +1,5 @@
 /**
- * @fileoverview Search index for the site. Add one import per page when using
- * this repo as a template for a new documentation project.
+ * @fileoverview Search index for the site. Add one import per page when using this repo as a template for a new documentation project.
  */
 
 import { meta as communication } from "@/app/communication/meta";

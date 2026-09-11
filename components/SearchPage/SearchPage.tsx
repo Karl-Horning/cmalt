@@ -1,6 +1,5 @@
 /**
- * @fileoverview Full-text search page powered by Fuse.js, searching page
- * titles, keywords, descriptions, and content.
+ * @fileoverview Full-text search page powered by Fuse.js, searching page titles, keywords, descriptions, and content.
  */
 
 "use client";

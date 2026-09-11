@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-// To change fonts: swap the import below and update the variable name in the
-// html className and the --font-* custom property in globals.css.
+// To change fonts: swap the import below and update the variable name in the html className and the --font-* custom property in globals.css.
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import {
@@ -17,7 +16,7 @@ import layoutStyles from "./layout.module.css";
 const lexend = Lexend({
     variable: "--font-lexend",
     subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
+    weight: ["400", "500", "600", "700", "800"],
     display: "swap",
 });
 

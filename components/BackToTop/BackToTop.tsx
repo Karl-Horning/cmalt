@@ -1,7 +1,4 @@
-/**
- * @fileoverview Floating scroll-to-top button that appears after scrolling past
- * a threshold and hides when the site footer enters the viewport.
- */
+/** @fileoverview Floating scroll-to-top button, shown past a scroll threshold. */
 
 "use client";
 
@@ -17,11 +14,7 @@ export default function BackToTop() {
 
     useEffect(() => {
         const onScroll = () => {
-            const footer = document.getElementById("site-footer");
-            const footerVisible =
-                footer !== null &&
-                footer.getBoundingClientRect().top < window.innerHeight;
-            setVisible(window.scrollY > SCROLL_THRESHOLD && !footerVisible);
+            setVisible(window.scrollY > SCROLL_THRESHOLD);
         };
         window.addEventListener("scroll", onScroll, { passive: true });
         return () => window.removeEventListener("scroll", onScroll);
@@ -39,6 +32,8 @@ export default function BackToTop() {
             onClick={handleClick}
             className={`${styles.button}${visible ? ` ${styles.visible}` : ""}`}
             aria-label="Back to top"
+            aria-hidden={!visible}
+            tabIndex={visible ? 0 : -1}
         >
             <FaArrowUp aria-hidden="true" />
         </button>

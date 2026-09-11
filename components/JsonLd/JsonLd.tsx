@@ -1,6 +1,5 @@
 /**
- * @fileoverview Renders a JSON-LD structured data script tag for SEO and rich
- * results.
+ * @fileoverview Renders a JSON-LD structured data script tag for SEO and rich results.
  */
 
 /** Props for the {@link JsonLd} component. */
