@@ -6,59 +6,63 @@
     --header-height: 60px;
 
     /* Colours — every text/background pairing below clears WCAG AAA (7:1) */
-    --bg: #ffffff;
+    --bg: #f7f3ee;
     --fg: #14181d;
-    --accent: #3535d6;
-    --accent-hover: #2626b0;
-    --muted: #5b6470;
-    --border: #dde1e6;
-    --surface: #f6f7f9;
-    --nav-label: #5b6470;
-    --accent-tint: rgba(53, 53, 214, 0.06);
+    --accent: #8e1451;
+    --accent-hover: #6e0f3f;
+    --muted: #514b48;
+    --border: #d5cfc8;
+    --surface: #ede9e3;
+    --nav-label: #514b48;
+    --accent-tint: rgba(142, 20, 81, 0.06);
 
     /* Secondary hue — reserved for code, don't reuse it elsewhere. */
     --code-fg: #7a3c0e;
     --code-bg: #fbf3e4;
 
-    --footer-bg: #0d0f12;
+    --footer-bg: #0d0d0d;
     --footer-fg: #b9bfc8;
     --footer-muted: #98a2b0;
-    --footer-accent: #809fff;
+    --footer-accent: #ed84b9;
     --footer-border: rgba(255, 255, 255, 0.08);
 
-    /* Opacity is chosen so white text stays readable against the brightest realistic photo. */
-    --header-overlay: rgba(53, 53, 214, 0.9);
-    --header-fg: #ffffff;
+    /* Opacity is chosen so text stays readable against the brightest realistic photo. */
+    --header-overlay: rgba(13, 13, 16, 0.85);
+    --header-fg: #b9bfc8;
 
     /* Focus outline — keep the same value in both themes. */
     --focus-outline: #ffdd00;
+
+    --logo-fg: var(--fg);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #0d0f12;
+        --bg: #111015;
         --fg: #b9bfc8;
-        --accent: #809fff;
-        --accent-hover: #a8bcff;
-        --muted: #98a2b0;
-        --border: #2a3038;
-        --surface: #171b21;
-        --nav-label: #98a2b0;
-        --accent-tint: rgba(128, 159, 255, 0.1);
+        --accent: #ed84b9;
+        --accent-hover: #f2a2c8;
+        --muted: #ab9fba;
+        --border: #2a2035;
+        --surface: #1a1522;
+        --nav-label: #ab9fba;
+        --accent-tint: rgba(237, 132, 185, 0.1);
 
         --code-fg: #fcd34d;
         --code-bg: #2b2013;
 
-        --footer-bg: #171b21;
+        --footer-bg: #0c0a10;
         --footer-fg: #b9bfc8;
         --footer-muted: #98a2b0;
-        --footer-accent: #809fff;
+        --footer-accent: #ed84b9;
         --footer-border: rgba(255, 255, 255, 0.08);
 
-        --header-overlay: rgba(53, 53, 214, 0.9);
-        --header-fg: #ffffff;
+        --header-overlay: rgba(13, 13, 16, 0.85);
+        --header-fg: #b9bfc8;
 
         --focus-outline: #ffdd00;
+
+        --logo-fg: var(--muted);
     }
 }
 
