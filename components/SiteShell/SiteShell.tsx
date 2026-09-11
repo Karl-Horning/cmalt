@@ -194,7 +194,6 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
             )}
 
-            <BackToTop />
             <main id="main-content" className={styles.siteMain}>
                 <div className={styles.contentBody}>
                     {children}
@@ -202,6 +201,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </div>
             </main>
             <Footer />
+            <BackToTop />
         </>
     );
 }

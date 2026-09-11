@@ -8,6 +8,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 Add new entries here as they're merged, then rename this section when the release is ready.
 
+## [1.0.1] - 2026-09-11
+
+### Fixed
+
+- The back to top button couldn't be reached by keyboard once visible — it was placed before the main content in the DOM, so tabbing forward from the footer could never reach it. It's now the last element on the page, matching its fixed position on screen.
+
 ## [1.0.0] - 2026-09-11
 
 Initial release.
