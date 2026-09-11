@@ -15,7 +15,7 @@ export default function page() {
     return (
         <>
             <JsonLd data={generatePageJsonLd(meta)} />
-            <PageHeader title={meta.title} date={meta.date} readingTime={meta.readingTime} />
+            <PageHeader title={meta.title} date={meta.date} lastUpdated={meta.lastUpdated} readingTime={meta.readingTime} />
             <section id="declaration">
                 <h2>Declaration</h2>
 
