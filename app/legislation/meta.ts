@@ -20,6 +20,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 11,
+    headerImage: {
+        src: "/headers/legislation.avif",
+        alt: "The Houses of Parliament and Big Ben on the River Thames",
+    },
     slug: "legislation",
     draft: false,
 };

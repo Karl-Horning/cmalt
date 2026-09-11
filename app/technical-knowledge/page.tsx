@@ -24,6 +24,7 @@ export default function page() {
                 date={meta.date}
                 lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -190,8 +191,8 @@ export default function page() {
                     These enabled broader staff participation in the evaluation
                     process and informed my training delivery. For example, the
                     ICT Senior Analyst test script exemplifies how I worked
-                    closely with academic and technical colleagues to
-                    understand their specific needs.
+                    closely with academic and technical colleagues to understand
+                    their specific needs.
                 </p>
 
                 <p>
@@ -199,10 +200,10 @@ export default function page() {
                     Senior Analysts, I identified key API functionalities for
                     their workflows, such as documentation accessibility, data
                     request formats, and response limitations. This
-                    collaborative approach ensured that the testing scripts
-                    were directly relevant to real-world tasks, and let me
-                    explain platform capabilities and constraints from both
-                    user and developer perspectives.
+                    collaborative approach ensured that the testing scripts were
+                    directly relevant to real-world tasks, and let me explain
+                    platform capabilities and constraints from both user and
+                    developer perspectives.
                 </p>
 
                 <p>
@@ -279,10 +280,10 @@ export default function page() {
                             Postman collection developed from Blackboard
                             Ultra&apos;s Swagger spec (Repository)
                         </a>{" "}
-                            Demonstrates hands-on evaluation of LMS API
-                            functionality and interoperability; translates
-                            Swagger documentation into practical testing
-                            workflows for IAM, analytics, and configuration.
+                        Demonstrates hands-on evaluation of LMS API
+                        functionality and interoperability; translates Swagger
+                        documentation into practical testing workflows for IAM,
+                        analytics, and configuration.
                     </li>
                     <li>
                         <a
@@ -292,9 +293,9 @@ export default function page() {
                         >
                             ICT Analyst test script (Screenshot)
                         </a>{" "}
-                            Structured manual test plan reflecting academic
-                            workflows; evidences reproducible checks of
-                            navigation, bulk actions, and activity logs.
+                        Structured manual test plan reflecting academic
+                        workflows; evidences reproducible checks of navigation,
+                        bulk actions, and activity logs.
                     </li>
                     <li>
                         <a
@@ -304,10 +305,10 @@ export default function page() {
                         >
                             ICT Senior Analyst test script (Screenshot)
                         </a>{" "}
-                            Further evidence of applied testing aligned to
-                            administrative requirements; supports dual
-                            technical-pedagogic perspective in LMS evaluation
-                            and training readiness.
+                        Further evidence of applied testing aligned to
+                        administrative requirements; supports dual
+                        technical-pedagogic perspective in LMS evaluation and
+                        training readiness.
                     </li>
                 </ul>
 
@@ -321,11 +322,10 @@ export default function page() {
                         >
                             Learnlight Platform Case Study (Website)
                         </a>{" "}
-                            Case study of large-scale LMS development for over
-                            700,000 registered learners, demonstrating API
-                            optimisation, automated testing, and user-focused
-                            improvements to accessibility and mobile
-                            performance.
+                        Case study of large-scale LMS development for over
+                        700,000 registered learners, demonstrating API
+                        optimisation, automated testing, and user-focused
+                        improvements to accessibility and mobile performance.
                     </li>
                     <li>
                         <a
@@ -336,10 +336,9 @@ export default function page() {
                             Oxford Learner&apos;s Dictionaries API Entry Fetcher
                             (Repository)
                         </a>{" "}
-                            Node.js prototype integrating third-party content;
-                            uses Cheerio and semantic HTML to deliver
-                            accessible, in-context definitions for blended
-                            learning.
+                        Node.js prototype integrating third-party content; uses
+                        Cheerio and semantic HTML to deliver accessible,
+                        in-context definitions for blended learning.
                     </li>
                     <li>
                         <a
@@ -349,10 +348,10 @@ export default function page() {
                         >
                             Trainee List Electron app (Screenshot)
                         </a>{" "}
-                            Bespoke cross-platform desktop tool for staff
-                            onboarding; shows pragmatic trade-offs for speed,
-                            deployment, and maintainability under institutional
-                            constraints.
+                        Bespoke cross-platform desktop tool for staff
+                        onboarding; shows pragmatic trade-offs for speed,
+                        deployment, and maintainability under institutional
+                        constraints.
                     </li>
                 </ul>
 
@@ -366,10 +365,9 @@ export default function page() {
                         >
                             Modern GraphQL with Node (Udemy, 2023) (Certificate)
                         </a>{" "}
-                            Formal training underpinning API design and
-                            optimisation work; evidences continued professional
-                            development directly supporting learning-technology
-                            projects.
+                        Formal training underpinning API design and optimisation
+                        work; evidences continued professional development
+                        directly supporting learning-technology projects.
                     </li>
                 </ul>
             </section>

@@ -17,6 +17,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 3,
+    headerImage: {
+        src: "/headers/future-plans.avif",
+        alt: "A notebook on a pink background embossed with My secret plan to rule the world",
+    },
     slug: "future-plans",
     draft: false,
 };

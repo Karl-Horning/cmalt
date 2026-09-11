@@ -19,6 +19,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 11,
+    headerImage: {
+        src: "/headers/target-learners.avif",
+        alt: "Three students sitting together outdoors reviewing course papers",
+    },
     slug: "target-learners",
     draft: false,
 };

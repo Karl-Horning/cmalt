@@ -25,6 +25,10 @@
     --footer-muted: #98a2b0;
     --footer-accent: #809fff;
     --footer-border: rgba(255, 255, 255, 0.08);
+
+    /* Photo header overlay — background for white header text over a photo. */
+    --header-overlay: rgba(53, 53, 214, 0.9);
+    --header-fg: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +51,9 @@
         --footer-muted: #98a2b0;
         --footer-accent: #809fff;
         --footer-border: rgba(255, 255, 255, 0.08);
+
+        --header-overlay: rgba(53, 53, 214, 0.9);
+        --header-fg: #ffffff;
     }
 }
 

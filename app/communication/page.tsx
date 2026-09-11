@@ -24,6 +24,7 @@ export default function page() {
                 date={meta.date}
                 lastUpdated={meta.lastUpdated}
                 readingTime={meta.readingTime}
+                image={meta.headerImage}
             />
             <section id="description">
                 <h2>Description</h2>
@@ -33,24 +34,24 @@ export default function page() {
                     Learning Technologist at Imperial College London. I
                     prioritised clarity, empathy, and inclusivity, translating
                     between academic, administrative, and technical groups so
-                    that shared goals were understood and achievable. In
-                    hybrid and remote settings, I used shared documentation,
-                    structured updates, and active listening to keep projects
-                    moving and make contributions visible.
+                    that shared goals were understood and achievable. In hybrid
+                    and remote settings, I used shared documentation, structured
+                    updates, and active listening to keep projects moving and
+                    make contributions visible.
                 </p>
 
                 <p>
-                    My communication strategies varied according to audience
-                    and purpose, from producing accessible written guides and
-                    visual technical documentation to delivering departmental
+                    My communication strategies varied according to audience and
+                    purpose, from producing accessible written guides and visual
+                    technical documentation to delivering departmental
                     presentations and preparing structured meeting summaries.
                     This adaptability was essential when collaborating across
                     cross-functional groups such as the Digital Education
-                    Platform Project&apos;s (DEPP) technical and academic
-                    teams, where collaboration more broadly was central to my
-                    role. I worked with colleagues across faculties and
-                    support teams to co-design learning experiences and advise
-                    on the use of Canvas LMS and related technologies.
+                    Platform Project&apos;s (DEPP) technical and academic teams,
+                    where collaboration more broadly was central to my role. I
+                    worked with colleagues across faculties and support teams to
+                    co-design learning experiences and advise on the use of
+                    Canvas LMS and related technologies.
                 </p>
 
                 <p>
@@ -73,10 +74,9 @@ export default function page() {
                     work was within the DEPP, supporting Imperial&apos;s
                     transition from Blackboard to Canvas. Within the Platform
                     Integration and Migration, and Testing and Evaluation
-                    groups, I helped surface technical dependencies,
-                    coordinate feedback loops, and get actionable outcomes
-                    captured in Asana so they could be implemented by the
-                    right teams.
+                    groups, I helped surface technical dependencies, coordinate
+                    feedback loops, and get actionable outcomes captured in
+                    Asana so they could be implemented by the right teams.
                 </p>
 
                 <p>
@@ -209,9 +209,8 @@ export default function page() {
                     the value of structured preparation and documentation from
                     colleagues who modelled effective facilitation practices.
                     Project owners consistently shared agendas in advance and
-                    followed them closely during meetings, which helped
-                    maintain focus and ensured that all voices were heard. On
-                    two
+                    followed them closely during meetings, which helped maintain
+                    focus and ensured that all voices were heard. On two
                     occasions,{" "}
                     <a
                         href={lmsProjectGroupNotesScreenshot}
@@ -259,13 +258,13 @@ export default function page() {
                 </p>
 
                 <p>
-                    Adapting communication formats, from technical
-                    documentation to plain-language guides and visual
-                    summaries, helped ensure accessibility for colleagues with
-                    differing technical confidence or learning preferences.
-                    This flexibility was key to inclusive and effective
-                    collaboration across Imperial&apos;s diverse academic and
-                    professional communities.
+                    Adapting communication formats, from technical documentation
+                    to plain-language guides and visual summaries, helped ensure
+                    accessibility for colleagues with differing technical
+                    confidence or learning preferences. This flexibility was key
+                    to inclusive and effective collaboration across
+                    Imperial&apos;s diverse academic and professional
+                    communities.
                 </p>
 
                 <p>
@@ -367,13 +366,12 @@ export default function page() {
                             PoC Data Cleaning Collaboration Screenshot (June
                             2025) (Image)
                         </a>{" "}
-                            Screenshot from Microsoft Teams showing
-                            collaborative communication with a Business School
-                            colleague during the Proof of Concept data-cleaning
-                            phase. Demonstrates how discrepancies were
-                            discussed, clarified, and actioned in real time.
-                            Shared with the colleague&apos;s consent;
-                            anonymisation not required.
+                        Screenshot from Microsoft Teams showing collaborative
+                        communication with a Business School colleague during
+                        the Proof of Concept data-cleaning phase. Demonstrates
+                        how discrepancies were discussed, clarified, and
+                        actioned in real time. Shared with the colleague&apos;s
+                        consent; anonymisation not required.
                     </li>
                     <li>
                         <a
@@ -384,12 +382,12 @@ export default function page() {
                             LMS Project Group Meeting Notes (October 2025)
                             (Screenshot)
                         </a>{" "}
-                            Example of structured, agenda-linked notes produced
-                            during the DEPP meetings. Demonstrates learning from
-                            colleagues&apos; communication practices and the
-                            application of accessible formatting principles.
-                            Shared with the consent of project leads;
-                            anonymisation not required.
+                        Example of structured, agenda-linked notes produced
+                        during the DEPP meetings. Demonstrates learning from
+                        colleagues&apos; communication practices and the
+                        application of accessible formatting principles. Shared
+                        with the consent of project leads; anonymisation not
+                        required.
                     </li>
                     <li>
                         <a
@@ -400,10 +398,10 @@ export default function page() {
                             Digital Education Platform Project (DEPP) ICT
                             Department Presentation (2024) (PDF)
                         </a>{" "}
-                            Presentation delivered to ICT colleagues outlining
-                            milestones, testing processes, and feedback
-                            mechanisms — demonstrating cross-departmental
-                            communication and facilitation.
+                        Presentation delivered to ICT colleagues outlining
+                        milestones, testing processes, and feedback mechanisms —
+                        demonstrating cross-departmental communication and
+                        facilitation.
                     </li>
                 </ul>
 
@@ -417,9 +415,9 @@ export default function page() {
                         >
                             Microsoft Teams FAQ (PDF)
                         </a>{" "}
-                            Plain-English staff guide demonstrating inclusive
-                            writing, accessible structure, and responsiveness to
-                            user needs.
+                        Plain-English staff guide demonstrating inclusive
+                        writing, accessible structure, and responsiveness to
+                        user needs.
                     </li>
                     <li>
                         <a
@@ -429,8 +427,8 @@ export default function page() {
                         >
                             Using Postman with Apollo Server (PDF)
                         </a>{" "}
-                            Technical guide for developers showing clear,
-                            step-by-step communication of complex processes.
+                        Technical guide for developers showing clear,
+                        step-by-step communication of complex processes.
                     </li>
                     <li>
                         <a
@@ -438,12 +436,12 @@ export default function page() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Testing LMS APIs: What an OpenAPI Spec Gives You (and What It Doesn&apos;t) (Link)
+                            Testing LMS APIs: What an OpenAPI Spec Gives You
+                            (and What It Doesn&apos;t) (Link)
                         </a>{" "}
-                            Blog post disseminating institutional testing
-                            practice and reusable methods for evaluating APIs —
-                            an example of outward-facing professional
-                            communication.
+                        Blog post disseminating institutional testing practice
+                        and reusable methods for evaluating APIs — an example of
+                        outward-facing professional communication.
                     </li>
                     <li>
                         <a
@@ -454,9 +452,9 @@ export default function page() {
                             Web Accessibility Resources and Tools: Guidelines,
                             Checklists, and Testing Solutions (PDF)
                         </a>{" "}
-                            Curated resource shared with the DEPP colleagues,
-                            supporting accessible design and awareness of
-                            WCAG-aligned best practice.
+                        Curated resource shared with the DEPP colleagues,
+                        supporting accessible design and awareness of
+                        WCAG-aligned best practice.
                     </li>
                 </ul>
 
@@ -471,11 +469,11 @@ export default function page() {
                             Understanding Manual Testing (LinkedIn Learning,
                             2024) (Certificate)
                         </a>{" "}
-                            Completed ahead of the DEPP Proof of Concept testing
-                            to strengthen communication between technical and
-                            academic stakeholders. Demonstrates reflective
-                            development and understanding of user behaviour
-                            beyond automated testing.
+                        Completed ahead of the DEPP Proof of Concept testing to
+                        strengthen communication between technical and academic
+                        stakeholders. Demonstrates reflective development and
+                        understanding of user behaviour beyond automated
+                        testing.
                     </li>
                 </ul>
             </section>

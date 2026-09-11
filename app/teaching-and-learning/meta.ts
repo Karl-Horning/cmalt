@@ -21,6 +21,10 @@ export const meta = {
     date: "2025-11-11",
     lastUpdated: "2026-09-10",
     readingTime: 14,
+    headerImage: {
+        src: "/headers/teaching-and-learning.avif",
+        alt: "A teacher writing on a chalkboard while a student checks their phone",
+    },
     slug: "teaching-and-learning",
     draft: false,
 };
