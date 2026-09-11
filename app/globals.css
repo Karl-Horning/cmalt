@@ -21,7 +21,7 @@
     --code-bg: #fbf3e4;
 
     --footer-bg: #0d0f12;
-    --footer-fg: #e9edf2;
+    --footer-fg: #b9bfc8;
     --footer-muted: #98a2b0;
     --footer-accent: #809fff;
     --footer-border: rgba(255, 255, 255, 0.08);
@@ -37,7 +37,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #0d0f12;
-        --fg: #e9edf2;
+        --fg: #b9bfc8;
         --accent: #809fff;
         --accent-hover: #a8bcff;
         --muted: #98a2b0;
@@ -50,7 +50,7 @@
         --code-bg: #2b2013;
 
         --footer-bg: #171b21;
-        --footer-fg: #e9edf2;
+        --footer-fg: #b9bfc8;
         --footer-muted: #98a2b0;
         --footer-accent: #809fff;
         --footer-border: rgba(255, 255, 255, 0.08);
