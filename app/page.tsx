@@ -58,63 +58,81 @@ export default function Home() {
     return (
         <>
             <JsonLd data={homeJsonLd} />
-            <div className={styles.homeHero}>
-                <p className={styles.homeEyebrow}>Full-Stack Developer</p>
-                <h1 className={styles.homeName}>Karl Horning</h1>
-                <p className={styles.homeDescription}>
-                    CMALT-accredited learning technologist and full-stack
-                    developer.
-                </p>
-                <div className={styles.homeCtaRow}>
-                    <Link href="/contextual-statement" className={styles.homeCta}>
-                        View the Portfolio
-                        <FiArrowRight aria-hidden="true" />
-                    </Link>
-                    <a
-                        href={cmaltCertificate}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.homeGhost}
-                    >
-                        <Image
-                            src={cmaltBadge}
-                            alt=""
-                            width={20}
-                            height={20}
-                            className={styles.homeGhostBadge}
-                        />
-                        CMALT Certified
-                    </a>
+            <div className={styles.homePage}>
+                <div className={styles.homePhotoBg} aria-hidden="true">
+                    <Image
+                        src="/headers/home.avif"
+                        alt=""
+                        fill
+                        sizes="100vw"
+                        style={{ objectFit: "cover" }}
+                        priority
+                    />
                 </div>
-                <nav className={styles.homeIconLinks} aria-label="External profiles">
-                    <a
-                        href="https://github.com/Karl-Horning"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.homeIconLink}
-                        aria-label="GitHub"
+                <div className={styles.homeHero}>
+                    <p className={styles.homeEyebrow}>Full-Stack Developer</p>
+                    <h1 className={styles.homeName}>Karl Horning</h1>
+                    <p className={styles.homeDescription}>
+                        CMALT-accredited learning technologist and full-stack
+                        developer.
+                    </p>
+                    <div className={styles.homeCtaRow}>
+                        <Link
+                            href="/contextual-statement"
+                            className={styles.homeCta}
+                        >
+                            View the Portfolio
+                            <FiArrowRight aria-hidden="true" />
+                        </Link>
+                        <a
+                            href={cmaltCertificate}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.homeGhost}
+                        >
+                            <Image
+                                src={cmaltBadge}
+                                alt=""
+                                width={20}
+                                height={20}
+                                className={styles.homeGhostBadge}
+                            />
+                            CMALT Certified
+                        </a>
+                    </div>
+                    <nav
+                        className={styles.homeIconLinks}
+                        aria-label="External profiles"
                     >
-                        <FaGithub aria-hidden="true" />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/karl-horning"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.homeIconLink}
-                        aria-label="LinkedIn"
-                    >
-                        <FaLinkedin aria-hidden="true" />
-                    </a>
-                    <a
-                        href="https://www.karlhorning.dev/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.homeIconLink}
-                        aria-label="karlhorning.dev"
-                    >
-                        <KSiteIcon aria-hidden="true" />
-                    </a>
-                </nav>
+                        <a
+                            href="https://github.com/Karl-Horning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.homeIconLink}
+                            aria-label="GitHub"
+                        >
+                            <FaGithub aria-hidden="true" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/karl-horning"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.homeIconLink}
+                            aria-label="LinkedIn"
+                        >
+                            <FaLinkedin aria-hidden="true" />
+                        </a>
+                        <a
+                            href="https://www.karlhorning.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.homeIconLink}
+                            aria-label="karlhorning.dev"
+                        >
+                            <KSiteIcon aria-hidden="true" />
+                        </a>
+                    </nav>
+                </div>
             </div>
         </>
     );
