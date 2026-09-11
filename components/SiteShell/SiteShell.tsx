@@ -56,7 +56,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                     >
                         <svg
                             className={styles.siteLogo}
-                            viewBox="0 0 1920 1080"
+                            viewBox="325 248 1265 580"
                             xmlns="http://www.w3.org/2000/svg"
                             style={{ fillRule: "evenodd" }}
                             aria-hidden="true"

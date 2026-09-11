@@ -28,8 +28,9 @@
 }
 
 .siteLogo {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: auto;
+    height: 2rem;
+    aspect-ratio: 1265 / 580;
     flex-shrink: 0;
 }
 
