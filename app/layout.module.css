@@ -5,7 +5,7 @@
     top: -100%;
     left: 1rem;
     background: var(--accent);
-    color: #fff;
+    color: var(--bg);
     padding: 0.5rem 1rem;
     border-radius: 0 0 4px 4px;
     font-size: 0.875rem;

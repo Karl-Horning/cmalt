@@ -12,7 +12,7 @@
     height: 2.5rem;
     border-radius: 50%;
     background: var(--accent);
-    color: #fff;
+    color: var(--bg);
     border: none;
     cursor: pointer;
     font-size: 1rem;
