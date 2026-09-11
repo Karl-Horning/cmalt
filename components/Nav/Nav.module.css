@@ -1,13 +1,21 @@
 /* Styles for the full-site menu shown from the header. */
 
-.navGrid {
-    columns: 4 180px;
-    column-gap: 2rem;
+.navColumns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.navColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    min-width: 220px;
 }
 
 .navGroup {
-    break-inside: avoid;
-    margin-bottom: 1.5rem;
+    min-width: 0;
 }
 
 .navGroupLabel {

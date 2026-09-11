@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import KSiteIcon from "@/components/icons/KSiteIcon/KSiteIcon";
 import { cmaltCertificate } from "@/lib/constants";
-import { navStructure } from "@/lib/nav";
+import { navColumns } from "@/lib/nav";
 import styles from "./Footer.module.css";
 
 const START_YEAR = 2025;
@@ -19,52 +19,56 @@ export default function Footer() {
         <footer id="site-footer" className={styles.siteFooter} aria-label="Site footer">
             <div className={styles.footerInner}>
                 <nav className={styles.footerSitemap} aria-label="Site map">
-                    {navStructure.map((item) => {
-                        if (item.type === "standalone") {
-                            if (item.utility) return null;
-                            return (
-                                <div key={item.href} className={styles.footerGroup}>
-                                    <Link href={item.href} className={styles.footerLink}>
+                    {navColumns.map((column, columnIndex) => (
+                        <div key={columnIndex} className={styles.footerColumn}>
+                            {column.map((item) => (
+                                <div
+                                    key={item.label}
+                                    className={styles.footerGroup}
+                                >
+                                    <p className={styles.footerGroupLabel}>
                                         {item.label}
-                                    </Link>
+                                    </p>
+                                    {item.items.map((subItem) => (
+                                        <Link
+                                            key={subItem.href}
+                                            href={subItem.href}
+                                            className={styles.footerLink}
+                                        >
+                                            {subItem.label}
+                                        </Link>
+                                    ))}
                                 </div>
-                            );
-                        }
-                        return (
-                            <div key={item.label} className={styles.footerGroup}>
-                                <p className={styles.footerGroupLabel}>{item.label}</p>
-                                {item.items.map((subItem) => (
-                                    <Link
-                                        key={subItem.href}
-                                        href={subItem.href}
-                                        className={styles.footerLink}
-                                    >
-                                        {subItem.label}
-                                    </Link>
-                                ))}
-                            </div>
-                        );
-                    })}
-                </nav>
-
-                <nav className={styles.footerMeta} aria-label="Legal and credentials">
-                    <Link href="/accessibility-statement" className={styles.footerLink}>
-                        Accessibility Statement
-                    </Link>
-                    <a
-                        href={cmaltCertificate}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.footerLink}
-                    >
-                        CMALT Certification
-                    </a>
+                            ))}
+                        </div>
+                    ))}
                 </nav>
 
                 <div className={styles.footerBottom}>
-                    <p className={styles.footerCopyright}>
-                        &copy; {copyrightRange} Karl Horning
-                    </p>
+                    <div className={styles.footerLegal}>
+                        <p className={styles.footerCopyright}>
+                            &copy; {copyrightRange} Karl Horning
+                        </p>
+                        <nav
+                            className={styles.footerLegalLinks}
+                            aria-label="Legal and credentials"
+                        >
+                            <Link
+                                href="/accessibility-statement"
+                                className={styles.footerLegalLink}
+                            >
+                                Accessibility Statement
+                            </Link>
+                            <a
+                                href={cmaltCertificate}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.footerLegalLink}
+                            >
+                                CMALT Certification
+                            </a>
+                        </nav>
+                    </div>
                     <div className={styles.footerSocial}>
                         <a
                             href="https://github.com/Karl-Horning"

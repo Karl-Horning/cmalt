@@ -87,6 +87,16 @@ export const navStructure: (StandaloneItem | GroupItem)[] = [
     },
 ];
 
+const navGroups = navStructure.filter(
+    (item): item is GroupItem => item.type === "group",
+);
+
+/** The site sections split into two independent, page-count-balanced columns. */
+export const navColumns: [GroupItem[], GroupItem[]] = [
+    navGroups.slice(0, 3),
+    navGroups.slice(3),
+];
+
 /** Flat list of all routes, including the home page. Used by tests. */
 export const routes = [
     "/",

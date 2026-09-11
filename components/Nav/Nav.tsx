@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navStructure } from "@/lib/nav";
+import { navColumns } from "@/lib/nav";
 import styles from "./Nav.module.css";
 
 /** Props for the {@link Nav} component. */
@@ -18,33 +18,33 @@ export default function Nav({ onNavigate }: NavProps) {
     const pathname = usePathname();
 
     return (
-        <div className={styles.navGrid}>
-            {navStructure.map((item) => {
-                if (item.type === "standalone") {
-                    return null;
-                }
-
-                return (
-                    <div key={item.label} className={styles.navGroup}>
-                        <p className={styles.navGroupLabel}>{item.label}</p>
-                        {item.items.map((subItem) => (
-                            <Link
-                                key={subItem.href}
-                                href={subItem.href}
-                                className={styles.navItem}
-                                onClick={onNavigate}
-                                aria-current={
-                                    pathname === subItem.href
-                                        ? "page"
-                                        : undefined
-                                }
-                            >
-                                {subItem.label}
-                            </Link>
-                        ))}
-                    </div>
-                );
-            })}
+        <div className={styles.navColumns}>
+            {navColumns.map((column, columnIndex) => (
+                <div key={columnIndex} className={styles.navColumn}>
+                    {column.map((item) => (
+                        <div key={item.label} className={styles.navGroup}>
+                            <p className={styles.navGroupLabel}>
+                                {item.label}
+                            </p>
+                            {item.items.map((subItem) => (
+                                <Link
+                                    key={subItem.href}
+                                    href={subItem.href}
+                                    className={styles.navItem}
+                                    onClick={onNavigate}
+                                    aria-current={
+                                        pathname === subItem.href
+                                            ? "page"
+                                            : undefined
+                                    }
+                                >
+                                    {subItem.label}
+                                </Link>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            ))}
         </div>
     );
 }
