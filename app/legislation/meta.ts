@@ -16,6 +16,7 @@ export const meta = {
         "PSBAR",
         "accessible design",
         "screen reader",
+        "GDPR",
     ],
     date: "2025-11-11",
     lastUpdated: "2026-09-10",

@@ -19,6 +19,7 @@ const fuse = new Fuse(searchIndex, {
         { name: "description", weight: 1 },
     ],
     threshold: 0.3,
+    ignoreLocation: true,
 });
 
 interface SearchPageProps {
