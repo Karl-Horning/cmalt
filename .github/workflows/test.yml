@@ -25,13 +25,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Check favicons and OG images are up to date
-        run: |
-          npm run generate:favicons
-          npm run generate:og-images
-          if ! git diff --exit-code -- public/favicons public/og; then
-            echo "::error::Favicons or OG images are out of date. Run 'npm run generate:favicons' and 'npm run generate:og-images' locally and commit the result."
-            exit 1
-          fi
+        run: npm run check:generated-assets
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4

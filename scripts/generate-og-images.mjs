@@ -5,7 +5,7 @@
  */
 
 import { chromium } from "@playwright/test";
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,7 +13,9 @@ import { navStructure } from "../lib/nav.ts";
 import { AUTHOR_NAME, SITE_TITLE } from "../lib/config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = path.join(__dirname, "..", "public", "og");
+const OUT_DIR =
+    process.env.OG_OUT_DIR ?? path.join(__dirname, "..", "public", "og");
+mkdirSync(OUT_DIR, { recursive: true });
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -96,7 +98,15 @@ function buildCardHtml(title) {
 
 async function main() {
     const tmpDir = mkdtempSync(path.join(tmpdir(), "og-gen-"));
-    const browser = await chromium.launch();
+    // These flags make text rendering more consistent across operating systems, which matters because the generated output is compared pixel-for-pixel in CI (see scripts/check-generated-assets.mjs).
+    const browser = await chromium.launch({
+        args: [
+            "--font-render-hinting=none",
+            "--disable-lcd-text",
+            "--disable-font-subpixel-positioning",
+            "--force-color-profile=srgb",
+        ],
+    });
 
     try {
         const page = await browser.newPage({

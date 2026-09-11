@@ -5,13 +5,21 @@
  */
 
 import { chromium } from "@playwright/test";
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+    mkdirSync,
+    mkdtempSync,
+    readFileSync,
+    rmSync,
+    writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUT_ROOT = path.join(__dirname, "..", "public", "favicons");
+const OUT_ROOT =
+    process.env.FAVICON_OUT_DIR ??
+    path.join(__dirname, "..", "public", "favicons");
 const LOGO_SVG_PATH = path.join(__dirname, "..", "design", "favicon-logo.svg");
 
 /**
@@ -153,6 +161,7 @@ async function main() {
     try {
         for (const [themeName, colors] of Object.entries(THEMES)) {
             const outDir = path.join(OUT_ROOT, themeName);
+            mkdirSync(outDir, { recursive: true });
             const page = await browser.newPage({ deviceScaleFactor: 1 });
 
             for (const [filename, size] of TARGETS) {

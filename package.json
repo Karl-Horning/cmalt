@@ -12,7 +12,8 @@
     "check-links": "linkinator https://cmalt.karlhorning.dev --recurse --skip '^mailto:' --timeout 10000",
     "check-links:local": "linkinator http://localhost:3001 --recurse --skip '^mailto:' --timeout 10000",
     "generate:favicons": "node scripts/generate-favicons.mjs",
-    "generate:og-images": "node scripts/generate-og-images.mjs"
+    "generate:og-images": "node scripts/generate-og-images.mjs",
+    "check:generated-assets": "node scripts/check-generated-assets.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.3.0",
@@ -31,6 +32,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "linkinator": "^7.6.1",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
