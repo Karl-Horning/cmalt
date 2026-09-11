@@ -22,6 +22,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     const [searchOpen, setSearchOpen] = useState(false);
     const [lastPathname, setLastPathname] = useState(pathname);
     const searchButtonRef = useRef<HTMLButtonElement>(null);
+    const menuButtonRef = useRef<HTMLButtonElement>(null);
 
     if (pathname !== lastPathname) {
         setLastPathname(pathname);
@@ -41,6 +42,11 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         searchButtonRef.current?.focus();
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+        menuButtonRef.current?.focus();
+    };
+
     useEffect(() => {
         const onKeyDown = (e: KeyboardEvent) => {
             if ((e.metaKey || e.ctrlKey) && e.key === "k") {
@@ -49,11 +55,13 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 setSearchOpen((v) => !v);
             } else if (e.key === "Escape" && searchOpen) {
                 closeSearch();
+            } else if (e.key === "Escape" && menuOpen) {
+                closeMenu();
             }
         };
         window.addEventListener("keydown", onKeyDown);
         return () => window.removeEventListener("keydown", onKeyDown);
-    }, [searchOpen]);
+    }, [searchOpen, menuOpen]);
 
     return (
         <>
@@ -120,6 +128,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                             <KSiteIcon aria-hidden="true" />
                         </a>
                         <button
+                            ref={menuButtonRef}
                             type="button"
                             className={styles.menuToggleBtn}
                             onClick={() => {
@@ -156,7 +165,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 <div
                     className={styles.overlayBackdrop}
                     onClick={() => {
-                        setMenuOpen(false);
+                        if (menuOpen) closeMenu();
                         if (searchOpen) closeSearch();
                     }}
                     aria-hidden="true"
