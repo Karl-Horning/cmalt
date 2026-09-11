@@ -7,7 +7,7 @@ export interface StandaloneItem {
     type: "standalone";
     href: string;
     label: string;
-    /** Utility pages (e.g. search) are excluded from prev/next and footer sitemap. */
+    /** Utility pages, for example search, are excluded from prev/next and footer sitemap. */
     utility?: boolean;
 }
 

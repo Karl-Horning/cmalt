@@ -34,7 +34,8 @@ export default function page() {
                 <p>
                     A few PDF documents linked from the Evidence sections may
                     not be fully accessible. These are supporting evidence for
-                    CMALT assessment, not the main content of the page.
+                    CMALT assessment. The portfolio&apos;s main content stays
+                    fully accessible.
                 </p>
                 <p>
                     Video evidence includes subtitles. I created and
@@ -44,13 +45,13 @@ export default function page() {
 
             <section id="testing">
                 <h2>How this site is tested</h2>
-                <p>I test this site two ways:</p>
+                <p>I test this site:</p>
                 <ul>
                     <li>
                         Automated testing with axe-core, covering every page,
-                        on every change.
+                        on every change
                     </li>
-                    <li>Manual testing, including keyboard navigation.</li>
+                    <li>Manual testing, including keyboard navigation</li>
                 </ul>
             </section>
 
