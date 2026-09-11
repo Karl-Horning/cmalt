@@ -26,9 +26,12 @@
     --footer-accent: #809fff;
     --footer-border: rgba(255, 255, 255, 0.08);
 
-    /* Photo header overlay — background for white header text over a photo. */
+    /* Opacity is chosen so white text stays readable against the brightest realistic photo. */
     --header-overlay: rgba(53, 53, 214, 0.9);
     --header-fg: #ffffff;
+
+    /* Focus outline — keep the same value in both themes. */
+    --focus-outline: #ffdd00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +57,8 @@
 
         --header-overlay: rgba(53, 53, 214, 0.9);
         --header-fg: #ffffff;
+
+        --focus-outline: #ffdd00;
     }
 }
 
@@ -75,4 +80,9 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+}
+
+:focus-visible {
+    outline: 3px solid var(--focus-outline);
+    outline-offset: 2px;
 }
