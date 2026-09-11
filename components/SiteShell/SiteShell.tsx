@@ -107,6 +107,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                             onClick={() => setMenuOpen((v) => !v)}
                             aria-expanded={menuOpen}
                             aria-controls="site-menu-panel"
+                            aria-label="Sections"
                         >
                             <span className={styles.menuIconStack}>
                                 <FiMenu

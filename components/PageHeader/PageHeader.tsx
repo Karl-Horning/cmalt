@@ -88,7 +88,6 @@ export default function PageHeader({
                     alt=""
                     fill
                     sizes="100vw"
-                    quality={50}
                     style={{ objectFit: "cover" }}
                     priority
                 />
