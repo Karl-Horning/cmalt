@@ -65,7 +65,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
 
     return (
         <>
-            <ScrollProgress />
+            {pathname !== "/" && <ScrollProgress />}
             <header className={styles.siteHeader}>
                 <div className={styles.siteHeaderInner}>
                     <Link
