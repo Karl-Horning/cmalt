@@ -8,6 +8,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 Add new entries here as they're merged, then rename this section when the release is ready.
 
+## [1.0.2] - 2026-09-25
+
+### Fixed
+
+- The reading progress bar appeared on the homepage, which has no long text to track. It now only shows on the portfolio pages.
+
 ## [1.0.1] - 2026-09-11
 
 ### Fixed
